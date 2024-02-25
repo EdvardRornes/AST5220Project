@@ -1,0 +1,493 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  25 FEB 2024 18:51
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./Master.tex
+(Master.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revtex4-2.cls
+Document Class: revtex4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for
+ documentation)
+ Copyright (c) 2019 American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>
+ Version (4.2d--4.2f): Modified by Mark Doyle and Phelype Oleinik
+ .
+ltxutil[2022/06/05 4.2f utilities package (portions licensed from W. E. Baxter 
+web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 356.
+Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 417.
+\eqncolsep=\skip48
+Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 492.
+Class revtex4-2 Info: Repairing broken LateX \@sect on input line 814.
+\intertabularlinepenalty=\count187
+\@tbpen=\count188
+\@arstrutbox@hline=\box51
+Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1845.
+Class revtex4-2 Info: Making \typeout \long on input line 2110.
+ltxfront[2022/06/05 4.2f frontmatter package (AO,DPC,MD)]
+\c@affil=\count189
+\c@collab=\count190
+\absbox=\box52
+ltxgrid[2022/06/05 4.2f page grid package (portions licensed from W. E. Baxter 
+web at superscript.com)]
+\c@linecount=\count191
+\output@latex=\toks17
+\box@size@1=\box53
+\box@size@2=\box54
+\@protection@box=\box55
+\@topmark@saved=\toks18
+\footins@saved=\box56
+\footins@recovered=\box57
+\column@recovered=\box58
+\pagesofar=\box59
+\footsofar=\box60
+\pagegrid@col=\count192
+Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5676.
+\c@part=\count193
+\c@section=\count194
+\c@subsection=\count195
+\c@subsubsection=\count196
+\c@paragraph=\count197
+\c@subparagraph=\count198
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\c@figure=\count199
+\fbox@1=\box61
+\c@table=\count266
+\fbox@2=\box62
+\c@video=\count267
+\fbox@4=\box63
+\@bibdataout=\write3
+\widetext@top=\box64
+\widetext@bot=\box65
+Class revtex4-2 Info: Selecting society aps on input line 7669.
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\aps4-2.rtx
+File: aps4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for documentatio
+n)
+Class revtex4-2 Info: RevTeX society APS selected on input line 40.
+)
+
+Class revtex4-2 Warning: No journal specified, using default pra.
+
+Class revtex4-2 Info: APS journal PRA selected on input line 7672.
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\aps10pt4-2.rtx
+File: aps10pt4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for document
+ation)
+Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
+Package: textcase 2023/07/27 v1.04 Text only upper/lower case changing (DPC)
+Package textcase Info: Defining Legacy names on input line 20.
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks19
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen140
+)
+LaTeX Info: Redefining \text on input line 28.
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen141
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count268
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count269
+\leftroot@=\count270
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count271
+\DOTSCASE@=\count272
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box66
+\strutbox@=\box67
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen142
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count273
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count274
+\dotsspace@=\muskip16
+\c@parentequation=\count275
+\dspbrk@lvl=\count276
+\tag@help=\toks21
+\row@=\count277
+\column@=\count278
+\maxfields@=\count279
+\andhelp@=\toks22
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks23
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip54
+\bibsep=\skip55
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count280
+)
+Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7676.
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revsymb4-2.sty
+Package: revsymb4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for docum
+entation)
+LaTeX Info: Redefining \frak on input line 104.
+LaTeX Info: Redefining \Bbb on input line 120.
+LaTeX Info: Redefining \REV@mathfrak on input line 128.
+)) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.st
+y
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+Package: import 2020/04/01  v 6.2
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen151
+\ar@mcellbox=\box68
+\extrarowheight=\dimen152
+\NC@list=\toks26
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box69
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+LaTeX Info: Redefining \bm on input line 219.
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count281
+\float@exts=\toks27
+\float@box=\box70
+\@float@everytoks=\toks28
+\@floatcapt=\box71
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count282
+\calc@Bcount=\count283
+\calc@Adimen=\dimen153
+\calc@Bdimen=\dimen154
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count284
+\calc@Cskip=\skip60
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count285
+\l_MT_multwidth_dim=\dimen155
+\origjot=\skip61
+\l_MT_shortvdotswithinadjustabove_dim=\dimen156
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen157
+\l_MT_above_intertext_sep=\dimen158
+\l_MT_below_intertext_sep=\dimen159
+\l_MT_above_shortintertext_sep=\dimen160
+\l_MT_below_shortintertext_sep=\dimen161
+\xmathstrut@box=\box72
+\xmathstrut@dim=\dimen162
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 63.
+
+Class revtex4-2 Warning: Repair the float package.
+
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 63.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 63.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 63.
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count286
+\l__pdf_internal_box=\box73
+) (Master.aux)
+\openout1 = `Master.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count287
+\scratchdimen=\dimen163
+\scratchbox=\box74
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen164
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks30
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\openout3 = `MasterNotes.bib'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+
+ (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Class revtex4-2 Warning: If you want your keywords to appear in your output, us
+e document class option showkeys.
+
+(Milestone1/milestone1.tex [1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdf
+tex/pdftex.map}]
+<Milestone1/Figures/Omega_i.png, id=18, 722.7pt x 433.62pt>
+File: Milestone1/Figures/Omega_i.png Graphic file (type png)
+<use Milestone1/Figures/Omega_i.png>
+Package pdftex.def Info: Milestone1/Figures/Omega_i.png  used on input line 161
+.
+(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+[][]
+ []
+
+[2]
+<Milestone1/Figures/dHpddHp_vs_anal.png, id=26, 722.7pt x 433.62pt>
+File: Milestone1/Figures/dHpddHp_vs_anal.png Graphic file (type png)
+<use Milestone1/Figures/dHpddHp_vs_anal.png>
+Package pdftex.def Info: Milestone1/Figures/dHpddHp_vs_anal.png  used on input 
+line 182.
+(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Milestone1/Figures/Eta_vs_anal_merge.png, id=27, 614.295pt x 686.565pt>
+File: Milestone1/Figures/Eta_vs_anal_merge.png Graphic file (type png)
+<use Milestone1/Figures/Eta_vs_anal_merge.png>
+Package pdftex.def Info: Milestone1/Figures/Eta_vs_anal_merge.png  used on inpu
+t line 209.
+(pdftex.def)             Requested size: 229.49844pt x 256.49744pt.
+[3 <./Milestone1/Figures/Omega_i.png> <./Milestone1/Figures/dHpddHp_vs_anal.png
+>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 216.
+
+<Milestone1/Figures/merge_Hp_t_eta_Ev.png, id=37, 491.436pt x 686.565pt>
+File: Milestone1/Figures/merge_Hp_t_eta_Ev.png Graphic file (type png)
+<use Milestone1/Figures/merge_Hp_t_eta_Ev.png>
+Package pdftex.def Info: Milestone1/Figures/merge_Hp_t_eta_Ev.png  used on inpu
+t line 223.
+(pdftex.def)             Requested size: 244.79782pt x 342.00357pt.
+<Milestone1/Figures/LumiDistance.png, id=38, 722.7pt x 433.62pt>
+File: Milestone1/Figures/LumiDistance.png Graphic file (type png)
+<use Milestone1/Figures/LumiDistance.png>
+Package pdftex.def Info: Milestone1/Figures/LumiDistance.png  used on input lin
+e 230.
+(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
+[][]
+ []
+
+<Milestone1/Figures/ScattPlot.png, id=39, 722.7pt x 433.62pt>
+File: Milestone1/Figures/ScattPlot.png Graphic file (type png)
+<use Milestone1/Figures/ScattPlot.png>
+Package pdftex.def Info: Milestone1/Figures/ScattPlot.png  used on input line 2
+35.
+(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
+<Milestone1/Figures/PDEh.png, id=40, 722.7pt x 433.62pt>
+File: Milestone1/Figures/PDEh.png Graphic file (type png)
+<use Milestone1/Figures/PDEh.png>
+Package pdftex.def Info: Milestone1/Figures/PDEh.png  used on input line 240.
+(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
+[4 <./Milestone1/Figures/Eta_vs_anal_merge.png> <./Milestone1/Figures/merge_Hp_
+t_eta_Ev.png> <./Milestone1/Figures/LumiDistance.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 245.
+
+
+Package natbib Warning: Citation `1' on page 5 undefined on input line 268.
+
+) (Milestone2/milestone2.tex) (Milestone3/milestone3.tex [5 <./Milestone1/Figur
+es/ScattPlot.png> <./Milestone1/Figures/PDEh.png>]) (Milestone4/milestone4.tex)
+(Master.bbl
+! Misplaced alignment tab character &.
+l.5   parameters},  {\em Astronomy &
+                                    amp; Astrophysics} {\bf 641} (2020) A6.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+)
+
+Class revtex4-2 Warning: Environment acknowledgements is obsolete;
+Use acknowledgments instead.
+
+
+Package natbib Warning: There were undefined citations.
+
+[6] (Master.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 5742 strings out of 474542
+ 87431 string characters out of 5744446
+ 1957978 words of memory out of 5000000
+ 27865 multiletter control sequences out of 15000+600000
+ 570890 words of font info for 83 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 71i,13n,79p,1043b,429s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/edvar/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/edvar/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/edvar/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/edvar/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users
+/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
+5.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr6.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/edvar/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/edvar/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/edvar/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ed
+var/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/
+Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.
+pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb>
+Output written on Master.pdf (6 pages, 635457 bytes).
+PDF statistics:
+ 141 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

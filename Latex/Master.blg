@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Master.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+The style file: bibtex/JHEP.bst
+Database file #1: MasterNotes.bib
+Database file #2: bibtex/main.bib
+You've used 1 entry,
+            2307 wiz_defined-function locations,
+            533 strings with 6801 characters,
+and the built_in function-call counts, 297 in all, are:
+= -- 31
+> -- 13
+< -- 0
++ -- 6
+- -- 3
+* -- 20
+:= -- 54
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 14
+empty$ -- 23
+format.name$ -- 3
+if$ -- 74
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 6
+num.names$ -- 1
+pop$ -- 4
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 10
+stack$ -- 0
+substring$ -- 4
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 12

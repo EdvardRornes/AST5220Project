@@ -1,0 +1,116 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{subfiles}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{float}
+\usepackage{mathtools}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\newcommand{\Hp}{\mathcal{H}}
+
+\begin{document}
+
+\title{The Large Scale Structure of the Cosmic Microwave Background}
+
+\author{E.B Rørnes}
+ \email{e.b.rornes@fys.uio.no}
+\affiliation{Institute of Physics, University of Oslo,\\0371 Oslo,  Norway}
+
+\date{\today}
+
+\begin{abstract}
+In this paper we consider the large scale structure of the universe and the Cosmic Microwave Background (CMB) fluctuations...
+\end{abstract}
+
+\keywords{cosmic microwave background  --	large-scale structure of Universe}
+\maketitle
+
+%\tableofcontents
+
+\section{Introduction}
+
+This project was built on the template provided from (cite) which already contains a large part of the structure behind the numerical parts of the project. In the entire paper the subscript 0 denotes today's values... (not a final introduction)
+
+
+
+
+% Include each milestone file
+
+% Milestone I
+\subfile{Milestone1/milestone1}
+
+% Milestone II
+\subfile{Milestone2/milestone2}
+
+% Milestone III
+\subfile{Milestone3/milestone3}
+
+% Milestone IV
+\subfile{Milestone4/milestone4}
+
+
+
+
+
+\begin{acknowledgements}
+	...
+\end{acknowledgements}
+
+% Bibliography
+
+\bibliographystyle{bibtex/JHEP}
+\bibliography{bibtex/main}
+
+\end{document}
