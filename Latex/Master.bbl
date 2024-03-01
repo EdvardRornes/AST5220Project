@@ -1,7 +1,19 @@
 \providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
 
-\bibitem{2020}
-N.~Aghanim, Y.~Akrami, {\em et.~al.}, {\it Planck2018 results: Vi. cosmological
-  parameters},  {\em Astronomy &amp; Astrophysics} {\bf 641} (2020) A6.
+\bibitem{Planck:2018vyg}
+Planck: N.~Aghanim {\em et.~al.}, {\it {Planck 2018 results. VI. Cosmological
+  parameters}},  {\em Astron. Astrophys.} {\bf 641} (2020) A6,
+  [\href{http://arxiv.org/abs/1807.06209}{{\tt arXiv:1807.06209}}]. [Erratum:
+  Astron.Astrophys. 652, C4 (2021)].
+
+\bibitem{dodelson:2003ft}
+S.~Dodelson, {\em {Modern Cosmology}}.
+\newblock Academic Press, Amsterdam, 2003.
+
+\bibitem{SDSS:2014iwm}
+SDSS: M.~Betoule {\em et.~al.}, {\it {Improved cosmological constraints from a
+  joint analysis of the SDSS-II and SNLS supernova samples}},  {\em Astron.
+  Astrophys.} {\bf 568} (2014) A22, [\href{http://arxiv.org/abs/1401.4064}{{\tt
+  arXiv:1401.4064}}].
 
 \end{thebibliography}\endgroup

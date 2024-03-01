@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  25 FEB 2024 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  1 MAR 2024 12:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -278,15 +278,33 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen161
 \xmathstrut@box=\box72
 \xmathstrut@dim=\dimen162
+) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
 Class revtex4-2 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 63.
+lass! (Proceeding with fingers crossed.) on input line 67.
+
 
 Class revtex4-2 Warning: Repair the float package.
 
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 63.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 63.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 63.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 67.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 67.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 67.
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -296,20 +314,20 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Master.aux)
 \openout1 = `Master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -338,12 +356,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \openout3 = `MasterNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
 
  (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
 
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -353,93 +371,68 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Class revtex4-2 Warning: If you want your keywords to appear in your output, us
 e document class option showkeys.
 
-(Milestone1/milestone1.tex [1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdf
-tex/pdftex.map}]
-<Milestone1/Figures/Omega_i.png, id=18, 722.7pt x 433.62pt>
-File: Milestone1/Figures/Omega_i.png Graphic file (type png)
-<use Milestone1/Figures/Omega_i.png>
-Package pdftex.def Info: Milestone1/Figures/Omega_i.png  used on input line 161
+(Milestone1/milestone1.tex
+Underfull \hbox (badness 3271) in paragraph at lines 80--81
+[]\OT1/cmr/m/n/10 We ap-prox-i-mate the uni-verse to be com-pletely
+ []
+
+[1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<Milestone1/Figures/Omega_i.pdf, id=24, 722.7pt x 433.62pt>
+File: Milestone1/Figures/Omega_i.pdf Graphic file (type pdf)
+<use Milestone1/Figures/Omega_i.pdf>
+Package pdftex.def Info: Milestone1/Figures/Omega_i.pdf  used on input line 166
 .
-(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/dHpddHp_vs_anal.pdf, id=25, 722.7pt x 433.62pt>
+File: Milestone1/Figures/dHpddHp_vs_anal.pdf Graphic file (type pdf)
+<use Milestone1/Figures/dHpddHp_vs_anal.pdf>
+Package pdftex.def Info: Milestone1/Figures/dHpddHp_vs_anal.pdf  used on input 
+line 187.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/Eta_vs_anal_merge.pdf, id=26, 614.77678pt x 686.565pt>
+File: Milestone1/Figures/Eta_vs_anal_merge.pdf Graphic file (type pdf)
+<use Milestone1/Figures/Eta_vs_anal_merge.pdf>
+Package pdftex.def Info: Milestone1/Figures/Eta_vs_anal_merge.pdf  used on inpu
+t line 214.
+(pdftex.def)             Requested size: 246.0pt x 274.72589pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
-[][]
- []
-
-[2]
-<Milestone1/Figures/dHpddHp_vs_anal.png, id=26, 722.7pt x 433.62pt>
-File: Milestone1/Figures/dHpddHp_vs_anal.png Graphic file (type png)
-<use Milestone1/Figures/dHpddHp_vs_anal.png>
-Package pdftex.def Info: Milestone1/Figures/dHpddHp_vs_anal.png  used on input 
-line 182.
-(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Milestone1/Figures/Eta_vs_anal_merge.png, id=27, 614.295pt x 686.565pt>
-File: Milestone1/Figures/Eta_vs_anal_merge.png Graphic file (type png)
-<use Milestone1/Figures/Eta_vs_anal_merge.png>
-Package pdftex.def Info: Milestone1/Figures/Eta_vs_anal_merge.png  used on inpu
-t line 209.
-(pdftex.def)             Requested size: 229.49844pt x 256.49744pt.
-[3 <./Milestone1/Figures/Omega_i.png> <./Milestone1/Figures/dHpddHp_vs_anal.png
+[3 <./Milestone1/Figures/Omega_i.pdf> <./Milestone1/Figures/dHpddHp_vs_anal.pdf
 >]
+<Milestone1/Figures/merge_Hp_t_eta_Ev.pdf, id=143, 722.7pt x 729.44518pt>
+File: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf Graphic file (type pdf)
+<use Milestone1/Figures/merge_Hp_t_eta_Ev.pdf>
+Package pdftex.def Info: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf  used on inpu
+t line 228.
+(pdftex.def)             Requested size: 246.0pt x 248.29747pt.
+<Milestone1/Figures/LumiDistance.pdf, id=144, 722.7pt x 433.62pt>
+File: Milestone1/Figures/LumiDistance.pdf Graphic file (type pdf)
+<use Milestone1/Figures/LumiDistance.pdf>
+Package pdftex.def Info: Milestone1/Figures/LumiDistance.pdf  used on input lin
+e 235.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/ScattPlot.pdf, id=145, 722.7pt x 433.62pt>
+File: Milestone1/Figures/ScattPlot.pdf Graphic file (type pdf)
+<use Milestone1/Figures/ScattPlot.pdf>
+Package pdftex.def Info: Milestone1/Figures/ScattPlot.pdf  used on input line 2
+40.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/PDEh.pdf, id=146, 722.7pt x 433.62pt>
+File: Milestone1/Figures/PDEh.pdf Graphic file (type pdf)
+<use Milestone1/Figures/PDEh.pdf>
+Package pdftex.def Info: Milestone1/Figures/PDEh.pdf  used on input line 245.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+ [4 <./Milestone1/Figures/Eta_vs_anal_merge.pdf> <./Milestone1/Figures/merge_Hp
+_t_eta_Ev.pdf> <./Milestone1/Figures/LumiDistance.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 216.
-
-<Milestone1/Figures/merge_Hp_t_eta_Ev.png, id=37, 491.436pt x 686.565pt>
-File: Milestone1/Figures/merge_Hp_t_eta_Ev.png Graphic file (type png)
-<use Milestone1/Figures/merge_Hp_t_eta_Ev.png>
-Package pdftex.def Info: Milestone1/Figures/merge_Hp_t_eta_Ev.png  used on inpu
-t line 223.
-(pdftex.def)             Requested size: 244.79782pt x 342.00357pt.
-<Milestone1/Figures/LumiDistance.png, id=38, 722.7pt x 433.62pt>
-File: Milestone1/Figures/LumiDistance.png Graphic file (type png)
-<use Milestone1/Figures/LumiDistance.png>
-Package pdftex.def Info: Milestone1/Figures/LumiDistance.png  used on input lin
-e 230.
-(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
-[][]
- []
-
-<Milestone1/Figures/ScattPlot.png, id=39, 722.7pt x 433.62pt>
-File: Milestone1/Figures/ScattPlot.png Graphic file (type png)
-<use Milestone1/Figures/ScattPlot.png>
-Package pdftex.def Info: Milestone1/Figures/ScattPlot.png  used on input line 2
-35.
-(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
-<Milestone1/Figures/PDEh.png, id=40, 722.7pt x 433.62pt>
-File: Milestone1/Figures/PDEh.png Graphic file (type png)
-<use Milestone1/Figures/PDEh.png>
-Package pdftex.def Info: Milestone1/Figures/PDEh.png  used on input line 240.
-(pdftex.def)             Requested size: 244.79782pt x 146.87967pt.
-[4 <./Milestone1/Figures/Eta_vs_anal_merge.png> <./Milestone1/Figures/merge_Hp_
-t_eta_Ev.png> <./Milestone1/Figures/LumiDistance.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 245.
+ on input line 250.
 
 
-Package natbib Warning: Citation `1' on page 5 undefined on input line 268.
+Package natbib Warning: Citation `1' on page 5 undefined on input line 275.
 
-) (Milestone2/milestone2.tex) (Milestone3/milestone3.tex [5 <./Milestone1/Figur
-es/ScattPlot.png> <./Milestone1/Figures/PDEh.png>]) (Milestone4/milestone4.tex)
-(Master.bbl
-! Misplaced alignment tab character &.
-l.5   parameters},  {\em Astronomy &
-                                    amp; Astrophysics} {\bf 641} (2020) A6.
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-)
+) (Milestone2/milestone2.tex [5 <./Milestone1/Figures/ScattPlot.pdf> <./Milesto
+ne1/Figures/PDEh.pdf>]) (Milestone3/milestone3.tex) (Milestone4/milestone4.tex)
+(Master.bbl)
 
 Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
@@ -454,13 +447,13 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5742 strings out of 474542
- 87431 string characters out of 5744446
+ 6248 strings out of 474542
+ 94944 string characters out of 5744446
  1957978 words of memory out of 5000000
- 27865 multiletter control sequences out of 15000+600000
- 570890 words of font info for 83 fonts, out of 8000000 for 9000
+ 28362 multiletter control sequences out of 15000+600000
+ 571057 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,79p,1043b,429s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 71i,13n,79p,1043b,459s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -483,11 +476,12 @@ l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/edvar/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ed
 var/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/
 Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.
-pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb>
-Output written on Master.pdf (6 pages, 635457 bytes).
+pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmtt9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on Master.pdf (6 pages, 488872 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
+ 527 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

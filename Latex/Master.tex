@@ -46,6 +46,7 @@ reprint,
 \usepackage{bm}% bold math
 \usepackage{float}
 \usepackage{mathtools}
+\usepackage{xcolor}
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -59,12 +60,15 @@ reprint,
 %]{geometry}
 
 \newcommand{\Hp}{\mathcal{H}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
 \begin{document}
 
 \title{The Large Scale Structure of the Cosmic Microwave Background}
 
-\author{E.B Rørnes}
+\author{E. B. Rørnes}
  \email{e.b.rornes@fys.uio.no}
 \affiliation{Institute of Physics, University of Oslo,\\0371 Oslo,  Norway}
 
@@ -79,9 +83,11 @@ In this paper we consider the large scale structure of the universe and the Cosm
 
 %\tableofcontents
 
-\section{Introduction}
+\section*{Introduction}
 
-This project was built on the template provided from (cite) which already contains a large part of the structure behind the numerical parts of the project. In the entire paper the subscript 0 denotes today's values... (not a final introduction)
+This project was built on the template provided from (cite) \color{red}[1. Should I cite the github which includes the template? If so, is there any special form for this?] \color{black} which already contains a large part of the structure behind the numerical parts of the project. In the entire paper the subscript 0 denotes today's values... (not a final introduction)
+
+\color{red}Note that I will fix the font size on the figures to match (or at least be similar) to the text size in the main report at some later time. All figures are vector drawn (with the exception of the scatterplot which is rasterized due to large amounts of data) so if it is too small to read you can zoom in if needed.\color{black}
 
 
 
@@ -110,7 +116,7 @@ This project was built on the template provided from (cite) which already contai
 
 % Bibliography
 
-\bibliographystyle{bibtex/JHEP}
-\bibliography{bibtex/main}
+\bibliographystyle{JHEP}
+\bibliography{Master}
 
 \end{document}
