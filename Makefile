@@ -1,6 +1,4 @@
 # Hans A. Winther (2020) (hans.a.winther@gmail.com)
-# I made some changes here so that I can put all .h files in the include/ folder and all .o files in the obj/ folder
-# Obviously such changed were necessary throughout the project 
 
 SHELL := /bin/bash
 

@@ -1,5 +1,7 @@
 import os
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from matplotlib import colors
 from scipy.interpolate import UnivariateSpline
@@ -98,7 +100,7 @@ x_mat_is_DE = find_index(cosmology_OmegaM_values - cosmology_OmegaLambda_values,
 x_uni_acc = find_index(dHpdx_values, 1, 0, 0, len(x_values))
 
 # Choose the conditions for domination to be over
-arb_dom_over = 0.85
+arb_dom_over = 0.8
 # Find the (arbitrary) first value where radiation is less than arb_dom_ver
 x_rad_is_mat_arb = find_index(cosmology_OmegaRel_values, -1, arb_dom_over, 0, len(x_values))
 # Skip radiation domination and find the (artibrary) first value where matter is less than arb_dom_ver
@@ -151,13 +153,13 @@ def derivs_of_Hp_vs_analytic():
 
 # Test out data compared to analytical expressions for eta*Hp/c in various epochs
 def merge_eta_Hp_c():
-    etaHpc_rel_dom        = np.ones_like(x_values)
-    etaHpc_M_dom          = 2 + np.exp(x_rad_is_mat_arb - x_values / 2) - 2 * np.exp((x_rad_is_mat_arb - x_values) / 2)
-    etaHpc_Lambda_dom     = (np.exp(x_rad_is_mat_arb) - 2 * np.exp(x_rad_is_mat_arb / 2) + 2 * np.exp(x_mat_is_DE_arb / 2) + np.exp(-x_mat_is_DE_arb) - np.exp(-x_values)) * np.exp(x_values)
-    rad_M_eq_str          = str(x_rad_is_mat)
-    rad_Lambda_eq_str     = str(x_mat_is_DE)
-    rad_M_eq_arb_str      = str(x_rad_is_mat_arb)
-    rad_Lambda_eq_arb_str = str(x_mat_is_DE_arb)
+    etaHpc_rel_dom    = np.ones_like(x_values)
+    etaHpc_M_dom      = 2 + np.exp(x_rad_is_mat_arb - x_values / 2) - 2 * np.exp((x_rad_is_mat_arb - x_values) / 2)
+    etaHpc_Lambda_dom = (np.exp(x_rad_is_mat_arb) - 2 * np.exp(x_rad_is_mat_arb / 2) + 2 * np.exp(x_mat_is_DE_arb / 2) + np.exp(-x_mat_is_DE_arb) - np.exp(-x_values)) * np.exp(x_values)
+    rad_M_eq_str      = str(x_rad_is_mat)
+    rad_Lambda_eq_str = str(x_mat_is_DE)
+    rad_M_eq_str      = str(x_rad_is_mat_arb)
+    rad_Lambda_eq_str = str(x_mat_is_DE_arb)
     fig, axs = plt.subplots(2, figsize=(10, 12))
 
     # Analytical approximation Omega_i = Omega_j for when epochs start and end
@@ -186,7 +188,7 @@ def merge_eta_Hp_c():
     axs[1].set_xlim(-12, 1)
     axs[1].set_ylabel(r'$\eta(x)\mathcal{H}/c$')
     axs[1].set_ylim(0, 9)
-    axs[1].set_title(r'$\eta\mathcal{H}/c$ compared to analytical approximations' + '\n' + r'where epochs are assumed to end once $\Omega_i<$'+ str(arb_dom_over) + '\n' + r'i.e. $x_0=$' + rad_M_eq_arb_str + r' and $x_1=$' + rad_Lambda_eq_arb_str)
+    axs[1].set_title(r'$\eta\mathcal{H}/c$ compared to analytical approximations' + '\n' + r'where epochs are assumed to end once $\Omega_i<0.8$' + '\n' + r'i.e. $x_0=$' + rad_M_eq_str + r' and $x_1=$' + rad_Lambda_eq_str)
     axs[1].legend(loc = 'upper left')
     axs[1].grid(True)
 
@@ -298,8 +300,8 @@ def read_and_scatterplot_data():
 
         # Plotting scatter plot with confidence regions
         plt.figure(figsize=(10, 6))
-        plt.scatter(accepted_samples_M2, accepted_samples_DE2, c='blue', s = 15, label=r'$2\sigma$ Constraint', rasterized = True)
-        plt.scatter(accepted_samples_M1, accepted_samples_DE1, c='orange', s = 15, label=r'$1\sigma$ Constraint', rasterized = True)
+        plt.scatter(accepted_samples_M2, accepted_samples_DE2, c='blue', label=r'$2\sigma$ Constraint')
+        plt.scatter(accepted_samples_M1, accepted_samples_DE1, c='orange', label=r'$1\sigma$ Constraint')
 
         # Flat universe
         hori = np.linspace(0,1,1000)
@@ -409,17 +411,17 @@ def make_table():
 def main():
     # Pick out the accepted samples whilst also plotting the scatterplot
     # Note that we only need h_accepted_samples for what is asked of in the project, but perhaps for future reference I added the others
-    # DE_accepted_samples, M_accepted_samples, h_accepted_samples = read_and_scatterplot_data()
+    DE_accepted_samples, M_accepted_samples, h_accepted_samples = read_and_scatterplot_data()
     
-    # # Plot histograms
-    # plot_histogram_h(h_accepted_samples)
+    # Plot histograms
+    plot_histogram_h(h_accepted_samples)
 
-    # # Plot various parameter combinations from cosmology file
-    # luminosity_distance()
-    # derivs_of_Hp_vs_analytic()
-    # Omega_of_a()
-    # make_table()
-    # merge_Hp_t_eta()
+    # Plot various parameter combinations from cosmology file
+    luminosity_distance()
+    derivs_of_Hp_vs_analytic()
+    Omega_of_a()
+    make_table()
+    merge_Hp_t_eta()
     merge_eta_Hp_c()
 
 main()
