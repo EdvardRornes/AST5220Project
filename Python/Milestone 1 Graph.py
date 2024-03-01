@@ -409,17 +409,17 @@ def make_table():
 def main():
     # Pick out the accepted samples whilst also plotting the scatterplot
     # Note that we only need h_accepted_samples for what is asked of in the project, but perhaps for future reference I added the others
-    # DE_accepted_samples, M_accepted_samples, h_accepted_samples = read_and_scatterplot_data()
+    DE_accepted_samples, M_accepted_samples, h_accepted_samples = read_and_scatterplot_data()
     
-    # # Plot histograms
-    # plot_histogram_h(h_accepted_samples)
+    # Plot histograms
+    plot_histogram_h(h_accepted_samples)
 
-    # # Plot various parameter combinations from cosmology file
-    # luminosity_distance()
-    # derivs_of_Hp_vs_analytic()
-    # Omega_of_a()
-    # make_table()
-    # merge_Hp_t_eta()
+    # Plot various parameter combinations from cosmology file
+    luminosity_distance()
+    derivs_of_Hp_vs_analytic()
+    Omega_of_a()
+    make_table()
+    merge_Hp_t_eta()
     merge_eta_Hp_c()
 
 main()
