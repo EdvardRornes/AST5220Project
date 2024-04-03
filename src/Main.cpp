@@ -20,8 +20,8 @@ int main(int argc, char **argv){
   double Neff        = 3.046;
   double TCMB0       = 2.7255;
 
-  // Recombination parameters
-  double Yp          = 0.245;
+  // Recombination parameters. Master student and hence set to 0
+  double Yp          = 0.0;
 
   // Power-spectrum parameters
   double A_s         = 2.1e-9;
@@ -43,13 +43,10 @@ int main(int argc, char **argv){
   // Do the supernova fits. Uncomment when you are ready to run this
   // Make sure you read the comments on the top of src/SupernovaFitting.h
   // Utils::StartTiming("Supernova Fitting");
-  mcmc_fit_to_supernova_data("data/supernovadata.txt", "data/results_supernovafitting.txt");
+  // mcmc_fit_to_supernova_data("data/supernovadata.txt", "data/results_supernovafitting.txt");
   // // End timing for supernova fitting
   // Utils::EndTiming("Supernova Fitting");
 
-  // Remove when module is completed
-  Utils::EndTiming("Everything");
-  return 0;
 
   //=========================================================================
   // Module II
@@ -62,6 +59,7 @@ int main(int argc, char **argv){
 
   // Output recombination quantities
   rec.output("data/recombination.txt");
+  rec.events("data/recombination_events.txt");
   
   // Remove when module is completed
   return 0;

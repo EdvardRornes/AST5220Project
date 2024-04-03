@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  1 MAR 2024 11:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  3 APR 2024 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,17 +350,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \openout3 = `Milestone1Notes.bib'.
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
 
-
-Package natbib Warning: Citation `Planck:2018vyg' on page 1 undefined on input 
-line 71.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
-
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
 
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -368,120 +363,141 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package natbib Warning: Citation `dodelson:2003ft' on page 1 undefined on input
- line 80.
+ line 75.
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 80--81
-[]\OT1/cmr/m/n/10 We ap-prox-i-mate the uni-verse to be com-pletely
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
+\OT1/cmr/m/n/10 called the Friedmann-Lema^^^Ptre-Robertson-Walker
  []
 
+
+Package natbib Warning: Citation `Planck:2018vyg' on page 1 undefined on input 
+line 119.
+
 [1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Figures/Omega_i.pdf, id=15, 722.7pt x 433.62pt>
+
+Package natbib Warning: Citation `Davis_2004' on page 2 undefined on input line
+ 130.
+
+[2]
+
+Package natbib Warning: Citation `SDSS:2014iwm' on page 3 undefined on input li
+ne 176.
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 178--179
+[]$\OML/cmm/m/it/10 x$\OT1/cmr/m/n/10 -values cor-re-spond-ing to radiation-mat
+ter- and
+ []
+
+<Figures/Omega_i.pdf, id=22, 722.7pt x 433.62pt>
 File: Figures/Omega_i.pdf Graphic file (type pdf)
 <use Figures/Omega_i.pdf>
-Package pdftex.def Info: Figures/Omega_i.pdf  used on input line 166.
+Package pdftex.def Info: Figures/Omega_i.pdf  used on input line 191.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
- [2 <./Figures/Omega_i.pdf>]
-<Figures/dHpddHp_vs_anal.pdf, id=79, 722.7pt x 433.62pt>
+[3 <./Figures/Omega_i.pdf>]
+<Figures/dHpddHp_vs_anal.pdf, id=84, 722.7pt x 433.62pt>
 File: Figures/dHpddHp_vs_anal.pdf Graphic file (type pdf)
 <use Figures/dHpddHp_vs_anal.pdf>
-Package pdftex.def Info: Figures/dHpddHp_vs_anal.pdf  used on input line 187.
+Package pdftex.def Info: Figures/dHpddHp_vs_anal.pdf  used on input line 213.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Figures/Eta_vs_anal_merge.pdf, id=80, 614.77678pt x 686.565pt>
+<Figures/Eta_vs_anal_merge.pdf, id=85, 614.77678pt x 686.565pt>
 File: Figures/Eta_vs_anal_merge.pdf Graphic file (type pdf)
 <use Figures/Eta_vs_anal_merge.pdf>
-Package pdftex.def Info: Figures/Eta_vs_anal_merge.pdf  used on input line 214.
+Package pdftex.def Info: Figures/Eta_vs_anal_merge.pdf  used on input line 240.
 
 (pdftex.def)             Requested size: 246.0pt x 274.72589pt.
-<Figures/merge_Hp_t_eta_Ev.pdf, id=81, 722.7pt x 729.44518pt>
+<Figures/merge_Hp_t_eta_Ev.pdf, id=86, 722.7pt x 729.44518pt>
 File: Figures/merge_Hp_t_eta_Ev.pdf Graphic file (type pdf)
 <use Figures/merge_Hp_t_eta_Ev.pdf>
-Package pdftex.def Info: Figures/merge_Hp_t_eta_Ev.pdf  used on input line 228.
+Package pdftex.def Info: Figures/merge_Hp_t_eta_Ev.pdf  used on input line 254.
 
 (pdftex.def)             Requested size: 246.0pt x 248.29747pt.
+ [4 <./Figures/dHpddHp_vs_anal.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 257.
 
 
-Package natbib Warning: Citation `SDSS:2014iwm' on page 3 undefined on input li
-ne 232.
+Package natbib Warning: Citation `1' on page 5 undefined on input line 285.
 
 
-Package natbib Warning: Citation `SDSS:2014iwm' on page 3 undefined on input li
-ne 234.
+Package natbib Warning: Citation `SDSS:2014iwm' on page 5 undefined on input li
+ne 287.
 
 
-Package natbib Warning: Citation `SDSS:2014iwm' on page 3 undefined on input li
-ne 234.
+Package natbib Warning: Citation `Di_Valentino_2021' on page 5 undefined on inp
+ut line 289.
 
-<Figures/LumiDistance.pdf, id=82, 722.7pt x 433.62pt>
+[5 <./Figures/Eta_vs_anal_merge.pdf> <./Figures/merge_Hp_t_eta_Ev.pdf>]
+
+Package natbib Warning: Citation `SDSS:2014iwm' on page 6 undefined on input li
+ne 293.
+
+
+Package natbib Warning: Citation `SDSS:2014iwm' on page 6 undefined on input li
+ne 293.
+
+<Figures/LumiDistance.pdf, id=277, 722.7pt x 433.62pt>
 File: Figures/LumiDistance.pdf Graphic file (type pdf)
 <use Figures/LumiDistance.pdf>
-Package pdftex.def Info: Figures/LumiDistance.pdf  used on input line 235.
+Package pdftex.def Info: Figures/LumiDistance.pdf  used on input line 294.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-[3 <./Figures/dHpddHp_vs_anal.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 237.
-
-<Figures/ScattPlot.pdf, id=142, 722.7pt x 433.62pt>
-File: Figures/ScattPlot.pdf Graphic file (type pdf)
-<use Figures/ScattPlot.pdf>
-Package pdftex.def Info: Figures/ScattPlot.pdf  used on input line 240.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Figures/PDEh.pdf, id=143, 722.7pt x 433.62pt>
+<Figures/PDEh.pdf, id=278, 722.7pt x 433.62pt>
 File: Figures/PDEh.pdf Graphic file (type pdf)
 <use Figures/PDEh.pdf>
-Package pdftex.def Info: Figures/PDEh.pdf  used on input line 245.
+Package pdftex.def Info: Figures/PDEh.pdf  used on input line 299.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-[4 <./Figures/Eta_vs_anal_merge.pdf> <./Figures/merge_Hp_t_eta_Ev.pdf> <./Figur
-es/ScattPlot.pdf> <./Figures/LumiDistance.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 252.
-
-
-Package natbib Warning: Citation `1' on page 5 undefined on input line 275.
-
+<Figures/ScattPlot.pdf, id=279, 722.7pt x 433.62pt>
+File: Figures/ScattPlot.pdf Graphic file (type pdf)
+<use Figures/ScattPlot.pdf>
+Package pdftex.def Info: Figures/ScattPlot.pdf  used on input line 307.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+[6 <./Figures/LumiDistance.pdf> <./Figures/PDEh.pdf> <./Figures/ScattPlot.pdf>]
 (Milestone1.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-[5 <./Figures/PDEh.pdf>] [6] (Milestone1.aux)
+[7] (Milestone1.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6052 strings out of 474542
- 89860 string characters out of 5744446
- 1958978 words of memory out of 5000000
+ 6053 strings out of 474542
+ 89927 string characters out of 5744446
+ 1959978 words of memory out of 5000000
  28218 multiletter control sequences out of 15000+600000
- 567473 words of font info for 71 fonts, out of 8000000 for 9000
+ 567818 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,79p,1015b,336s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 71i,13n,79p,1174b,376s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/edvar/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/edvar/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/edvar/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/edvar/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/
-edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:
-/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/edvar/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/edvar/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/edvar/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Milestone1.pdf (6 pages, 431244 bytes).
+TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/edvar/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/edvar/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/edvar/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/
+edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
+:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5
+.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/edvar/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/edvar/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/edvar/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/ed
+var/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/
+Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on Milestone1.pdf (7 pages, 472771 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
+ 522 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

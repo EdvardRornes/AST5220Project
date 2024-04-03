@@ -10,7 +10,7 @@ BackgroundCosmology::BackgroundCosmology(
     double OmegaCDM0, 
     double OmegaK0,
     double Neff, 
-    double TCMB0) :
+    double TCMB0):
   h(h),
   OmegaB0(OmegaB0),
   OmegaCDM0(OmegaCDM0),
@@ -229,6 +229,10 @@ double BackgroundCosmology::t_of_x(double x) const{
   return t_of_x_spline(x);
 }
 
+double BackgroundCosmology::z_of_x(double x) const{
+  return exp(-x) - 1;
+}
+
 double BackgroundCosmology::get_H0() const{ 
   return H0; 
 }
@@ -291,6 +295,7 @@ void BackgroundCosmology::output(const std::string filename) const{
     fp << get_luminosity_distance_of_x(x)   << " "; // 12
     fp << get_comoving_distance_of_x(x)     << " "; // 13
     fp << get_r_of_x(x)                     << " "; // 14
+    fp << z_of_x(x)                         << " "; // 15
     fp <<"\n";
   };
   std::for_each(x_array.begin(), x_array.end(), print_data);

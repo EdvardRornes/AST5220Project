@@ -94,12 +94,12 @@ void mcmc_fit_to_supernova_data(std::string supernovadata_filename, std::string 
   
   // The chi^2 function
   auto comp_chi2 = [&](std::array<double, nparam> & parameters){
-    // Priors: if outside range return huuuuge chi^2
     bool inside_prior = true;
     for(int i = 0; i < nparam; i++){
       if(parameters[i] > prior_high[i]) inside_prior = false;
       if(parameters[i] < prior_low[i]) inside_prior = false;
     }
+    // Priors: if outside range return huuuuge chi^2
     if(not inside_prior) return std::numeric_limits<double>::max();
 
     //=========================================================================================

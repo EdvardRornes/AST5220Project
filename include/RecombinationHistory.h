@@ -23,10 +23,18 @@ class RecombinationHistory{
     const double x_end    = Constants.x_end;
     
     // Numbers of points of Xe,ne array (modify as you see fit)
-    const int npts_rec_arrays = 4000;
+    const int npts_rec_arrays = 23001;
   
-    // Xe for when to switch between Saha and Peebles
+    // Xe and x for when to switch between Saha and Peebles
     const double Xe_saha_limit = 0.99;
+    double x_transition = 0;
+
+    // Constants from the cosmology class
+    double OmegaB; 
+    double TCMB;
+    double H0;
+    double rho_c0;   // Critical density today
+    void set_cosmo_constant();
 
     //===============================================================
     // [1] Computation of Xe (Saha and Peebles equation)
@@ -48,10 +56,18 @@ class RecombinationHistory{
     // The two things we need to solve: Xe/ne and tau
     void solve_for_optical_depth_tau();
 
+    // Solve for Sound Horizon
+    void solve_for_sound_horizon();
+
     // Splines contained in this class
-    Spline log_Xe_of_x_spline{"Xe"};
+    Spline Xe_of_x_spline{"Xe"};
+    Spline Xe_saha_of_x_spline{"Xe Saha"};
+    Spline log_ne_of_x_spline{"ne"};
     Spline tau_of_x_spline{"tau"}; 
-    Spline g_tilde_of_x_spline{"g"};  
+    Spline dtaudx_of_x_spline{"dtau"};
+    Spline g_tilde_of_x_spline{"g"};
+    Spline dg_tildedx_of_x_spline{"dgdx"};
+    Spline sound_horizon_of_x_spline{"s"};
 
   public:
 
@@ -70,6 +86,8 @@ class RecombinationHistory{
     // Output some data to file
     void output(const std::string filename) const;
 
+    void events(const std::string filename) const;
+
     // Get functions that we must implement
     double tau_of_x(double x) const;
     double dtaudx_of_x(double x) const;
@@ -77,9 +95,14 @@ class RecombinationHistory{
     double g_tilde_of_x(double x) const;
     double dgdx_tilde_of_x(double x) const;
     double ddgddx_tilde_of_x(double x) const;
+    double get_c_s_of_x(double x) const;
+    double sound_horizon_of_x(double x) const;
     double Xe_of_x(double x) const;
+    double Xe_saha_of_x(double x) const;
     double ne_of_x(double x) const;
     double get_Yp() const;
+    double get_t_of_x(double x) const;
+    double get_R(double x) const;
 };
 
 #endif

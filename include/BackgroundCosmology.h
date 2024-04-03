@@ -77,6 +77,7 @@ class BackgroundCosmology{
     double get_r_of_x(double x = 0.0) const;
     double get_dA_of_x(double x = 0.0) const;
     double t_of_x(double x) const;
+    double z_of_x(double x) const;
 
     // Distance measures
     double get_luminosity_distance_of_x(double x) const;
