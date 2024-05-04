@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  3 APR 2024 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  4 MAY 2024 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,54 +295,347 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-)
-Class revtex4-2 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 67.
+) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+Package: physics 
 
-
-Class revtex4-2 Warning: Repair the float package.
-
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 67.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 67.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 67.
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box73
-) (Master.aux)
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box74
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\pgf@xd=\dimen173
+\pgf@yd=\dimen174
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count291
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen175
+\pgfmath@count=\count294
+\pgfmath@box=\box75
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count295
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box76
+\pgf@hbox=\box77
+\pgf@layerbox@main=\box78
+\pgf@picture@serial@count=\count296
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen194
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen198
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box79
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box80
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+)
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count299
+)
+\tcb@titlebox=\box81
+\tcb@upperbox=\box82
+\tcb@lowerbox=\box83
+\tcb@phantombox=\box84
+\c@tcbbreakpart=\count300
+\c@tcblayer=\count301
+\c@tcolorbox@number=\count302
+\l__tcobox_tmpa_box=\box85
+\l__tcobox_tmpa_dim=\dimen258
+\tcb@temp=\box86
+\tcb@temp=\box87
+\tcb@temp=\box88
+\tcb@temp=\box89
+) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tensor\tensor.sty
+Package: tensor 2023/07/18 v2.2 tensor indices package (PGR)
+LaTeX Info: Redefining \tensor on input line 37.
+\tnsr@Sps=\toks41
+\tnsr@Sbs=\toks42
+\tnsr@Spe=\toks43
+\tnsr@Sbe=\toks44
+\ncld@Mno=\toks45
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document c
+lass! (Proceeding with fingers crossed.) on input line 70.
+
+
+Class revtex4-2 Warning: Repair the float package.
+
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 70.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 70.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 70.
+(Master.aux)
 \openout1 = `Master.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen163
-\scratchbox=\box74
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen164
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count303
+\scratchdimen=\dimen259
+\scratchbox=\box90
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen260
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks47
 )
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -356,12 +649,12 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \openout3 = `MasterNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 
  (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
 
 
 (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -371,94 +664,187 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Class revtex4-2 Warning: If you want your keywords to appear in your output, us
 e document class option showkeys.
 
-(Milestone1/milestone1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-\OT1/cmr/m/n/10 called the Friedmann-Lema^^^Ptre-Robertson-Walker
- []
-
-[1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Underfull \hbox (badness 5667) in paragraph at lines 178--179
+(Milestone1/milestone1.tex [1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdf
+tex/pdftex.map}] [2] [3]
+Underfull \hbox (badness 5667) in paragraph at lines 186--187
 []$\OML/cmm/m/it/10 x$\OT1/cmr/m/n/10 -values cor-re-spond-ing to radiation-mat
 ter- and
  []
 
-[3]
-<Milestone1/Figures/Omega_i.pdf, id=28, 722.7pt x 433.62pt>
-File: Milestone1/Figures/Omega_i.pdf Graphic file (type pdf)
-<use Milestone1/Figures/Omega_i.pdf>
-Package pdftex.def Info: Milestone1/Figures/Omega_i.pdf  used on input line 191
-.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone1/Figures/dHpddHp_vs_anal.pdf, id=29, 722.7pt x 433.62pt>
+<Milestone1/Figures/dHpddHp_vs_anal.pdf, id=32, 722.7pt x 433.62pt>
 File: Milestone1/Figures/dHpddHp_vs_anal.pdf Graphic file (type pdf)
 <use Milestone1/Figures/dHpddHp_vs_anal.pdf>
 Package pdftex.def Info: Milestone1/Figures/dHpddHp_vs_anal.pdf  used on input 
-line 213.
+line 214.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
- [4 <./Milestone1/Figures/Omega_i.pdf> <./Milestone1/Figures/dHpddHp_vs_anal.pd
-f>]
-<Milestone1/Figures/Eta_vs_anal_merge.pdf, id=146, 614.77678pt x 686.565pt>
+[4 <./Milestone1/Figures/dHpddHp_vs_anal.pdf>]
+<Milestone1/Figures/Eta_vs_anal_merge.pdf, id=65, 722.7pt x 433.62pt>
 File: Milestone1/Figures/Eta_vs_anal_merge.pdf Graphic file (type pdf)
 <use Milestone1/Figures/Eta_vs_anal_merge.pdf>
 Package pdftex.def Info: Milestone1/Figures/Eta_vs_anal_merge.pdf  used on inpu
-t line 240.
-(pdftex.def)             Requested size: 246.0pt x 274.72589pt.
-<Milestone1/Figures/merge_Hp_t_eta_Ev.pdf, id=147, 722.7pt x 729.44518pt>
+t line 242.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/Omega_i.pdf, id=66, 722.7pt x 433.62pt>
+File: Milestone1/Figures/Omega_i.pdf Graphic file (type pdf)
+<use Milestone1/Figures/Omega_i.pdf>
+Package pdftex.def Info: Milestone1/Figures/Omega_i.pdf  used on input line 255
+.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/merge_Hp_t_eta_Ev.pdf, id=67, 722.7pt x 1300.86pt>
 File: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf Graphic file (type pdf)
 <use Milestone1/Figures/merge_Hp_t_eta_Ev.pdf>
 Package pdftex.def Info: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf  used on inpu
-t line 254.
-(pdftex.def)             Requested size: 246.0pt x 248.29747pt.
- [5 <./Milestone1/Figures/Eta_vs_anal_merge.pdf> <./Milestone1/Figures/merge_Hp
-_t_eta_Ev.pdf>]
-
-Package natbib Warning: Citation `1' on page 6 undefined on input line 285.
-
-<Milestone1/Figures/LumiDistance.pdf, id=279, 722.7pt x 433.62pt>
+t line 264.
+(pdftex.def)             Requested size: 246.0pt x 442.80264pt.
+ [5 <./Milestone1/Figures/Eta_vs_anal_merge.pdf> <./Milestone1/Figures/Omega_i.
+pdf>]
+<Milestone1/Figures/LumiDistance.pdf, id=105, 722.7pt x 433.62pt>
 File: Milestone1/Figures/LumiDistance.pdf Graphic file (type pdf)
 <use Milestone1/Figures/LumiDistance.pdf>
 Package pdftex.def Info: Milestone1/Figures/LumiDistance.pdf  used on input lin
-e 294.
+e 304.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone1/Figures/PDEh.pdf, id=280, 722.7pt x 433.62pt>
+<Milestone1/Figures/PDEh.pdf, id=106, 722.7pt x 433.62pt>
 File: Milestone1/Figures/PDEh.pdf Graphic file (type pdf)
 <use Milestone1/Figures/PDEh.pdf>
-Package pdftex.def Info: Milestone1/Figures/PDEh.pdf  used on input line 299.
+Package pdftex.def Info: Milestone1/Figures/PDEh.pdf  used on input line 309.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone1/Figures/ScattPlot.pdf, id=281, 722.7pt x 433.62pt>
+ [6 <./Milestone1/Figures/merge_Hp_t_eta_Ev.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 315.
+
+<Milestone1/Figures/ScattPlot.pdf, id=124, 722.7pt x 433.62pt>
 File: Milestone1/Figures/ScattPlot.pdf Graphic file (type pdf)
 <use Milestone1/Figures/ScattPlot.pdf>
 Package pdftex.def Info: Milestone1/Figures/ScattPlot.pdf  used on input line 3
-07.
+17.
 (pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-[6 <./Milestone1/Figures/LumiDistance.pdf> <./Milestone1/Figures/PDEh.pdf>]
+) (Milestone2/milestone2.tex [7 <./Milestone1/Figures/LumiDistance.pdf> <./Mile
+stone1/Figures/PDEh.pdf> <./Milestone1/Figures/ScattPlot.pdf>]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 318.
+Package natbib Warning: Citation `Dodelson:2003ft' on page 8 undefined on input
+ line 86.
 
-) (Milestone2/milestone2.tex [7 <./Milestone1/Figures/ScattPlot.pdf>] [8]
-<Milestone2/Figures/Xe.pdf, id=447, 614.77678pt x 318.4698pt>
+[8] [9]
+<Milestone2/Figures/Xe.pdf, id=174, 722.7pt x 433.62pt>
 File: Milestone2/Figures/Xe.pdf Graphic file (type pdf)
 <use Milestone2/Figures/Xe.pdf>
-Package pdftex.def Info: Milestone2/Figures/Xe.pdf  used on input line 155.
-(pdftex.def)             Requested size: 246.0pt x 127.43425pt.
-
-[9 <./Milestone2/Figures/Xe.pdf>]
-<Milestone2/Figures/tau_and_derivs.pdf, id=495, 614.77678pt x 318.4698pt>
+Package pdftex.def Info: Milestone2/Figures/Xe.pdf  used on input line 161.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone2/Figures/tau_and_derivs.pdf, id=175, 722.7pt x 433.62pt>
 File: Milestone2/Figures/tau_and_derivs.pdf Graphic file (type pdf)
 <use Milestone2/Figures/tau_and_derivs.pdf>
 Package pdftex.def Info: Milestone2/Figures/tau_and_derivs.pdf  used on input l
-ine 163.
-(pdftex.def)             Requested size: 246.0pt x 127.43425pt.
-<Milestone2/Figures/gtilde.pdf, id=496, 614.77678pt x 318.4698pt>
+ine 169.
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone2/Figures/gtilde.pdf, id=176, 722.7pt x 433.62pt>
 File: Milestone2/Figures/gtilde.pdf Graphic file (type pdf)
 <use Milestone2/Figures/gtilde.pdf>
-Package pdftex.def Info: Milestone2/Figures/gtilde.pdf  used on input line 168.
+Package pdftex.def Info: Milestone2/Figures/gtilde.pdf  used on input line 174.
 
-(pdftex.def)             Requested size: 246.0pt x 127.43425pt.
-) (Milestone3/milestone3.tex)
-(Milestone4/milestone4.tex [10 <./Milestone2/Figures/tau_and_derivs.pdf> <./Mil
-estone2/Figures/gtilde.pdf>]) (Master.bbl)
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+ [10 <./Milestone2/Figures/Xe.pdf> <./Milestone2/Figures/tau_and_derivs.pdf> <.
+/Milestone2/Figures/gtilde.pdf>]) (Milestone3/milestone3.tex [11]
+
+Package natbib Warning: Citation `Dodelson:2003ft' on page 12 undefined on inpu
+t line 78.
+
+
+LaTeX Warning: Reference `contCDM' on page 12 undefined on input line 97.
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 101--103
+\OT1/cmr/m/n/10 relativistic fluid, mean-ing they sat-isfy Maxwell-
+ []
+
+[12]
+
+Package natbib Warning: Citation `Dodelson:2003ft' on page 13 undefined on inpu
+t line 133.
+
+
+Overfull \hbox (8.30656pt too wide) detected at line 158
+[]
+ []
+
+[13]
+Overfull \hbox (2.18459pt too wide) detected at line 203
+\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 :
+ []
+
+
+Package natbib Warning: Citation `Dodelson:2003ft' on page 14 undefined on inpu
+t line 231.
+
+[14] [15]
+
+Package natbib Warning: Citation `Dodelson:2003ft' on page 16 undefined on inpu
+t line 285.
+
+[16]
+<Milestone3/Figures/baryon_cdm.pdf, id=235, 722.7pt x 867.24pt>
+File: Milestone3/Figures/baryon_cdm.pdf Graphic file (type pdf)
+<use Milestone3/Figures/baryon_cdm.pdf>
+Package pdftex.def Info: Milestone3/Figures/baryon_cdm.pdf  used on input line 
+344.
+(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
+ [17 <./Milestone3/Figures/baryon_cdm.pdf>]
+<Milestone3/Figures/gamma.pdf, id=253, 722.7pt x 867.24pt>
+File: Milestone3/Figures/gamma.pdf Graphic file (type pdf)
+<use Milestone3/Figures/gamma.pdf>
+Package pdftex.def Info: Milestone3/Figures/gamma.pdf  used on input line 366.
+(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
+
+Underfull \hbox (badness 1442) in paragraph at lines 371--372
+\OT1/cmr/m/n/10 to the quan-ti-ties $\OML/cmm/m/it/10 ^^N[]$ \OT1/cmr/m/n/10 an
+d $\OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 for the modes $\OML/cmm/m/it/10 k \OT1
+/cmr/m/n/10 =
+ []
+
+<Milestone3/Figures/gamma0.1.pdf, id=254, 722.7pt x 867.24pt>
+File: Milestone3/Figures/gamma0.1.pdf Graphic file (type pdf)
+<use Milestone3/Figures/gamma0.1.pdf>
+Package pdftex.def Info: Milestone3/Figures/gamma0.1.pdf  used on input line 37
+6.
+(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
+[18 <./Milestone3/Figures/gamma.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 382.
+
+<Milestone3/Figures/gamma0.01.pdf, id=271, 722.7pt x 867.24pt>
+File: Milestone3/Figures/gamma0.01.pdf Graphic file (type pdf)
+<use Milestone3/Figures/gamma0.01.pdf>
+Package pdftex.def Info: Milestone3/Figures/gamma0.01.pdf  used on input line 3
+84.
+(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
+<Milestone3/Figures/gamma0.001.pdf, id=272, 722.7pt x 867.24pt>
+File: Milestone3/Figures/gamma0.001.pdf Graphic file (type pdf)
+<use Milestone3/Figures/gamma0.001.pdf>
+Package pdftex.def Info: Milestone3/Figures/gamma0.001.pdf  used on input line 
+392.
+(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
+<Milestone3/Figures/Theta2.pdf, id=273, 722.7pt x 433.62pt>
+File: Milestone3/Figures/Theta2.pdf Graphic file (type pdf)
+<use Milestone3/Figures/Theta2.pdf>
+Package pdftex.def Info: Milestone3/Figures/Theta2.pdf  used on input line 402.
+
+(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
+[19 <./Milestone3/Figures/gamma0.1.pdf> <./Milestone3/Figures/gamma0.01.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 410.
+
+<Milestone3/Figures/Phi_Psi.pdf, id=304, 722.7pt x 867.24pt>
+File: Milestone3/Figures/Phi_Psi.pdf Graphic file (type pdf)
+<use Milestone3/Figures/Phi_Psi.pdf>
+Package pdftex.def Info: Milestone3/Figures/Phi_Psi.pdf  used on input line 419
+.
+(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
+[20 <./Milestone3/Figures/gamma0.001.pdf> <./Milestone3/Figures/Theta2.pdf> <./
+Milestone3/Figures/Phi_Psi.pdf>]) (Milestone4/milestone4.tex) (Master.bbl
+[21])
 
 Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
@@ -466,51 +852,60 @@ Use acknowledgments instead.
 
 Package natbib Warning: There were undefined citations.
 
-[11] (Master.aux)
+[22] (Master.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 6302 strings out of 474542
- 96476 string characters out of 5744446
- 1960978 words of memory out of 5000000
- 28410 multiletter control sequences out of 15000+600000
+ 16977 strings out of 474542
+ 327091 string characters out of 5744446
+ 1962978 words of memory out of 5000000
+ 38878 multiletter control sequences out of 15000+600000
  571225 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,79p,1193b,484s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,15n,93p,1562b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmbx9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmex10.pfb><C:/Users/edvar/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/edvar/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/edvar/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/edvar/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users
-/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
-C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmr5.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/edvar/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/edvar/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/edvar/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ed
-var/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
-Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.
-pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmti9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmtt9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/edvar/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Master.pdf (11 pages, 642806 bytes).
+TeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/edvar/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/edvar/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/e
+dvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
+/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6
+.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/edvar/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/edvar/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/edvar/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/edvar/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/edv
+ar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb
+><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy5.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/edvar/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/edvar/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/edvar/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/ed
+var/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
+b><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb>
+Output written on Master.pdf (22 pages, 962148 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
+ 456 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

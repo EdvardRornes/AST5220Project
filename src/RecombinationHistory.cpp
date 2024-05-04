@@ -251,7 +251,7 @@ int RecombinationHistory::rhs_peebles_ode(double x, const double *Xe, double *dX
 void RecombinationHistory::solve_for_optical_depth_tau(){
   Utils::StartTiming("Optical Depth");
 
-  // Set up x-arrays to integrate over. We split into three regions as we need extra points in reionisation
+  // Set up x-arrays to integrate over. We split into three regions as we need extra points in reionization
   const int npts = 100000;
   // Make reversed array to integrate over
   Vector x_array_tau_rev = Utils::linspace(-x_end, -x_start, npts);

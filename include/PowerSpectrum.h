@@ -22,6 +22,8 @@ class PowerSpectrum {
     RecombinationHistory *rec  = nullptr;
     Perturbations *pert        = nullptr;
 
+    Vector make_linspace_from_dx(double min, double max, double delta, bool logarithm=false);
+
     // Parameters defining the primordial power-spectrum
     double A_s        = 2.1e-9;
     double n_s        = 0.965;
@@ -31,6 +33,19 @@ class PowerSpectrum {
     const int n_k      = 100;
     const double k_min = Constants.k_min;
     const double k_max = Constants.k_max;
+
+    // Sampling values
+    const double n_bessel       = 25.0;  // Samplings per oscillation for the Bessel function
+    const double n_k_theta_LOS  = 32.0;  // Samplings per oscillation of theta_ell
+    const double n_x_LOS        = 350.0; // Samplings per oscillation of the integrand in the line of sight (LOS) integral
+    const double n_k_PS         = 32.0;  // Sampling per oscillation when integrating across k in the power spectrum (PS) integral
+
+    const double eta0   = cosmo->eta_of_x(0);
+    
+    const double x_start     = Constants.x_start;
+    const double x_end       = Constants.x_end;
+    const double x_start_LOS = -8.0;     // Time before recombination from which we integrate the line of sight integral
+    const double x_end_LOS   = 0.0;
     
     // The ells's we will compute Theta_ell and Cell for
     Vector ells{ 

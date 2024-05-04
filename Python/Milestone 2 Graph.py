@@ -1,11 +1,16 @@
-import os
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
-from matplotlib import colors
-from scipy.interpolate import UnivariateSpline
-from scipy.stats import norm
-from scipy.optimize import curve_fit
 from tabulate import tabulate
+
+plt.rcParams['text.usetex'] = True
+plt.rcParams['axes.titlepad'] = 20 
+
+font = {'family' : 'euclid',
+        'weight' : 'bold',
+        'size'   : 19}
+
+matplotlib.rc('font', **font)
 
 # Constants
 c              = 3*10**8 
@@ -92,7 +97,7 @@ def tau(x_last_scattering):
     plt.title(r'Optical depth $\tau(x)$ and its derivatives')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone2/Figures/tau_and_derivs.pdf", format='pdf')
 
 def ne():
     plt.figure(figsize=(10, 6))
@@ -105,7 +110,7 @@ def ne():
     plt.title(r'Electron number density $n_e(x)$')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone2/Figures/electron_number_density.pdf", format='pdf')
 
 def Xe(x_recombination):
     # Find freeze out Xe value, i.e. Xe(x=0)
@@ -114,7 +119,7 @@ def Xe(x_recombination):
     print(Xe_freeze_out)
     plt.figure(figsize=(10, 6))
     plt.plot(x_values, Xe_values, lw=2.5, label=r'$X_e(x)$')
-    plt.plot(x_values, Xe_saha_values, lw=2.5, label=r'$X_e^\text{Saha}(x)$')
+    plt.plot(x_values, Xe_saha_values, lw=2.5, label=r'$X_e^\mathrm{Saha}(x)$')
     plt.axvline(x=x_recombination, color='k', linestyle='--', lw = 1.5, label='Recombination')
     plt.axhline(y=Xe_freeze_out, color='r', linestyle='--', lw = 1.5, label='Freeze out')
     plt.xlim(-7.8, -4)
@@ -124,7 +129,7 @@ def Xe(x_recombination):
     plt.title(r'Fraction of free electrons $X_e(x)$')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone2/Figures/Xe.pdf", format='pdf')
 
 def g_tilde(x_last_scattering):
     plt.figure(figsize=(10, 6))
@@ -135,10 +140,10 @@ def g_tilde(x_last_scattering):
     plt.xlim(-7.25, -6.5)
     plt.ylim(-1.1*max_g_tilde, 1.1*max_g_tilde)
     plt.xlabel(r'$x$')
-    plt.title(r'Visibility function $\tilde{g}(x)$ its derivatives normalized' + '\n' + r's.t. $\max{|\tilde{g}|}=\max{|\tilde{g}^\prime|}=\max{|\tilde{g}^{\prime\prime}|}$')
+    plt.title(r'Visibility function $\tilde{g}(x)$ its derivatives normalized')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone2/Figures/gtilde.pdf", format='pdf')
 
     # Make a table for the values of the various time parameters in the various relevant cosmic events
 def make_table():
@@ -181,6 +186,6 @@ def main():
     tau(x_last_scattering)
     ne()
     g_tilde(x_last_scattering)
-
+    # plt.show()
 
 main()

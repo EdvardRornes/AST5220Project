@@ -19,6 +19,17 @@ PowerSpectrum::PowerSpectrum(
   kpivot_mpc(kpivot_mpc)
 {}
 
+// Function to create a linspace with desired spacing
+Vector PowerSpectrum::make_linspace_from_dx(double min, double max, double delta, bool logarithm) {
+  double npts = (int)abs(((max-min)/delta));
+  if(logarithm){
+    return Utils::linspace(log(min), log(max), npts);
+  }
+  else{
+    return Utils::linspace(min, max, npts);
+  }
+}
+
 //====================================================
 // Do all the solving
 //====================================================
@@ -27,35 +38,37 @@ void PowerSpectrum::solve(){
   //=========================================================================
   // TODO: Choose the range of k's and the resolution to compute Theta_ell(k)
   //=========================================================================
-  Vector k_array;
-  Vector log_k_array = log(k_array);
+  // Make k array for line of sight (LOS) integration
+  double log_k_min = log(k_min);
+  double log_k_max = log(k_max);
 
-  //=========================================================================
-  // TODO: Make splines for j_ell. 
-  // Implement generate_bessel_function_splines
+  double dk_LOS = 2.0*M_PI/(eta0*n_k_theta_LOS);
+
+  Vector k_theta_array = make_linspace_from_dx(k_min, k_max, dk_LOS);
+  Vector log_k_theta_array = log(k_theta_array);
+
+  // Make k array for power spectrum (PS) integration
+  double dk_PS = 2.0*M_PI/(eta0*n_k_PS);
+
+  Vector log_k_PS_array = make_linspace_from_dx(k_min, k_max, dk_PS, true);
+  Vector k_PS_array = exp(log_k_PS_array);
+
+  //========================================================================= 
+  // generate_bessel_function_splines
   //=========================================================================
   generate_bessel_function_splines();
 
   //=========================================================================
-  // TODO: Line of sight integration to get Theta_ell(k)
   // Implement line_of_sight_integration
   //=========================================================================
-  line_of_sight_integration(k_array);
+  line_of_sight_integration(k_theta_array);
 
   //=========================================================================
-  // TODO: Integration to get Cell by solving dCell^f/dlogk = Delta(k) * f_ell(k)^2
-  // Implement solve_for_cell
+  // solve_for_cell
   //=========================================================================
-  auto cell_TT = solve_for_cell(log_k_array, thetaT_ell_of_k_spline, thetaT_ell_of_k_spline);
+  auto cell_TT = solve_for_cell(log_k_theta_array, thetaT_ell_of_k_spline, thetaT_ell_of_k_spline);
   cell_TT_spline.create(ells, cell_TT, "Cell_TT_of_ell");
   
-  //=========================================================================
-  // TODO: Do the same for polarization...
-  //=========================================================================
-  // ...
-  // ...
-  // ...
-  // ...
 }
 
 //====================================================
@@ -64,6 +77,8 @@ void PowerSpectrum::solve(){
 
 void PowerSpectrum::generate_bessel_function_splines(){
   Utils::StartTiming("besselspline");
+
+  const int size_ell = (int)ells.size();
   
   // Make storage for the splines
   j_ell_splines = std::vector<Spline>(ells.size());
@@ -75,15 +90,20 @@ void PowerSpectrum::generate_bessel_function_splines(){
   // might break down. Use j_ell(z) = Utils::j_ell(ell, z)
   //=============================================================================
 
+  double z_min = 0.0;
+  double z_max = k_max*eta0;
+  double dz = 2*M_PI/n_bessel;
+  Vector z_array = make_linspace_from_dx(z_min, z_max, dz);
+
   for(size_t i = 0; i < ells.size(); i++){
     const int ell = ells[i];
 
-    // ...
-    // ...
-    // ...
-    // ...
+    Vector j_ell_array(z_array.size());
 
-    // Make the j_ell_splines[i] spline
+    for (size_t i = 0; i < z_array.size(); i++){
+      j_ell_array[i] = Utils::j_ell(ell, z_array[i]);
+    }
+    j_ell_splines[i].create(z_array, j_ell_array);
   }
 
   Utils::EndTiming("besselspline");
@@ -102,18 +122,33 @@ Vector2D PowerSpectrum::line_of_sight_integration_single(
   // Make storage for the results
   Vector2D result = Vector2D(ells.size(), Vector(k_array.size()));
 
+  double dx = 2.0*M_PI/n_x_LOS;
+
+  Vector x_array = make_linspace_from_dx(x_start_LOS, x_end_LOS, dx);
+
   for(size_t ik = 0; ik < k_array.size(); ik++){
+    if (10.0*ik/k_array.size() != (10.0*ik + 10)/k_array.size()){
+      std::cout << (100*ik + 100)/k_array.size() << "% " << std::flush;
+      if (ik == k_array.size() - 1){
+        std::cout << std::endl;
+      }
+    }
+    double k_value = k_array[ik];
+    for (size_t il = 0; il < ells.size(); il++){
+      double ell = ells[il];
 
-    //=============================================================================
-    // TODO: Implement to solve for the general line of sight integral 
-    // F_ell(k) = Int dx jell(k(eta-eta0)) * S(x,k) for all the ell values for the 
-    // given value of k
-    //=============================================================================
-    // ...
-    // ...
-    // ...
-
-    // Store the result for Source_ell(k) in results[ell][ik]
+      Vector integrand(x_array.size());
+      for (size_t i = 0; i < x_array.size(); i++){
+        integrand[i] = source_function(x_array[i], k_value) * j_ell_splines[il](k_value*(eta0 - cosmo->eta_of_x(x_array[i])));
+      }
+      double int_value = 0;
+      size_t N = integrand.size();
+      for (size_t i = 1; i < N - 1; i++){
+        int_value += integrand[i];
+      }
+      int_value += (integrand[0] + integrand[N-1])/2.0;
+      result[il][ik] = int_value * dx;
+    }
   }
 
   Utils::EndTiming("lineofsight");
@@ -126,22 +161,23 @@ Vector2D PowerSpectrum::line_of_sight_integration_single(
 void PowerSpectrum::line_of_sight_integration(Vector & k_array){
   const int n_k        = k_array.size();
   const int n          = 100;
-  const int nells      = ells.size();
+  const int n_ells      = ells.size();
   
   // Make storage for the splines we are to create
-  thetaT_ell_of_k_spline = std::vector<Spline>(nells);
+  thetaT_ell_of_k_spline = std::vector<Spline>(n_ells);
 
   //============================================================================
   // TODO: Solve for Theta_ell(k) and spline the result
   //============================================================================
+  // Vector2D thetaT_ell_of_k_spline = line_of_sight_integration_single(k_array, pert->get_Source_T(x,k))
 
   // Make a function returning the source function
-  std::function<double(double,double)> source_function_T = [&](double x, double k){
-    return pert->get_Source_T(x,k);
-  };
+  // std::function<double(double,double)> source_function_T = [&](double x, double k){
+  //   return pert->get_Source_T(x,k);
+  // };
 
   // Do the line of sight integration
-  Vector2D thetaT_ell_of_k = line_of_sight_integration_single(k_array, source_function_T);
+  // Vector2D thetaT_ell_of_k = line_of_sight_integration_single(k_array, source_function_T);
 
   // Spline the result and store it in thetaT_ell_of_k_spline
   // ...

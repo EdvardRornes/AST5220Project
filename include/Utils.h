@@ -53,8 +53,8 @@ extern struct ConstantsAndUnits {
   const double x_end   = 5.0;
 
   // Include polarization and/or neutrinos?
-  const bool polarization  = true;
-  const bool neutrinos     = true;
+  const bool polarization  = false;
+  const bool neutrinos     = false;
 
   // For integration of perturbations (number of equations and positions in arrays)
   const int n_scalars           = 5;
@@ -94,7 +94,7 @@ namespace Utils {
   double binary_search_for_value(
       const Spline &y, 
       double y_value, 
-      std::pair<double,double> xrange = {0.0,0.0}, 
+      std::pair<double,double> xrange = {0.0, 0.0}, 
       double epsilon = 1e-7);
 
   // Ordinary bessel functions

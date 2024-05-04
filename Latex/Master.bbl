@@ -5,21 +5,11 @@ H.~A. Winther, H.~K. Eriksen, O.~Elgaroy, D.~F. Mota, and H.~Ihle, ``Cosmology
   ii.'' \url{https://cmb.wintherscoming.no/}, 2023.
 \newblock Accessed on March 1, 2023.
 
-\bibitem{dodelson:2003ft}
-S.~Dodelson, {\em {Modern Cosmology}}.
-\newblock Academic Press, Amsterdam, 2003.
-
 \bibitem{Planck:2018vyg}
 Planck: N.~Aghanim {\em et.~al.}, {\it {Planck 2018 results. VI. Cosmological
   parameters}},  {\em Astron. Astrophys.} {\bf 641} (2020) A6,
   [\href{http://arxiv.org/abs/1807.06209}{{\tt arXiv:1807.06209}}]. [Erratum:
   Astron.Astrophys. 652, C4 (2021)].
-
-\bibitem{Davis_2004}
-T.~M. Davis and C.~H. Lineweaver, {\it Expanding confusion: Common
-  misconceptions of cosmological horizons and the superluminal expansion of the
-  universe},  {\em Publications of the Astronomical Society of Australia} {\bf
-  21} (2004) 97–109.
 
 \bibitem{SDSS:2014iwm}
 SDSS: M.~Betoule {\em et.~al.}, {\it {Improved cosmological constraints from a
@@ -27,9 +17,34 @@ SDSS: M.~Betoule {\em et.~al.}, {\it {Improved cosmological constraints from a
   Astrophys.} {\bf 568} (2014) A22, [\href{http://arxiv.org/abs/1401.4064}{{\tt
   arXiv:1401.4064}}].
 
+\bibitem{dodelson:2003ft}
+S.~Dodelson, {\em {Modern Cosmology}}.
+\newblock Academic Press, Amsterdam, 2003.
+
+\bibitem{Davis_2004}
+T.~M. Davis and C.~H. Lineweaver, {\it Expanding confusion: Common
+  misconceptions of cosmological horizons and the superluminal expansion of the
+  universe},  {\em Publications of the Astronomical Society of Australia} {\bf
+  21} (2004) 97–109.
+
+\bibitem{Gott:2003pf}
+J.~R. Gott, III, M.~Juric, {\em et.~al.}, {\it {A map of the universe}},  {\em
+  Astrophys. J.} {\bf 624} (2005) 463,
+  [\href{http://arxiv.org/abs/astro-ph/0310571}{{\tt astro-ph/0310571}}].
+
 \bibitem{Di_Valentino_2021}
 E.~Di~Valentino, O.~Mena, {\em et.~al.}, {\it In the realm of the hubble
   tension—a review of solutions *},  {\em Classical and Quantum Gravity} {\bf
   38} (2021) 153001.
+
+\bibitem{Carroll:2004st}
+S.~M. Carroll, {\em {Spacetime and Geometry}: {An Introduction to General
+  Relativity}}.
+\newblock Cambridge University Press, 2019.
+
+\bibitem{Doran:2005ep}
+M.~Doran, {\it {Speeding up cosmological Boltzmann codes}},  {\em JCAP} {\bf
+  06} (2005) 011, [\href{http://arxiv.org/abs/astro-ph/0503277}{{\tt
+  astro-ph/0503277}}].
 
 \end{thebibliography}\endgroup

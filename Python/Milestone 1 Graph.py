@@ -1,11 +1,19 @@
 import os
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
-from matplotlib import colors
 from scipy.interpolate import UnivariateSpline
 from scipy.stats import norm
-from scipy.optimize import curve_fit
 from tabulate import tabulate
+
+plt.rcParams['text.usetex'] = True
+plt.rcParams['axes.titlepad'] = 20 
+
+font = {'family' : 'euclid',
+        'weight' : 'bold',
+        'size'   : 19}
+
+matplotlib.rc('font', **font)
 
 # Constants
 c              = 3*10**8 
@@ -46,7 +54,6 @@ comoving_distance_values     = data_cosmology[:, 13]
 r_values                     = data_cosmology[:, 14]
 cosmology_OmegaM_values      = cosmology_OmegaB_values + cosmology_OmegaCDM_values  # Non-relativistic particles
 cosmology_OmegaRel_values    = cosmology_OmegaR_values + cosmology_OmegaNu_values   # Relativistic particles
-a_of_x                       = np.exp(x_values)                                     # Use scale factor instead of x
 redshift                     = np.exp(-x_values)-1
 
 # Extract columns from supernova
@@ -97,104 +104,77 @@ x_mat_is_DE = find_index(cosmology_OmegaM_values - cosmology_OmegaLambda_values,
 # Since Hp = dot(a) then dHpdx = ddot(a)/H, since H is strictly positive then dHpdx changes sign in the same way as ddot(a).
 x_uni_acc = find_index(dHpdx_values, 1, 0, 0, len(x_values))
 
-# Choose the conditions for domination to be over
-arb_dom_over = 0.85
-# Find the (arbitrary) first value where radiation is less than arb_dom_ver
-x_rad_is_mat_arb = find_index(cosmology_OmegaRel_values, -1, arb_dom_over, 0, len(x_values))
-# Skip radiation domination and find the (artibrary) first value where matter is less than arb_dom_ver
-x_mat_is_DE_arb = find_index(cosmology_OmegaM_values, -1, arb_dom_over, 12000, len(x_values))
-
 
 # Plot Omegai and vertical lines for various events
-def Omega_of_a():
+def Omega_of_x():
     plt.figure(figsize=(10, 6))
-    plt.plot(a_of_x, cosmology_OmegaRel_values, lw = 2.5, label=r'$\Omega_\text{rad}$')
-    plt.plot(a_of_x, cosmology_OmegaM_values, lw = 2.5, label=r'$\Omega_\text{M}$')
-    plt.plot(a_of_x, cosmology_OmegaLambda_values, lw = 2.5, label=r'$\Omega_\Lambda$')
-    plt.plot(a_of_x, cosmology_OmegaK_values, lw = 2.5, label=r'$\Omega_\text{K}$')
-    plt.plot(a_of_x, cosmology_OmegaRel_values + cosmology_OmegaM_values + cosmology_OmegaLambda_values + cosmology_OmegaK_values, lw = 2.5, label = r'$\sum_i\Omega_i$')
-    plt.axvline(x=np.exp(x_mat_is_DE), color='b', linestyle='--', lw = 1.5, label=r'$\Omega_{\text{rel}}(a)=\Omega_{\text{M}}(a)$')
-    plt.axvline(x=np.exp(x_rad_is_mat), color='r', linestyle='--', lw = 1.5, label = r'$\Omega_{\text{M}}(a)=\Omega_\Lambda(a)$')
-    plt.axvline(x=np.exp(x_uni_acc), color='g', linestyle='--', lw = 1.5, label = 'Universe accelerates')
-    plt.xlim(np.exp(-18),np.exp(3))
-    plt.xscale('log')
+    plt.plot(x_values, cosmology_OmegaRel_values, lw = 2.5, label=r'$\Omega_\mathrm{rad}$')
+    plt.plot(x_values, cosmology_OmegaM_values, lw = 2.5, label=r'$\Omega_\mathrm{M}$')
+    plt.plot(x_values, cosmology_OmegaLambda_values, lw = 2.5, label=r'$\Omega_\Lambda$')
+    plt.plot(x_values, cosmology_OmegaK_values, lw = 2.5, label=r'$\Omega_\mathrm{K}$')
+    plt.plot(x_values, cosmology_OmegaRel_values + cosmology_OmegaM_values + cosmology_OmegaLambda_values + cosmology_OmegaK_values, lw = 2.5, label = r'$\sum_i\Omega_i$')
+    plt.axvline(x=x_mat_is_DE, color='b', linestyle='--', lw = 2.5, label=r'$\Omega_{\mathrm{rel}}(x)=\Omega_{\mathrm{M}}(x)$')
+    plt.axvline(x=x_rad_is_mat, color='r', linestyle='--', lw = 2.5, label = r'$\Omega_{\mathrm{M}}(x)=\Omega_\Lambda(x)$')
+    plt.axvline(x=x_uni_acc, color='g', linestyle='--', lw = 2.5, label = 'Universe accelerates')
+    plt.xlim(-18,3)
     plt.ylim(-0.05, 1.05)
-    plt.xlabel(r'Scale factor $a$')
+    plt.xlabel(r'$x$')
     plt.ylabel(r'$\Omega_i(x)$')
-    plt.title(r'Energy density of the various $\Omega_i(a)$')
+    plt.title(r'Energy density of the various $\Omega_i(x)$')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone1/Figures/Omega_i.pdf", format='pdf')
 
 # Test out data compared to analytical expressions for the derivatives of Hp
 def derivs_of_Hp_vs_analytic():
     plt.figure(figsize=(10, 6))
-    plt.axhline(y=-1, color='b', linestyle='--', lw = 2, label=r'$\frac{1}{\mathcal{H}_{\text{rel}}}\frac{d\mathcal{H}_{\text{rel}}}{dx}\approx-1$')
-    plt.axhline(y=-1/2, color='g', linestyle='--', lw = 2, label=r'$\frac{1}{\mathcal{H}_{\text{M}}}\frac{d\mathcal{H}_{\text{M}}}{dx}\approx-1/2$')
-    plt.axhline(y=1, color='r', linestyle='--', lw = 2, label=r'$\frac{1}{\mathcal{H}_\Lambda}\frac{d\mathcal{H}_\Lambda}{dx}\approx\frac{1}{\mathcal{H}_{\text{rel}}}\frac{d^2\mathcal{H}_{\text{rel}}}{dx^2}$' + '\n' + r'$\approx\frac{1}{\mathcal{H}_\Lambda}\frac{d^2\mathcal{H}_\Lambda}{dx^2}\approx1$')
-    plt.axhline(y=1/4, color='y', linestyle='--', lw = 2, label=r'$\frac{1}{\mathcal{H}_{\text{M}}}\frac{d^2\mathcal{H}_{\text{M}}}{dx^2}\approx1/4$')
-    plt.plot(a_of_x, dHpdx_values/Hp_values, lw = 3, label = r'Numerical $\frac{1}{\mathcal{H}}\frac{d\mathcal{H}}{dx}$')
-    plt.plot(a_of_x, ddHpddx_values/Hp_values, lw = 3, label = r'Numerical $\frac{1}{\mathcal{H}}\frac{d^2\mathcal{H}}{dx^2}$')
-    plt.xlabel(r'Scale factor $a$')
-    plt.xscale('log')
-    plt.xlim(np.exp(-18), np.exp(5))
-    plt.ylabel(r'$\frac{1}{\mathcal{H}}\frac{d\mathcal{H}}{dx},\frac{1}{\mathcal{H}}\frac{d^2\mathcal{H}}{dx^2}$')
-    plt.title(r'Evolution of $\frac{1}{\mathcal{H}}\frac{d\mathcal{H}}{dx}$ and $\frac{1}{\mathcal{H}}\frac{d^2\mathcal{H}}{dx^2}$ compared to analytical approximations in various regimes')
+    plt.axhline(y=-1, color='b', linestyle='--', lw = 2, label=r'$\frac{\mathcal{H}^\prime_{\mathrm{R}}}{\mathcal{H}_{\mathrm{R}}}=-1$')
+    plt.axhline(y=-1/2, color='g', linestyle='--', lw = 2, label=r'$\frac{\mathcal{H}_{\mathrm{M}}^\prime}{\mathcal{H}_{\mathrm{M}}}=-1/2$')
+    plt.axhline(y=1, color='r', linestyle='--', lw = 2, label=r'$\frac{\mathcal{H}_\Lambda^\prime}{\mathcal{H}_\Lambda}=\frac{\mathcal{H}_{\mathrm{R}}^{\prime\prime}}{\mathcal{H}_{\mathrm{R}}}=\frac{\mathcal{H}_\Lambda^{\prime\prime}}{\mathcal{H}_\Lambda}=1$')
+    plt.axhline(y=1/4, color='y', linestyle='--', lw = 2, label=r'$\frac{\mathcal{H}_{\mathrm{M}}^{\prime\prime}}{\mathcal{H}_{\mathrm{M}}}=1/4$')
+    plt.plot(x_values, dHpdx_values/Hp_values, lw = 3, label = r'Numerical $\frac{\mathcal{H}^{\prime}}{\mathcal{H}}$')
+    plt.plot(x_values, ddHpddx_values/Hp_values, lw = 3, label = r'Numerical $\frac{\mathcal{H}^{\prime\prime}}{\mathcal{H}}$')
+    plt.axvline(x_rad_is_mat, color=(0, 0, 0.5), linestyle = '-.', lw=2.5, label=r'$\Omega_{\mathrm{rel}}(x)=\Omega_{\mathrm{M}}(x)$')
+    plt.axvline(x_mat_is_DE, color=(0.5, 0, 0), linestyle = '-.', lw=2.5, label=r'$\Omega_{\mathrm{M}}(x)=\Omega_\Lambda(x)$')
+    plt.xlabel(r'$x$')
+    plt.xlim(-18, 5)
+    plt.title(r'Evolution of $\frac{\mathcal{H}^\prime}{\mathcal{H}}$ and $\frac{\mathcal{H}^{\prime\prime}}{\mathcal{H}}$')
 
     # Code to switch order of legends
     handles, labels = plt.gca().get_legend_handles_labels()
     order = [4,5,0,1,2,3]
     plt.legend([handles[idx] for idx in order],[labels[idx] for idx in order], loc='center left')
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone1/Figures/dHpddHp_vs_anal.pdf", format='pdf')
 
 
 # Test out data compared to analytical expressions for eta*Hp/c in various epochs
-def merge_eta_Hp_c():
+def eta_Hp_c():
+    plt.figure(figsize=(10, 6))
     etaHpc_rel_dom        = np.ones_like(x_values)
-    etaHpc_M_dom          = 2 + np.exp(x_rad_is_mat_arb - x_values / 2) - 2 * np.exp((x_rad_is_mat_arb - x_values) / 2)
-    etaHpc_Lambda_dom     = (np.exp(x_rad_is_mat_arb) - 2 * np.exp(x_rad_is_mat_arb / 2) + 2 * np.exp(x_mat_is_DE_arb / 2) + np.exp(-x_mat_is_DE_arb) - np.exp(-x_values)) * np.exp(x_values)
-    rad_M_eq_str          = str(x_rad_is_mat)
-    rad_Lambda_eq_str     = str(x_mat_is_DE)
-    rad_M_eq_arb_str      = str(x_rad_is_mat_arb)
-    rad_Lambda_eq_arb_str = str(x_mat_is_DE_arb)
-    fig, axs = plt.subplots(2, figsize=(10, 12))
+    etaHpc_M_dom          = 2 + np.exp(x_rad_is_mat - x_values / 2) - 2 * np.exp((x_rad_is_mat - x_values) / 2)
+    etaHpc_Lambda_dom     = (np.exp(x_rad_is_mat) - 2 * np.exp(x_rad_is_mat / 2) + 2 * np.exp(x_mat_is_DE / 2) + np.exp(-x_mat_is_DE) - np.exp(-x_values)) * np.exp(x_values)
 
     # Analytical approximation Omega_i = Omega_j for when epochs start and end
-    axs[0].plot(x_values, eta_values * Hp_values / c, lw=3.5, label=r'$\eta\mathcal{H}/c$')
-    axs[0].plot(x_values, etaHpc_rel_dom * (x_values < x_rad_is_mat), linestyle='--', lw=1.5, label=r'$\eta_{\text{rel}}\mathcal{H}_{\text{rel}}/c$')
-    axs[0].plot(x_values, etaHpc_M_dom * (x_values >= x_rad_is_mat) * (x_values < x_mat_is_DE), linestyle='--', lw=1.5, label=r'$\eta_{\text{M}}\mathcal{H}_{\text{M}}/c$')
-    axs[0].plot(x_values, etaHpc_Lambda_dom * (x_values >= x_mat_is_DE), linestyle='--', lw=1.5, label=r'$\eta_\Lambda\mathcal{H}_\Lambda/c$')
-    axs[0].axvline(x_rad_is_mat, color=(0, 0, 0.5), lw=2.5, label=r'$\Omega_{\text{rel}}(x)=\Omega_{\text{M}}(x)$')
-    axs[0].axvline(x_mat_is_DE, color=(0.5, 0, 0), lw=2.5, label=r'$\Omega_{\text{M}}(x)=\Omega_\Lambda(x)$')
-    axs[0].set_xlabel(r'$x$')
-    axs[0].set_xlim(-12, 1)
-    axs[0].set_ylabel(r'$\eta(x)\mathcal{H}/c$')
-    axs[0].set_ylim(0, 9)
-    axs[0].set_title(r'$\eta\mathcal{H}/c$ compared to analytical approximations' + '\n' + r'where epochs are assumed to end abruptly once we have equality' + '\n' + r'between the density parameters i.e. $x_0=$' + rad_M_eq_str + r' and $x_1=$' + rad_Lambda_eq_str)
-    axs[0].legend()
-    axs[0].grid(True)
-
-    # Analytical approximation for Omega_i < 0.8 for when epochs start and end
-    axs[1].plot(x_values, eta_values * Hp_values / c, lw=3.5, label=r'$\eta\mathcal{H}/c$')
-    axs[1].plot(x_values, etaHpc_rel_dom * (x_values < x_rad_is_mat_arb), linestyle='--', lw=1.5, label=r'$\eta_{\text{rel}}\mathcal{H}_{\text{rel}}/c$')
-    axs[1].plot(x_values, etaHpc_M_dom * (x_values >= x_rad_is_mat_arb) * (x_values < x_mat_is_DE_arb), linestyle='--', lw=1.5, label=r'$\eta_{\text{M}}\mathcal{H}_{\text{M}}/c$')
-    axs[1].plot(x_values, etaHpc_Lambda_dom * (x_values >= x_mat_is_DE_arb), linestyle='--', lw=1.5, label=r'$\eta_\Lambda\mathcal{H}_\Lambda/c$')
-    axs[1].axvline(x_rad_is_mat_arb, color=(0, 0, 0.5), lw=2.5, label=r'$\Omega_{\text{rel}}(x)=\Omega_{\text{M}}(x)$')
-    axs[1].axvline(x_mat_is_DE_arb, color=(0.5, 0, 0), lw=2.5, label=r'$\Omega_{\text{M}}(x)=\Omega_\Lambda(x)$')
-    axs[1].set_xlabel(r'$x$')
-    axs[1].set_xlim(-12, 1)
-    axs[1].set_ylabel(r'$\eta(x)\mathcal{H}/c$')
-    axs[1].set_ylim(0, 9)
-    axs[1].set_title(r'$\eta\mathcal{H}/c$ compared to analytical approximations' + '\n' + r'where epochs are assumed to end once $\Omega_i<$'+ str(arb_dom_over) + '\n' + r'i.e. $x_0=$' + rad_M_eq_arb_str + r' and $x_1=$' + rad_Lambda_eq_arb_str)
-    axs[1].legend(loc = 'upper left')
-    axs[1].grid(True)
+    plt.plot(x_values, eta_values * Hp_values / c, lw=3.5, label=r'$\eta\mathcal{H}/c$')
+    plt.plot(x_values, etaHpc_rel_dom * (x_values < x_rad_is_mat), linestyle='--', lw=1.5, label=r'$\eta_{\mathrm{rel}}\mathcal{H}_{\mathrm{rel}}/c$')
+    plt.plot(x_values, etaHpc_M_dom * (x_values >= x_rad_is_mat) * (x_values < x_mat_is_DE), linestyle='--', lw=1.5, label=r'$\eta_{\mathrm{M}}\mathcal{H}_{\mathrm{M}}/c$')
+    plt.plot(x_values, etaHpc_Lambda_dom * (x_values >= x_mat_is_DE), linestyle='--', lw=1.5, label=r'$\eta_\Lambda\mathcal{H}_\Lambda/c$')
+    plt.axvline(x_rad_is_mat, color=(0, 0, 0.5), lw=2.5, label=r'$\Omega_{\mathrm{rel}}(x)=\Omega_{\mathrm{M}}(x)$')
+    plt.axvline(x_mat_is_DE, color=(0.5, 0, 0), lw=2.5, label=r'$\Omega_{\mathrm{M}}(x)=\Omega_\Lambda(x)$')
+    plt.xlabel(r'$x$')
+    plt.xlim(-12, 1)
+    plt.ylabel(r'$\eta(x)\mathcal{H}/c$')
+    plt.ylim(0.2, 9)
+    plt.title(r'$\eta\mathcal{H}/c$ compared to analytical approximations')
+    plt.legend(loc='upper left')
+    plt.grid(True)
 
     # Adjust layout
     plt.tight_layout()
     # Adjust the vertical spacing between subplots
     plt.subplots_adjust(hspace=0.35)
-    plt.show()
+    plt.savefig("../Latex/Milestone1/Figures/Eta_vs_anal_merge.pdf", format='pdf')
 
 
 # Merge together plots for the evolution of Hp, t and eta as a function of x
@@ -203,7 +183,7 @@ def merge_Hp_t_eta():
     
     # Hp(x)
     axs[0].plot(x_values, Hp_values/Hkm_per_parsec, lw=2.5, label = r'$\mathcal{H}(x)$')
-    axs[0].axvline(x_uni_acc, color='r', lw=2.5, linestyle = '--', label=r'Universe begins to accelerate $\ddot{a}\geq0$')
+    axs[0].axvline(x_uni_acc, color='r', lw=2.5, linestyle = '--', label=r'$\ddot{a}\geq0$')
     axs[0].set_xlabel(r'$x$')
     axs[0].set_xlim(-12, 3)
     axs[0].set_ylabel(r'$\mathcal{H}$ [100 km/s/Mpc]')
@@ -216,8 +196,8 @@ def merge_Hp_t_eta():
     # t(x)
     t_today = t_values[x_values == 0]/(Gigayear)
     t_today_str = '{:.2f}'.format(t_today[0])    
-    axs[1].plot(x_values, t_values/Gigayear, lw=2.5, label=r'$t(x)/c$')
-    axs[1].axhline(y=t_today, color='r', linestyle='--', lw=2.5, label=r'$t(0)=$' + t_today_str + ' Gyr')
+    axs[1].plot(x_values, t_values/Gigayear, lw=2.5, label=r'$t(x)$')
+    axs[1].axhline(y=t_today, color='r', linestyle='--', lw=2.5, label=r'$t(0)=\,$' + t_today_str + ' Gyr')
     axs[1].set_xlabel(r'$x$')
     axs[1].set_xlim(-12, 3)
     axs[1].set_ylabel(r'$t$ [Gyr]')
@@ -231,19 +211,19 @@ def merge_Hp_t_eta():
     eta_today = eta_values[x_values == 0]/(c*Gigayear)
     eta_today_str = '{:.2f}'.format(eta_today[0])
     axs[2].plot(x_values, eta_values/(c*Gigayear), lw=2.5, label=r'$\eta(x)/c$')
-    axs[2].axhline(y=eta_today, color='r', linestyle='--', lw=2.5, label=r'$\eta(0)/c=$' + eta_today_str + ' Gly')
+    axs[2].axhline(y=eta_today, color='r', linestyle='--', lw=2.5, label=r'$\eta(0)/c=\,$' + eta_today_str + ' Gyr')
     axs[2].set_xlabel(r'$x$')
     axs[2].set_xlim(-12, 3)
-    axs[2].set_ylabel(r'$\eta/c$ [Gly]')
+    axs[2].set_ylabel(r'$\eta/c$ [Gyr]')
     axs[2].set_yscale('log')
     axs[2].set_ylim(5e-3, 1e2)
-    axs[2].set_title(r'Conformal distance $\eta(x)/c$')
+    axs[2].set_title(r'Conformal time $\eta(x)/c$')
     axs[2].legend()
     axs[2].grid(True)
     
-    plt.subplots_adjust(hspace=0.5)  # Adjust the vertical spacing between subplots
+    plt.subplots_adjust(hspace=0.7)  # Adjust the vertical spacing between subplots
+    plt.savefig("../Latex/Milestone1/Figures/merge_Hp_t_eta_Ev.pdf", format='pdf')
     
-    plt.show()
 
 
 # Plot the numerical luminosity distance versus luminosity distance from supernova data
@@ -253,14 +233,14 @@ def luminosity_distance():
 
     # Plot luminosity distance with error bars from supernova.txt
     plt.figure(figsize=(10, 6))
-    plt.errorbar(redshift_data, luminosity_distance_data/redshift_data, yerr=error_values/redshift_data, fmt='o', markersize=4, label='Data From Supernova')
+    plt.errorbar(redshift_data, luminosity_distance_data/redshift_data, yerr=error_values/redshift_data, fmt='o', markersize=4, label='Data from supernova')
 
     # Plot theoretical prediction, division by 0 removed
-    plt.plot(redshift[redshift != 0], luminosity_distance_values[redshift != 0] / redshift[redshift != 0] * MPC_to_meter / 10**3, lw = 2.5, label='Theoretical Prediction')
+    plt.plot(redshift[redshift != 0], luminosity_distance_values[redshift != 0] / redshift[redshift != 0] * MPC_to_meter / 10**3, lw = 2.5, label='Theoretical prediction')
 
     # Plot spline fit
     x_fit = np.linspace(min(x_values), max(x_values), 1000)
-    plt.plot(x_fit, spline(x_fit)/x_fit, label='Spline Fit', lw = 1.5)
+    plt.plot(x_fit, spline(x_fit)/x_fit, label='Spline fit to data', lw = 2.5)
 
     plt.xlabel(r'Redshift $z$')
     plt.ylabel(r'$D_L/z$ [Gpc]')
@@ -270,7 +250,7 @@ def luminosity_distance():
     plt.title(r'Luminosity distance $D_L$ as a function of redshift $z$')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone1/Figures/LumiDistance.pdf", format='pdf')
 
 
 # Creates and plots a scatterplot whilst extracting accepted samples
@@ -298,29 +278,29 @@ def read_and_scatterplot_data():
 
         # Plotting scatter plot with confidence regions
         plt.figure(figsize=(10, 6))
-        plt.scatter(accepted_samples_M2, accepted_samples_DE2, c='blue', s = 15, label=r'$2\sigma$ Constraint', rasterized = True)
-        plt.scatter(accepted_samples_M1, accepted_samples_DE1, c='orange', s = 15, label=r'$1\sigma$ Constraint', rasterized = True)
+        plt.scatter(accepted_samples_M2, accepted_samples_DE2, c='blue', s = 15, label=r'$2\sigma$ constraint', rasterized = True)
+        plt.scatter(accepted_samples_M1, accepted_samples_DE1, c='orange', s = 15, label=r'$1\sigma$ constraint', rasterized = True)
 
         # Flat universe
         hori = np.linspace(0,1,1000)
         def f(d):
             return 1-d
-        plt.plot(hori, f(hori), linestyle = '--', color = 'k', label = 'Flat universe')
+        plt.plot(hori, f(hori), linestyle = '--', lw = 2.5, color = 'k', label = 'Flat universe')
         # Horizontal dashed line at y=0
-        plt.axhline(1, color='r', linestyle='--')
+        plt.axhline(1, color='r', linestyle='--', lw = 2.5)
 
-        plt.xlabel(r'$\Omega_{\text{M}}$')
+        plt.xlabel(r'$\Omega_{\mathrm{M}}$')
         plt.xlim(0.0, 0.7)
-        plt.ylabel(r'$\Omega_{\text{DE}}$')
+        plt.ylabel(r'$\Omega_{\Lambda}$')
         plt.ylim(0.0, 1.2)
 
         # Code to switch order of legends
         handles, labels = plt.gca().get_legend_handles_labels()
         order = [1,0,2]
-        plt.legend([handles[idx] for idx in order],[labels[idx] for idx in order])
+        plt.legend([handles[idx] for idx in order],[labels[idx] for idx in order], loc = 'lower right')
 
-        plt.title('Degeneracy between Dark Energy and Matter Density Parameters in Cosmology.')
-        plt.show()
+        plt.title('Degeneracy between dark energy and matter density parameters in cosmology.')
+        plt.savefig("../Latex/Milestone1/Figures/ScattPlot.pdf", format='pdf')
         
         # Returns the accepted samples
         return DE_accepted_samples, M_accepted_samples, h_accepted_samples
@@ -332,7 +312,7 @@ def read_and_scatterplot_data():
 # Functions to plot PDF histogram of h
 def plot_histogram_h(data, bins=50):
     plt.figure(figsize=(10, 6))
-    n, bins, patches = plt.hist(data, bins=bins, range=(0.675, 0.725), alpha = 0.7, density=True, color='g')
+    n, bins, patches = plt.hist(data, bins=bins, range=(0.66, 0.74), alpha = 0.7, density=True, color='g')
 
     # Fit a Gaussian distribution
     mu, std = norm.fit(data)
@@ -340,17 +320,21 @@ def plot_histogram_h(data, bins=50):
     xmin, xmax = plt.xlim()
     x = np.linspace(xmin, xmax, 1000)
     p = norm.pdf(x, mu, std)
-    plt.plot(x, p, 'r', linewidth=2, label = 'Gaussian fit')
+    plt.plot(x, p, 'r', linewidth=2.5, label = 'Gaussian fit')
 
     # Line at center of Gaussian
-    plt.axvline(mu, color = 'b', linestyle = '--', label = r'$H_0=$' + mu_str)
+    plt.axvline(mu, color = 'b', linestyle = '--', lw = 2.5, label = r'$H_0=\,$' + mu_str)
 
+    # Fiducial cosmology
+    plt.axvline(0.67, color = 'k', linestyle = '--', lw = 2.5, label = r'Fiducial value')
+
+    plt.xlim(0.66, 0.74)
     plt.xlabel(r'$H_0$ [100 km/s/Mpc]')
-    plt.ylabel('Probability Density')
-    plt.title(r'Probability Distribution Function of $H_0$')
+    plt.ylabel('Probability density')
+    plt.title(r'Probability distribution of $H_0$')
     plt.legend()
     plt.grid(True)
-    plt.show()
+    plt.savefig("../Latex/Milestone1/Figures/PDEh.pdf", format='pdf')
 
 
 # Make a table for the values of the various time parameters in the various relevant cosmic events
@@ -417,9 +401,10 @@ def main():
     # Plot various parameter combinations from cosmology file
     luminosity_distance()
     derivs_of_Hp_vs_analytic()
-    Omega_of_a()
+    Omega_of_x()
     make_table()
     merge_Hp_t_eta()
-    merge_eta_Hp_c()
+    eta_Hp_c()
+    # plt.show()
 
 main()

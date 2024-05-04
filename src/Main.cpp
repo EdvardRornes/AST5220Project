@@ -60,22 +60,28 @@ int main(int argc, char **argv){
   // Output recombination quantities
   rec.output("data/recombination.txt");
   rec.events("data/recombination_events.txt");
-  
-  // Remove when module is completed
-  return 0;
 
   //=========================================================================
   // Module III
   //=========================================================================
  
   // Solve the perturbations
-  Perturbations pert(&cosmo, &rec);
+
+  Neff = 0.0;
+
+  BackgroundCosmology cosmo_no_neutrino(h, OmegaB0, OmegaCDM0, OmegaK0, Neff, TCMB0);
+  cosmo_no_neutrino.solve();
+  RecombinationHistory rec_no_neutrino(&cosmo_no_neutrino, Yp);
+  rec_no_neutrino.solve();
+
+  Perturbations pert(&cosmo_no_neutrino, &rec_no_neutrino);
   pert.solve();
   pert.info();
   
   // Output perturbation quantities
-  double kvalue = 0.01 / Constants.Mpc;
-  pert.output(kvalue, "data/perturbations_k0.01.txt");
+  pert.output(0.1 / Constants.Mpc, "data/perturbations_k0.1.txt");
+  pert.output(0.01 / Constants.Mpc, "data/perturbations_k0.01.txt");
+  pert.output(0.001 / Constants.Mpc, "data/perturbations_k0.001.txt");
   
   // Remove when module is completed
   return 0;

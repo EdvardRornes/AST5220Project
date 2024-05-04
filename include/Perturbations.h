@@ -43,14 +43,11 @@ class Perturbations{
    
     // Splines of source functions (ST for temperature; SE for polarization)
     Spline2D ST_spline{"ST_spline"};
-    Spline2D SE_spline{"SE_spline"};
     
     // Splines of mulipole quantities
     // NB: If you use there you have to allocate the container first
     // e.g. Theta_spline = std::vector<Spline2D>(n_ell_theta); before using it
     std::vector<Spline2D> Theta_spline;
-    std::vector<Spline2D> Theta_p_spline;
-    std::vector<Spline2D> Nu_spline;
     
     //==========================================================
     // [1] Tight coupling ODE system
@@ -65,7 +62,7 @@ class Perturbations{
     int rhs_tight_coupling_ode(double x, double k, const double *y, double *dydx);
     
     // Compute the time when tight coupling ends
-    double get_tight_coupling_time(const double k) const;
+    double get_tight_coupling_time_idx(const double k, Vector x_arr) const;
     
     //==========================================================
     // [2] The full ODE system 
@@ -116,14 +113,19 @@ class Perturbations{
     double get_delta_b(const double x, const double k) const;
     double get_v_cdm(const double x, const double k) const;
     double get_v_b(const double x, const double k) const;
+    double get_dv_bdx(const double x, const double k) const;
     double get_Phi(const double x, const double k) const;
+    double get_dPhidx(const double x, const double k) const;
     double get_Psi(const double x, const double k) const;
+    double get_dPsidx(const double x, const double k) const;
     double get_Pi(const double x, const double k) const;
     double get_Theta(const double x, const double k, const int ell) const;
+    double get_dThetadx(const double x, const double k, const int ell) const;
     double get_Theta_p(const double x, const double k, const int ell) const;
     double get_Nu(const double x, const double k, const int ell) const;
     double get_Source_T(const double x, const double k) const;
     double get_Source_E(const double x, const double k) const;
+    double get_eta_k(const double x, const double k) const;
 };
 
 #endif
