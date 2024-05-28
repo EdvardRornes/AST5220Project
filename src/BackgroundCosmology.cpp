@@ -164,6 +164,10 @@ double BackgroundCosmology::get_OmegaCDM(double x) const{
   return OmegaCDM;
 }
 
+double BackgroundCosmology::get_OmegaM(double x) const{
+  return get_OmegaB(x) + get_OmegaCDM(x);
+}
+
 double BackgroundCosmology::get_OmegaLambda(double x) const{ 
   if(x == 0.0) return OmegaLambda0;
   // Compute OmegaLambda, notice that it is NOT Hp_of_x that is used, but H_of_x
@@ -274,7 +278,7 @@ void BackgroundCosmology::info() const{
 void BackgroundCosmology::output(const std::string filename) const{
   const double x_min = -18.0;
   const double x_max =  5.0;
-  const int    n_pts =  23001;
+  const int    n_pts =  230001;
   
   Vector x_array = Utils::linspace(x_min, x_max, n_pts);
 

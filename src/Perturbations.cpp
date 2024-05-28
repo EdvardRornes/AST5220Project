@@ -200,7 +200,7 @@ Vector Perturbations::set_ic(const double x, const double k) const{
   // The vector we are going to fill
   Vector y_tc(Constants.n_ell_tot_tc);
   
-  // For integration of perturbations in tight coupling regime (Only 2 photon multipoles + neutrinos needed)
+  // For integration of perturbations in tight coupling regime (Only 2 photon multipoles needed)
   const int n_ell_theta_tc      = Constants.n_ell_theta_tc;
 
   // References to the tight coupling quantities
@@ -225,7 +225,7 @@ Vector Perturbations::set_ic(const double x, const double k) const{
   v_cdm      = -1.0/2.0*ck_Hp*Psi;
   v_b        = -1.0/2.0*ck_Hp*Psi;
 
-  // Photon Photon temperature perturbations (Theta_ell)
+  // Photon temperature perturbations (Theta_ell)
   Theta[0] = -Psi/2.0;
   Theta[1] = 1.0/6.0*ck_Hp*Psi;
 
@@ -244,10 +244,10 @@ Vector Perturbations::set_ic_after_tight_coupling(
   // Make the vector we are going to fill
   Vector y(Constants.n_ell_tot_full);
   
-  //============================================================================
-  // Compute where in the y array each component belongs and where corresponding
-  // components are located in the y_tc array
-  //============================================================================
+  //=============================================================
+  // Compute where in the y array each component belongs and 
+  // where corresponding components are located in the y_tc array
+  //=============================================================
 
   // Number of multipoles we have in the full regime
   const int n_ell_theta      = Constants.n_ell_theta;
@@ -325,10 +325,10 @@ double Perturbations::get_tight_coupling_time_idx(const double k, Vector x_arr) 
   return idx_tc;
 }
 
-//===============================================
-// After integrating the perturbation compute the
-// source function(s)
-//===============================================
+//===================================
+// After integrating the perturbation
+// compute the source function
+//===================================
 void Perturbations::compute_source_functions(){
   Utils::StartTiming("source");
 
@@ -368,20 +368,14 @@ void Perturbations::compute_source_functions(){
       double tau      = rec->tau_of_x(x);
       double dtaudx   = rec->dtaudx_of_x(x);
       double ddtauddx = rec->ddtauddx_of_x(x);
-      
-
       double g        = rec->g_tilde_of_x(x);
       double dgdx     = rec->dgdx_tilde_of_x(x);
       double ddgddx   = rec->ddgddx_tilde_of_x(x);
 
-      double ck_Hp    = c*k/Hp;
-
       double Psi         = get_Psi(x, k);
       double dPsidx      = get_dPsidx(x, k);
-
       double Phi         = get_Phi(x, k);
       double dPhidx      = get_dPhidx(x, k);
-
       double v_b         = get_v_b(x, k);
       double dv_bdx      = get_dv_bdx(x, k);
 
@@ -392,10 +386,13 @@ void Perturbations::compute_source_functions(){
       double dTheta1dx   = get_dThetadx(x, k, 1);
       double dTheta2dx   = get_dThetadx(x, k, 2);
       double dTheta3dx   = get_dThetadx(x, k, 3);
+      
+      double ck_Hp    = c*k/Hp;
+      // Found analytically
       double ddTheta2ddx = 2.0/5.0*ck_Hp*(dTheta1dx - dHpdx/Hp*Theta1) - 3.0/5.0*ck_Hp*(dTheta3dx - dHpdx/Hp*Theta3) + 9.0/10.0*(ddtauddx*Theta2 + dtaudx*dTheta2dx);
-
-      double source_function_1 = exp(-tau)*(dPsidx - dPhidx) + g*(Psi + Theta0 + 1.0/4.0*Theta2) - 1.0/(c*k)*(dHpdx*g*v_b + dgdx*Hp*v_b - Hp*g*dv_bdx);
-      double source_function_2 = 3.0*Hp/(4.0*c*k)*(g*(pow(dHpdx, 2)*Theta2 + 3.0*dHpdx*Hp*dTheta2dx + Hp*ddHpddx*Theta2 + pow(Hp, 2)*ddTheta2ddx) + dgdx*(2.0*dHpdx*Hp*Theta2 + 2.0*pow(Hp, 2)*dTheta2dx) + pow(Hp, 2)*ddgddx*Theta2);
+      // Split up for readability
+      double source_function_1 = g*(Psi + Theta0 + 1.0/4.0*Theta2) + exp(-tau)*(dPsidx - dPhidx) - 1.0/(c*k)*(dHpdx*g*v_b + Hp*dgdx*v_b + Hp*g*dv_bdx);
+      double source_function_2 = 3.0*Hp/(4.0*pow(c*k, 2))*(g*(pow(dHpdx, 2)*Theta2 + 3.0*dHpdx*Hp*dTheta2dx + Hp*ddHpddx*Theta2 + pow(Hp, 2)*ddTheta2ddx) + dgdx*(3.0*dHpdx*Hp*Theta2 + 2.0*pow(Hp, 2)*dTheta2dx) + pow(Hp, 2)*ddgddx*Theta2);
 
       double source_function = source_function_1 + source_function_2;
 
@@ -460,7 +457,7 @@ int Perturbations::rhs_tight_coupling_ode(double x, double k, const double *y, d
   // Shorthand quantities
   double ck_Hp  = c*k/Hp;
   double Theta2 = -20.0/(45.0*dtaudx)*ck_Hp*Theta[1];
-  double Psi    = -Phi - 12.*pow(Hp/(c*k), 2)*OmegaR*Theta2;
+  double Psi    = -Phi - 12.*pow(H0/(c*k*exp(x)), 2)*OmegaR0*Theta2;
   
 
   // ODE setup
@@ -547,14 +544,6 @@ int Perturbations::rhs_full_ode(double x, double k, const double *y, double *dyd
   // For ell = l_max
   int l = n_ell_theta - 1;
   dThetadx[l] = ck_Hp*Theta[l - 1] - c*(l + 1.0)/(Hp*eta)*Theta[l] + dtaudx*Theta[l];
-
-  // for(int i = 0; i < 14; i++){
-  //   std::cout << i  << "  " << y[i] << std::endl;
-  // }
-  // for(int i = 0; i < 14; i++){
-  //   if(y[i] != y[i])
-  //     exit(0);
-  // }
 
   return GSL_SUCCESS;
 }
