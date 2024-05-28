@@ -1,78 +1,46 @@
-# Cosmology II
-## The Cosmic Microwave Background and the Large Scale Structure of our Universe in theory and practice
+# Cosmology II Project
 
-This repository contains C++ templates for making an Einstein-Boltzmann solver (a CAMB like code). This is used for the course AST5220 "Cosmology II" at ITA University of Oslo. The aim of this course is for students to learn both the theory, the physics and the numerics. We derive all the equations and discuss the physics in the lectures and then the students have to implement and solve them in a numerical code that will ultimately lead to matter and CMB power spectra. 
+This repository is built on a C++ templates from [website](https://github.com/HAWinther/AST5220-Cosmology) for making an Einstein-Boltzmann solver (a CAMB like code). This is the project for the course AST5220 "Cosmology II" at ITA University of Oslo. 
 
-For the current version of the course C++ is the main language and you are strongly reccomended to use this as I can much more easily help you out and most of the course website only contains information for this C++ template. However you are free to do this project in any language you want (and you don't even have to use the template we provide if you don't want to), just be aware that I'm only good at C, C++, Fortran and Python so if you do it any other language you are on your own. See below for templates in other languages: 
+### Website
+All relevant information background for this project can also be found at [website](https://cmb.wintherscoming.no/).
 
-# Fortran
+## Structure
 
-Templates for how to do this in Fortran (written by Hans Kristian Eriksen) can be found in the Fortran\_template directory together with PDFs outlining what to do for each milestone.
+### Background Cosmology
 
-# Python?
+In this section we consider the evolution of the uniform background of the universe in the Lambda-Cold-Dark-Matter ($\Lambda$CDM) model which is considered to be the present day standard model of cosmology. The main goal of this section is to solve the unperturbed background evolution of the universe by using known cosmological parameters and comparing this to observational supernova data.
 
-Every year there is someone who absolutely wants to do it in Python and very often it ends up not going so well (though some people manage to do it extremely well). I have therefore also included some simple templates for how you could do this in Python and you can find these in python\_template. However its strongly reccomended that you do not do this in Python even if that is what you know best. First of all its extremely useful to learn a more low level language which will make you a better human being and secondly the last two milestones are going to be super slow unless you really know what you are doing and how to speed up slow parts in Python (and is willing to spend time doing this). If you just naively implement things its likely going to take 10-20 minutes for a proper run of the full code (which will be very challenging to debug). Having said all that, this is not kindergarden so make your own choice.
+### Recombination History
 
-# Website
-All relevant information about the project and the different milestones can be found on this [website](https://cmb.wintherscoming.no/).
+Next we look at the recombination history of the universe. This is when baryons, mainly protons and electrons, went from being ionized to forming neutral atoms once the energy of the photons dropped below $13.6\,$eV. As a result, photons during this time decoupled from the thermal equilibrium of the universe and are what we now detect as the CMB photons. As this event is tightly related to the free mean path of photons, the goal of this section is to compute the optical depth $\tau$, the visibility function $\tilde g$ and their derivatives as these will be vital for the next sections. In this section we only consider the formation of hydrogen and neglect the existence of any heavier atoms.
 
-# Compiling
+### Perturbations
 
-Compile the code running [ make ]. If you want to compile this on your computer you need to install the [GSL library](ftp://ftp.gnu.org/gnu/gsl/) first. See below for instructions if you haven't installed a library lik this before.
+The topic of this section is to see how small quantum fluctuations from the inflationary period caused small perturbations to the baryon, photon and dark matter fluid in the early which then grew into large structures formations we see today. Since we have determined various quantities of the background cosmology in the previous sections, all we need to do is to perturb the background and determine suitable initial conditions. To do this we write the perturbed flat FRLW metric in the Newtonian gauge. Note that from this section and onwards we set $N_\text{eff}=0$, completely neglecting neutrinos from hereon.
 
-The code runs from Main.cpp and then proceeds to go through the different milestones one by one untill we have the CMB power spectra in the end. If you get it compiled then run it as [ ./cmb ]. It will crash with "Error: Spline eta has not been created". That is fine, it's one of your task to implement this. 
+### Power Spectrum
 
-See Examples.cpp - and run the examples as [ make examples; ./examples ; ] - for examples on how to make splines, solve ODEs and the functionality of the stuff supplied with this template.
+In this section we compute the CMB power spectrum using the line-of-sight integration technique and compare the theoretical prediction with observables.
 
-For the last milestone you need to compute spherical bessel functions (see the function j\_ell(n, x) in Utils.cpp). There are several options for this: if you have a C++17 compiler (use -std=c++17 instead of c++11 in the Makefile) then you can use provided by the C++ standard std::sph\_bessel(n, x). Otherwise the GSL library provides a function gsl\_sf\_bessel\_jl(n, x) for this that we use in the template. This implementation has problems with underflow for small x and large n, but we correct this using known asymptotical expressions. The last option is to use another library like for example the [Complex Bessel](https://github.com/joeydumont/complex_bessel) library.
+## Prerequisites
 
-# How to install GSL
+The code uses GSL, see [this](https://solarianprogrammer.com/) for how to install it on a Windows machine. On Linux or a Mac see [this](https://cmb.wintherscoming.no/about.php#GSL) for how to install it.
 
-See [this](https://solarianprogrammer.com/) for how to install it on a Windows machine. On Linux or a Mac you can either use a package manager or install it directly as follows:
+## Running the C++ code
 
-- Go the the home directory:
+Build:
 
-cd $HOME
+    make cmb
 
-- Make a local folder to hold libraries:
+Run:
 
-mkdir local
+ ./cmb
 
-- Enter this directory:
+Clean:
 
-cd local
+    make clean
 
-- Download the code (if you don't have wget you need to get the file to this dir by other means):
+## Running the Python code
 
-wget ftp://ftp.gnu.org/gnu/gsl/gsl-2.6.tar.gz
-
-- Untar the code:
-
-tar -xvf gsl-2.6.tar.gz
-
-- You should now have the gsl-2.6 folder. Enter it:
-
-cd gsl-2.6
-
-- Run the configure script:
-
-./configure --prefix=$HOME/local
-
-- Compile and install it:
-
-make ; make install
-
-- In the CMB code Makefile change the include and lib paths to point to the library:
-
-INC  = -I$(HOME)/local/include
-LIBS = -L$(HOME)/local/lib -lgsl -lgslcblas
-
-- If this fails with "libgsl.so not found" then run the command:
-
-export LD\_LIBRARY\_PATH="$LD\_LIBRARY\_PATH:$HOME/local/lib"
-
-and try to run ./cmb again and it should work. To avoid having
-to run this command every time you open a new terminal open
-the $HOME/.bashrc file and add this line to the end of the file
-and it will load everytime you open a new window.
-
+All plots are saved in /Latex/MilestoneX/Figures. To see the graphs, uncomment the plt.show() for the desired section at the bottom of /Python/MilestoneX_1_Graph.py
