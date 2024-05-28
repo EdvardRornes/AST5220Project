@@ -66,6 +66,10 @@ reprint,
 \renewcommand{\thesection}{\arabic{section}}
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\makeatletter
+\def\@date{\Dated@name\@date@value}
+\def\Dated@name{Date: }
+\makeatother
 \renewcommand{\figurename}{Fig.}
 \renewcommand{\tablename}{Table}
 \makeatletter
@@ -91,7 +95,7 @@ reprint,
 \date{\today}
 
 \begin{abstract}
-In this paper we present everything needed to create a Boltzmann-Einstein solver which calculates the CMB power spectrum in a simplified Lambda-Cold-Dark-Matter model. This is done by considering linear perturbations to the FLRW cosmology in the Newtonian gauge. First the completely flat background cosmology is computed where we later analyze recombination epoch. Finally we linearly perturb the background and compute the CMB and matter power spectrum. The formation of heavier atoms than hydrogen together with the effects of polarization and neutrinos are ignored throughout. This yields a rather significant discrepancy for small scale modes compared to more sophisticated methods, but is however accurate enough to understand the underlying mechanisms behind the CMB. The main results include: 1) various important epochs which are numerically calculated from the fiducial background cosmology, 2) the recombination history of the Universe, 3) how perturbations from initial conditions stemming from inflation allowed for overdensities to form large scale structures, and 4) a numerical approximation to the CMB and matter power-spectra.
+In this paper we present everything needed to create a Boltzmann-Einstein solver which calculates the CMB power spectrum in a simplified Lambda-Cold-Dark-Matter model. This is done by considering linear perturbations to the FLRW cosmology in the Newtonian gauge. First the completely flat background cosmology is computed where we later analyze recombination epoch. Finally we linearly perturb the background and compute the CMB and matter power spectrum. The formation of heavier atoms than hydrogen together with the effects of polarization and neutrinos are ignored throughout. This yields a rather significant discrepancy for small scale modes compared to more sophisticated methods, but is however accurate enough to understand the underlying mechanisms behind the CMB. The main results include: 1) various important epochs which are numerically calculated from the fiducial background cosmology, 2) the recombination history of the Universe, 3) how perturbations from initial conditions stemming from inflation allowed for overdensities to form large scale structures, and 4) a theoretical prediction to the CMB and matter power-spectra.
 \end{abstract}
 
 \keywords{cosmic microwave background  --	large-scale structure of Universe}

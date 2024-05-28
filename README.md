@@ -1,11 +1,17 @@
 # Cosmology II Project
 
-This repository is built on a C++ templates from [website](https://github.com/HAWinther/AST5220-Cosmology) for making an Einstein-Boltzmann solver (a CAMB like code). This is the project for the course AST5220 "Cosmology II" at ITA University of Oslo. 
+This repository is built on a C++ template from [H. A. Winther](https://github.com/HAWinther/AST5220-Cosmology) for making an Einstein-Boltzmann solver (a CAMB like code). This is the project for the course AST5220 "Cosmology II" at the institute of theoretical astrophysics at the University of Oslo. 
 
 ### Website
-All relevant information background for this project can also be found at [website](https://cmb.wintherscoming.no/).
+All relevant information background for this project can also be found at this [website](https://cmb.wintherscoming.no/).
 
-## Structure
+## Report
+
+The report can be found [here](https://github.com/EdvardRornes/AST5220Project/blob/main/Latex/Master.pdf).
+
+### Abstract
+
+In this paper we present everything needed to create a Boltzmann-Einstein solver which calculates the CMB power spectrum in a simplified Lambda-Cold-Dark-Matter model. This is done by considering linear perturbations to the FLRW cosmology in the Newtonian gauge. First the completely flat background cosmology is computed where we later analyze recombination epoch. Finally we linearly perturb the background and compute the CMB and matter power spectrum. The formation of heavier atoms than hydrogen together with the effects of polarization and neutrinos are ignored throughout. This yields a rather significant discrepancy for small scale modes compared to more sophisticated methods, but is however accurate enough to understand the underlying mechanisms behind the CMB. The main results include: 1) various important epochs which are numerically calculated from the fiducial background cosmology, 2) the recombination history of the Universe, 3) how perturbations from initial conditions stemming from inflation allowed for overdensities to form large scale structures, and 4) a theoretical prediction to the CMB and matter power-spectra.
 
 ### Background Cosmology
 

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.2.2)  28 MAY 2024 12:16
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.2.2)  28 MAY 2024 14:21
  restricted system commands enabled.
 **Master.tex
 (./Master.tex
@@ -734,42 +734,42 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip62
 )
 Class revtex4-2 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 83.
+lass! (Proceeding with fingers crossed.) on input line 89.
 
 
 Class revtex4-2 Warning: Repair the float package.
 
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 83.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 83.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 83.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 89.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 89.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 89.
 (./Master.aux)
 \openout1 = Master.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-3.
+9.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -793,23 +793,23 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 89.
 
 (./Master.out) (./Master.out)
 \@outlinefile=\write5
 
 \openout5 = Master.out
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 83.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 89.
 
 \openout3 = MasterNotes.bib
-LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104
+.
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104
+.
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1095,7 +1095,7 @@ LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
 <Milestone4/Figures/CMB_map.pdf, id=1246, 462.528pt x 346.896pt>
 File: Milestone4/Figures/CMB_map.pdf Graphic file (type pdf)
 <use Milestone4/Figures/CMB_map.pdf>
-Package luatex.def Info: Milestone4/Figures/CMB_map.pdf  used on input line 128
+Package luatex.def Info: Milestone4/Figures/CMB_map.pdf  used on input line 134
 .
 (luatex.def)             Requested size: 510.0pt x 382.51837pt.
  (./Master.bbl [27<./Milestone4/Figures/Mat_pow.pdf>])
@@ -1113,14 +1113,14 @@ Package rerunfilecheck Info: File `Master.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24601 strings out of 476553
+ 24602 strings out of 476553
  195369,1977958 words of node,token memory allocated
  1167 words of node memory still in use:
    11 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 8 sub_mlist, 1 glyph, 140 attribut
 e, 61 glue_spec, 140 attribute_list, 6 pdf_action nodes
-   avail lists: 1:2,2:1156,3:750,4:90,5:1126,6:275,7:19751,8:98,9:2623,10:29,11:
+   avail lists: 1:1,2:1157,3:750,4:90,5:1126,6:275,7:19751,8:98,9:2623,10:29,11:
 1393
- 45588 multiletter control sequences out of 65536+600000
+ 45589 multiletter control sequences out of 65536+600000
  84 fonts using 6038991 bytes
  83i,16n,89p,1757b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf><c:/tex
@@ -1153,7 +1153,7 @@ sy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c
 ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2023/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msbm10.pfb>
-Output written on Master.pdf (28 pages, 3982208 bytes).
+Output written on Master.pdf (28 pages, 3982243 bytes).
 
 PDF statistics: 1481 PDF objects out of 1728 (max. 8388607)
  1219 compressed objects within 13 object streams
