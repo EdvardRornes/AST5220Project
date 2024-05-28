@@ -1,8 +1,8 @@
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{AST5220LectureNotes}
 H.~A. Winther, H.~K. Eriksen, O.~Elgaroy, D.~F. Mota, and H.~Ihle, ``Cosmology
-  ii.'' \url{https://cmb.wintherscoming.no/}, 2023.
+  {II}.'' \url{https://cmb.wintherscoming.no/}, 2023.
 \newblock Accessed on March 1, 2023.
 
 \bibitem{Planck:2018vyg}
@@ -17,7 +17,7 @@ SDSS: M.~Betoule {\em et.~al.}, {\it {Improved cosmological constraints from a
   Astrophys.} {\bf 568} (2014) A22, [\href{http://arxiv.org/abs/1401.4064}{{\tt
   arXiv:1401.4064}}].
 
-\bibitem{dodelson:2003ft}
+\bibitem{Dodelson:2003ft}
 S.~Dodelson, {\em {Modern Cosmology}}.
 \newblock Academic Press, Amsterdam, 2003.
 
@@ -46,5 +46,15 @@ S.~M. Carroll, {\em {Spacetime and Geometry}: {An Introduction to General
 M.~Doran, {\it {Speeding up cosmological Boltzmann codes}},  {\em JCAP} {\bf
   06} (2005) 011, [\href{http://arxiv.org/abs/astro-ph/0503277}{{\tt
   astro-ph/0503277}}].
+
+\bibitem{Hlozek_2012}
+R.~Hlozek, J.~Dunkley, {\em et.~al.}, {\it The atacama cosmology telescope: A
+  measurement of the primordial power spectrum},  {\em The Astrophysical
+  Journal} {\bf 749} (2012) 90.
+
+\bibitem{Reid_2010}
+B.~A. Reid, W.~J. Percival, {\em et.~al.}, {\it Cosmological constraints from
+  the clustering of the sloan digital sky survey dr7 luminous red galaxies},
+  {\em Monthly Notices of the Royal Astronomical Society} (2010).
 
 \end{thebibliography}\endgroup

@@ -9,11 +9,11 @@ All relevant information background for this project can also be found at [websi
 
 ### Background Cosmology
 
-In this section we consider the evolution of the uniform background of the universe in the Lambda-Cold-Dark-Matter ($\Lambda$CDM) model which is considered to be the present day standard model of cosmology. The main goal of this section is to solve the unperturbed background evolution of the universe by using known cosmological parameters and comparing this to observational supernova data.
+In this section we consider the evolution of the uniform background of the universe in the Lambda-Cold-Dark-Matter model which is considered to be the present day standard model of cosmology. The main goal of this section is to solve the unperturbed background evolution of the universe by using known cosmological parameters and comparing this to observational supernova data.
 
 ### Recombination History
 
-Next we look at the recombination history of the universe. This is when baryons, mainly protons and electrons, went from being ionized to forming neutral atoms once the energy of the photons dropped below $13.6$ eV. As a result, photons during this time decoupled from the thermal equilibrium of the universe and are what we now detect as the CMB photons. As this event is tightly related to the free mean path of photons, the goal of this section is to compute the optical depth $\tau$, the visibility function $\tilde g$ and their derivatives as these will be vital for the next sections. In this section we only consider the formation of hydrogen and neglect the existence of any heavier atoms.
+Next we look at the recombination history of the universe. This is when baryons, mainly protons and electrons, went from being ionized to forming neutral atoms once the energy of the photons dropped below $13.6$ eV. As a result, photons during this time decoupled from the thermal equilibrium of the universe and are what we now detect as the CMB photons. As this event is tightly related to the free mean path of photons, the goal of this section is to compute the optical depth $\tau$, the visibility function $\tilde g$ and their derivatives. In this section we only consider the formation of hydrogen and neglect the existence of any heavier atoms.
 
 ### Perturbations
 

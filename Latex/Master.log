@@ -1,12 +1,46 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.22)  4 MAY 2024 15:33
-entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**./Master.tex
-(Master.tex
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.2.2)  28 MAY 2024 12:16
+ restricted system commands enabled.
+**Master.tex
+(./Master.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revtex4-2.cls
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/texlive/2023/texmf-var/luatex-ca
+che/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-res
+olved path "c:/texlive/2023/texmf-dist/tex/luatex/luaotfload/fontloader-2023-08-
+19.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.133
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/texlive/2023/texmf-var/luatex-ca
+che/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2023/texmf-
+dist/tex/latex/revtex/revtex4-2.cls
 Document Class: revtex4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for
  documentation)
  Copyright (c) 2019 American Physical Society.
@@ -25,18 +59,18 @@ Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 417.
 Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
 note on input line 492.
 Class revtex4-2 Info: Repairing broken LateX \@sect on input line 814.
-\intertabularlinepenalty=\count187
-\@tbpen=\count188
+\intertabularlinepenalty=\count185
+\@tbpen=\count186
 \@arstrutbox@hline=\box51
 Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1845.
 Class revtex4-2 Info: Making \typeout \long on input line 2110.
 ltxfront[2022/06/05 4.2f frontmatter package (AO,DPC,MD)]
-\c@affil=\count189
-\c@collab=\count190
+\c@affil=\count187
+\c@collab=\count188
 \absbox=\box52
 ltxgrid[2022/06/05 4.2f page grid package (portions licensed from W. E. Baxter 
 web at superscript.com)]
-\c@linecount=\count191
+\c@linecount=\count189
 \output@latex=\toks17
 \box@size@1=\box53
 \box@size@2=\box54
@@ -47,28 +81,28 @@ web at superscript.com)]
 \column@recovered=\box58
 \pagesofar=\box59
 \footsofar=\box60
-\pagegrid@col=\count192
+\pagegrid@col=\count190
 Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
  \\  on input line 5676.
-\c@part=\count193
-\c@section=\count194
-\c@subsection=\count195
-\c@subsubsection=\count196
-\c@paragraph=\count197
-\c@subparagraph=\count198
+\c@part=\count191
+\c@section=\count192
+\c@subsection=\count193
+\c@subsubsection=\count194
+\c@paragraph=\count195
+\c@subparagraph=\count196
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\c@figure=\count199
+\c@figure=\count197
 \fbox@1=\box61
-\c@table=\count266
+\c@table=\count198
 \fbox@2=\box62
-\c@video=\count267
+\c@video=\count199
 \fbox@4=\box63
 \@bibdataout=\write3
 \widetext@top=\box64
 \widetext@bot=\box65
 Class revtex4-2 Info: Selecting society aps on input line 7669.
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\aps4-2.rtx
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/aps4-2.rtx
 File: aps4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for documentatio
 n)
 Class revtex4-2 Info: RevTeX society APS selected on input line 40.
@@ -77,19 +111,19 @@ Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 Class revtex4-2 Warning: No journal specified, using default pra.
 
 Class revtex4-2 Info: APS journal PRA selected on input line 7672.
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\aps10pt4-2.rtx
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
 File: aps10pt4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for document
 ation)
 Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 39.
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/textcase\textcase.sty
+(c:/texlive/2023/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2023/07/27 v1.04 Text only upper/lower case changing (DPC)
 Package textcase Info: Defining Legacy names on input line 20.
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks19
 \symAMSa=\mathgroup4
@@ -97,36 +131,37 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+))
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen140
+\ex@=\dimen139
 )
 LaTeX Info: Redefining \text on input line 28.
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen141
+\pmbraise@=\dimen140
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count268
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count269
-\leftroot@=\count270
+\inf@bad=\count266
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count267
+\leftroot@=\count268
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count271
-\DOTSCASE@=\count272
+\classnum@=\count269
+\DOTSCASE@=\count270
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -136,30 +171,30 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen142
+\big@size=\dimen141
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count273
+\macc@depth=\count271
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count274
+\c@MaxMatrixCols=\count272
 \dotsspace@=\muskip16
-\c@parentequation=\count275
-\dspbrk@lvl=\count276
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
 \tag@help=\toks21
-\row@=\count277
-\column@=\count278
-\maxfields@=\count279
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
 \andhelp@=\toks22
-\eqnshift@=\dimen143
-\alignsep@=\dimen144
-\tagshift@=\dimen145
-\tagwidth@=\dimen146
-\totwidth@=\dimen147
-\lineht@=\dimen148
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
 \@envbody=\toks23
 \multlinegap=\skip52
 \multlinetaggap=\skip53
@@ -167,70 +202,72 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(c:/texlive/2023/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+(c:/texlive/2023/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip54
 \bibsep=\skip55
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count280
+\c@NAT@ctr=\count278
 )
 Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7676.
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/revtex\revsymb4-2.sty
+(c:/texlive/2023/texmf-dist/tex/latex/revtex/revsymb4-2.sty
 Package: revsymb4-2 2022/06/05 4.2f (https://journals.aps.org/revtex/ for docum
 entation)
 LaTeX Info: Redefining \frak on input line 104.
 LaTeX Info: Redefining \Bbb on input line 120.
 LaTeX Info: Redefining \REV@mathfrak on input line 128.
-)) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfiles.st
-y
+)
+luaotfload | db : Font names database loaded from C:/texlive/2023/texmf-var/luat
+ex-cache/generic/names/luaotfload-names.luc.gz)
+(c:/texlive/2023/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/import\import.sty
+(c:/texlive/2023/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
 ))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: luatex.def on input line 107.
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen149
-\Gin@req@width=\dimen150
-) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
+\Gin@req@height=\dimen148
+\Gin@req@width=\dimen149
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tools/dcolumn.sty
 Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/array.sty
 Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen151
+\col@sep=\dimen150
 \ar@mcellbox=\box68
-\extrarowheight=\dimen152
+\extrarowheight=\dimen151
 \NC@list=\toks26
 \extratabsurround=\skip56
 \backup@length=\skip57
 \ar@cellbox=\box69
 ))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -241,51 +278,54 @@ Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 LaTeX Info: Redefining \bm on input line 219.
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+(c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count281
+\c@float@type=\count279
 \float@exts=\toks27
 \float@box=\box70
 \@float@everytoks=\toks28
 \@floatcapt=\box71
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+
+(c:/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count282
-\calc@Bcount=\count283
-\calc@Adimen=\dimen153
-\calc@Bdimen=\dimen154
+\calc@Acount=\count280
+\calc@Bcount=\count281
+\calc@Adimen=\dimen152
+\calc@Bdimen=\dimen153
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count284
+\calc@Ccount=\count282
 \calc@Cskip=\skip60
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+(c:/texlive/2023/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count285
-\l_MT_multwidth_dim=\dimen155
+\g_MT_multlinerow_int=\count283
+\l_MT_multwidth_dim=\dimen154
 \origjot=\skip61
-\l_MT_shortvdotswithinadjustabove_dim=\dimen156
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen157
-\l_MT_above_intertext_sep=\dimen158
-\l_MT_below_intertext_sep=\dimen159
-\l_MT_above_shortintertext_sep=\dimen160
-\l_MT_below_shortintertext_sep=\dimen161
+\l_MT_shortvdotswithinadjustabove_dim=\dimen155
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen156
+\l_MT_above_intertext_sep=\dimen157
+\l_MT_below_intertext_sep=\dimen158
+\l_MT_above_shortintertext_sep=\dimen159
+\l_MT_below_shortintertext_sep=\dimen160
 \xmathstrut@box=\box72
-\xmathstrut@dim=\dimen162
-) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+\xmathstrut@dim=\dimen161
+)
+(c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Driver file: luatex.def on input line 274.
+
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
 Package xcolor Info: Model `RGB' extended on input line 1366.
@@ -295,298 +335,260 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/physics\physics.sty
+)
+(c:/texlive/2023/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
-e.sty
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(c:/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2024-01-22 L3 programming layer (loader) 
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count284
+Inserting `l3color' in `luaotfload.parse_color'.
 \l__pdf_internal_box=\box73
 ))
 Package: xparse 2023-10-10 L3 Experimental document command parser
 ))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+(c:/texlive/2023/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
-y
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common.tex
+
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen163
-\pgfutil@tempdimb=\dimen164
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--latex.def
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box74
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
-sty
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s.code.tex
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks30
 \pgfkeys@temptoks=\toks31
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-libraryfiltered.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
 \pgfkeys@tmptoks=\toks32
 ))
-\pgf@x=\dimen165
-\pgf@y=\dimen166
-\pgf@xa=\dimen167
-\pgf@ya=\dimen168
-\pgf@xb=\dimen169
-\pgf@yb=\dimen170
-\pgf@xc=\dimen171
-\pgf@yc=\dimen172
-\pgf@xd=\dimen173
-\pgf@yd=\dimen174
+\pgf@x=\dimen164
+\pgf@y=\dimen165
+\pgf@xa=\dimen166
+\pgf@ya=\dimen167
+\pgf@xb=\dimen168
+\pgf@yb=\dimen169
+\pgf@xc=\dimen170
+\pgf@yc=\dimen171
+\pgf@xd=\dimen172
+\pgf@yd=\dimen173
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count287
-\c@pgf@countb=\count288
-\c@pgf@countc=\count289
-\c@pgf@countd=\count290
+\c@pgf@counta=\count285
+\c@pgf@countb=\count286
+\c@pgf@countc=\count287
+\c@pgf@countd=\count288
 \t@pgf@toka=\toks33
 \t@pgf@tokb=\toks34
 \t@pgf@tokc=\toks35
-\pgf@sys@id@count=\count291
-
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
-fg
+\pgf@sys@id@count=\count289
+ (c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-luatex.def
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-ssoftpath.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count292
-\pgfsyssoftpath@bigbuffer@items=\count293
+\pgfsyssoftpath@smallbuffer@items=\count290
+\pgfsyssoftpath@bigbuffer@items=\count291
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-sprotocol.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-e.code.tex
+)) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
-code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
-r.code.tex
-\pgfmath@dimen=\dimen175
-\pgfmath@count=\count294
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count292
 \pgfmath@box=\box75
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
 \pgfmath@stack@operation=\toks38
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
-.code.tex
-\c@pgfmathroundto@lastzeros=\count295
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count293
 ))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
-tex)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epoints.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen176
-\pgf@picmaxx=\dimen177
-\pgf@picminy=\dimen178
-\pgf@picmaxy=\dimen179
-\pgf@pathminx=\dimen180
-\pgf@pathmaxx=\dimen181
-\pgf@pathminy=\dimen182
-\pgf@pathmaxy=\dimen183
-\pgf@xx=\dimen184
-\pgf@xy=\dimen185
-\pgf@yx=\dimen186
-\pgf@yy=\dimen187
-\pgf@zx=\dimen188
-\pgf@zy=\dimen189
+\pgf@picminx=\dimen175
+\pgf@picmaxx=\dimen176
+\pgf@picminy=\dimen177
+\pgf@picmaxy=\dimen178
+\pgf@pathminx=\dimen179
+\pgf@pathmaxx=\dimen180
+\pgf@pathminy=\dimen181
+\pgf@pathmaxy=\dimen182
+\pgf@xx=\dimen183
+\pgf@xy=\dimen184
+\pgf@yx=\dimen185
+\pgf@yy=\dimen186
+\pgf@zx=\dimen187
+\pgf@zy=\dimen188
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathconstruct.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen190
-\pgf@path@lasty=\dimen191
+\pgf@path@lastx=\dimen189
+\pgf@path@lasty=\dimen190
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathusage.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen192
-\pgf@shorten@start@additional=\dimen193
+\pgf@shorten@end@additional=\dimen191
+\pgf@shorten@start@additional=\dimen192
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-escopes.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box76
 \pgf@hbox=\box77
 \pgf@layerbox@main=\box78
-\pgf@picture@serial@count=\count296
+\pgf@picture@serial@count=\count294
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-egraphicstate.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen194
+\pgflinewidth=\dimen193
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransformations.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen195
-\pgf@pt@y=\dimen196
-\pgf@pt@temp=\dimen197
+\pgf@pt@x=\dimen194
+\pgf@pt@y=\dimen195
+\pgf@pt@temp=\dimen196
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-equick.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eobjects.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathprocessing.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-earrows.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen198
+\pgfarrowsep=\dimen197
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eshade.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen199
-\pgf@sys@shading@range@num=\count297
-\pgf@shadingcount=\count298
+\pgf@max=\dimen198
+\pgf@sys@shading@range@num=\count295
+\pgf@shadingcount=\count296
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eimage.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eexternal.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfexternal@startupbox=\box79
-)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-elayers.code.tex
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransparency.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
 File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epatterns.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-erdf.code.tex
+) (c:/texlive/2023/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-shapes.code.tex
+))) (c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfnodeparttextbox=\box80
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-plot.code.tex
+(c:/texlive/2023/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-0-65.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen256
-\pgf@nodesepend=\dimen257
+\pgf@nodesepstart=\dimen199
+\pgf@nodesepend=\dimen256
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-1-18.sty
+(c:/texlive/2023/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
-))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+)) (c:/texlive/2023/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks39
 \verbatim@line=\toks40
 \verbatim@in@stream=\read3
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+(c:/texlive/2023/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
-ty
+(c:/texlive/2023/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(c:/texlive/2023/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count299
+\etb@tempcnta=\count297
 )
 \tcb@titlebox=\box81
 \tcb@upperbox=\box82
 \tcb@lowerbox=\box83
 \tcb@phantombox=\box84
-\c@tcbbreakpart=\count300
-\c@tcblayer=\count301
-\c@tcolorbox@number=\count302
+\c@tcbbreakpart=\count298
+\c@tcblayer=\count299
+\c@tcolorbox@number=\count300
 \l__tcobox_tmpa_box=\box85
-\l__tcobox_tmpa_dim=\dimen258
+\l__tcobox_tmpa_dim=\dimen257
 \tcb@temp=\box86
 \tcb@temp=\box87
 \tcb@temp=\box88
 \tcb@temp=\box89
-) (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/tensor\tensor.sty
+)
+(c:/texlive/2023/texmf-dist/tex/latex/tensor/tensor.sty
 Package: tensor 2023/07/18 v2.2 tensor indices package (PGR)
 LaTeX Info: Redefining \tensor on input line 37.
 \tnsr@Sps=\toks41
@@ -595,317 +597,566 @@ LaTeX Info: Redefining \tensor on input line 37.
 \tnsr@Sbe=\toks44
 \ncld@Mno=\toks45
 )
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(c:/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks46
+))
+(c:/texlive/2023/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(c:/texlive/2023/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(c:/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+
+Package nameref Warning: The definition of \label has changed! 
+(nameref)                Check your packages! 
+(nameref)                Replacing it with the kernel definition on input line 
+149.
+
+\c@section@level=\count301
+)
+\@linkdim=\dimen258
+\Hy@linkcounter=\count302
+\Hy@pagecounter=\count303
+ (c:/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+)
+(c:/texlive/2023/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count304
+
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+LaTeX Info: Redefining \href on input line 4695.
+\c@Hy@tempcnt=\count305
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen259
+
+(c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count306
+\Field@Width=\dimen260
+\Fld@charsize=\dimen261
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count307
+\c@Item=\count308
+\c@Hfootnote=\count309
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(c:/texlive/2023/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2024-01-20 v7.01h Hyperref driver for luaTeX
+
+(c:/texlive/2023/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+(c:/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count310
+\c@bookmark@seq@number=\count311
+
+(c:/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip62
+)
 Class revtex4-2 Info: Unrecognized array package. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 70.
+lass! (Proceeding with fingers crossed.) on input line 83.
 
 
 Class revtex4-2 Warning: Repair the float package.
 
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 70.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 70.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 70.
-(Master.aux)
-\openout1 = `Master.aux'.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 83.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 83.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 83.
+(./Master.aux)
+\openout1 = Master.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen259
-\scratchbox=\box90
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen260
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks47
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
+3.
+ (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count312
+\scratchdimen=\dimen262
+\scratchbox=\box90
+\nofMPsegments=\count313
+\nofMParguments=\count314
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen263
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
+\everyMPtoPDFconversion=\toks48
+) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+(c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
-\openout3 = `MasterNotes.bib'.
+Package hyperref Info: Link coloring OFF on input line 83.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+(./Master.out) (./Master.out)
+\@outlinefile=\write5
 
- (C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+\openout5 = Master.out
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 83.
+
+\openout3 = MasterNotes.bib
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
+
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
 
 
-(C:\Users\edvar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Class revtex4-2 Warning: If you want your keywords to appear in your output, us
 e document class option showkeys.
 
-(Milestone1/milestone1.tex [1{C:/Users/edvar/AppData/Local/MiKTeX/fonts/map/pdf
-tex/pdftex.map}] [2] [3]
-Underfull \hbox (badness 5667) in paragraph at lines 186--187
-[]$\OML/cmm/m/it/10 x$\OT1/cmr/m/n/10 -values cor-re-spond-ing to radiation-mat
-ter- and
+(./Master.toc)
+\tf@toc=\write6
+
+\openout6 = Master.toc
+ [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Milestone
+1/Milestone1.tex [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 98.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Lambda' on input line 98.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 98.
+
+[3] [4]
+Underfull \hbox (badness 8189) in paragraph at lines 185--186
+[]$\OML/cmm/m/it/10 x$\TU/lmr/m/n/10 -values cor-re-spond-ing to radiation-matte
+r and
  []
 
-<Milestone1/Figures/dHpddHp_vs_anal.pdf, id=32, 722.7pt x 433.62pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 197.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 197.
+
+<Milestone1/Figures/dHpddHp_vs_anal.pdf, id=402, 722.7pt x 433.62pt>
 File: Milestone1/Figures/dHpddHp_vs_anal.pdf Graphic file (type pdf)
 <use Milestone1/Figures/dHpddHp_vs_anal.pdf>
-Package pdftex.def Info: Milestone1/Figures/dHpddHp_vs_anal.pdf  used on input 
-line 214.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-[4 <./Milestone1/Figures/dHpddHp_vs_anal.pdf>]
-<Milestone1/Figures/Eta_vs_anal_merge.pdf, id=65, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone1/Figures/dHpddHp_vs_anal.pdf  used on input 
+line 213.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+[5<./Milestone1/Figures/dHpddHp_vs_anal.pdf>]
+<Milestone1/Figures/Eta_vs_anal_merge.pdf, id=438, 722.7pt x 433.62pt>
 File: Milestone1/Figures/Eta_vs_anal_merge.pdf Graphic file (type pdf)
 <use Milestone1/Figures/Eta_vs_anal_merge.pdf>
-Package pdftex.def Info: Milestone1/Figures/Eta_vs_anal_merge.pdf  used on inpu
-t line 242.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone1/Figures/Omega_i.pdf, id=66, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone1/Figures/Eta_vs_anal_merge.pdf  used on inpu
+t line 240.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/Omega_i.pdf, id=440, 722.7pt x 433.62pt>
 File: Milestone1/Figures/Omega_i.pdf Graphic file (type pdf)
 <use Milestone1/Figures/Omega_i.pdf>
-Package pdftex.def Info: Milestone1/Figures/Omega_i.pdf  used on input line 255
+Package luatex.def Info: Milestone1/Figures/Omega_i.pdf  used on input line 254
 .
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone1/Figures/merge_Hp_t_eta_Ev.pdf, id=67, 722.7pt x 1300.86pt>
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/merge_Hp_t_eta_Ev.pdf, id=442, 722.7pt x 1300.86pt>
 File: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf Graphic file (type pdf)
 <use Milestone1/Figures/merge_Hp_t_eta_Ev.pdf>
-Package pdftex.def Info: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf  used on inpu
-t line 264.
-(pdftex.def)             Requested size: 246.0pt x 442.80264pt.
- [5 <./Milestone1/Figures/Eta_vs_anal_merge.pdf> <./Milestone1/Figures/Omega_i.
-pdf>]
-<Milestone1/Figures/LumiDistance.pdf, id=105, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone1/Figures/merge_Hp_t_eta_Ev.pdf  used on inpu
+t line 263.
+(luatex.def)             Requested size: 246.0pt x 442.80264pt.
+ [6<./Milestone1/Figures/Eta_vs_anal_merge.pdf><./Milestone1/Figures/Omega_i.pdf
+>]
+<Milestone1/Figures/LumiDistance.pdf, id=509, 722.7pt x 433.62pt>
 File: Milestone1/Figures/LumiDistance.pdf Graphic file (type pdf)
 <use Milestone1/Figures/LumiDistance.pdf>
-Package pdftex.def Info: Milestone1/Figures/LumiDistance.pdf  used on input lin
-e 304.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone1/Figures/PDEh.pdf, id=106, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone1/Figures/LumiDistance.pdf  used on input lin
+e 303.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/PDEh.pdf, id=512, 722.7pt x 433.62pt>
 File: Milestone1/Figures/PDEh.pdf Graphic file (type pdf)
 <use Milestone1/Figures/PDEh.pdf>
-Package pdftex.def Info: Milestone1/Figures/PDEh.pdf  used on input line 309.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
- [6 <./Milestone1/Figures/merge_Hp_t_eta_Ev.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 315.
-
-<Milestone1/Figures/ScattPlot.pdf, id=124, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone1/Figures/PDEh.pdf  used on input line 308.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone1/Figures/ScattPlot.pdf, id=514, 722.7pt x 433.62pt>
 File: Milestone1/Figures/ScattPlot.pdf Graphic file (type pdf)
 <use Milestone1/Figures/ScattPlot.pdf>
-Package pdftex.def Info: Milestone1/Figures/ScattPlot.pdf  used on input line 3
-17.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-) (Milestone2/milestone2.tex [7 <./Milestone1/Figures/LumiDistance.pdf> <./Mile
-stone1/Figures/PDEh.pdf> <./Milestone1/Figures/ScattPlot.pdf>]
+Package luatex.def Info: Milestone1/Figures/ScattPlot.pdf  used on input line 3
+15.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+ [7<./Milestone1/Figures/merge_Hp_t_eta_Ev.pdf>]) (./Milestone2/Milestone2.tex 
+[8<./Milestone1/Figures/LumiDistance.pdf><./Milestone1/Figures/PDEh.pdf><./Miles
+tone1/Figures/ScattPlot.pdf>]
+[9] [10]
 
-Package natbib Warning: Citation `Dodelson:2003ft' on page 8 undefined on input
- line 86.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
 
-[8] [9]
-<Milestone2/Figures/Xe.pdf, id=174, 722.7pt x 433.62pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 157.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+<Milestone2/Figures/Xe.pdf, id=657, 722.7pt x 433.62pt>
 File: Milestone2/Figures/Xe.pdf Graphic file (type pdf)
 <use Milestone2/Figures/Xe.pdf>
-Package pdftex.def Info: Milestone2/Figures/Xe.pdf  used on input line 161.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone2/Figures/tau_and_derivs.pdf, id=175, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone2/Figures/Xe.pdf  used on input line 160.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone2/Figures/tau_and_derivs.pdf, id=660, 722.7pt x 433.62pt>
 File: Milestone2/Figures/tau_and_derivs.pdf Graphic file (type pdf)
 <use Milestone2/Figures/tau_and_derivs.pdf>
-Package pdftex.def Info: Milestone2/Figures/tau_and_derivs.pdf  used on input l
-ine 169.
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-<Milestone2/Figures/gtilde.pdf, id=176, 722.7pt x 433.62pt>
+Package luatex.def Info: Milestone2/Figures/tau_and_derivs.pdf  used on input l
+ine 167.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone2/Figures/gtilde.pdf, id=661, 722.7pt x 433.62pt>
 File: Milestone2/Figures/gtilde.pdf Graphic file (type pdf)
 <use Milestone2/Figures/gtilde.pdf>
-Package pdftex.def Info: Milestone2/Figures/gtilde.pdf  used on input line 174.
+Package luatex.def Info: Milestone2/Figures/gtilde.pdf  used on input line 172.
 
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
- [10 <./Milestone2/Figures/Xe.pdf> <./Milestone2/Figures/tau_and_derivs.pdf> <.
-/Milestone2/Figures/gtilde.pdf>]) (Milestone3/milestone3.tex [11]
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+[11<./Milestone2/Figures/Xe.pdf><./Milestone2/Figures/tau_and_derivs.pdf>]
 
-Package natbib Warning: Citation `Dodelson:2003ft' on page 12 undefined on inpu
-t line 78.
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 178.
 
-
-LaTeX Warning: Reference `contCDM' on page 12 undefined on input line 97.
-
-
-Underfull \hbox (badness 8019) in paragraph at lines 101--103
-\OT1/cmr/m/n/10 relativistic fluid, mean-ing they sat-isfy Maxwell-
+) (./Milestone3/Milestone3.tex [12<./Milestone2/Figures/gtilde.pdf>]
+Underfull \hbox (badness 1946) in paragraph at lines 110--112
+\TU/lmr/m/n/10 Baryons are also con-sid-ered to be-have as a non-
  []
 
-[12]
 
-Package natbib Warning: Citation `Dodelson:2003ft' on page 13 undefined on inpu
-t line 133.
-
-
-Overfull \hbox (8.30656pt too wide) detected at line 158
-[]
+Underfull \hbox (badness 8038) in paragraph at lines 110--112
+\TU/lmr/m/n/10 relativistic fluid, mean-ing they sat-isfy Maxwell-
  []
 
 [13]
-Overfull \hbox (2.18459pt too wide) detected at line 203
+Overfull \hbox (9.12712pt too wide) detected at line 167
+[]
+ []
+
+[14]
+Overfull \hbox (2.18999pt too wide) detected at line 212
 \OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 = [] [] \OML/cmm/m/it/10 :
  []
 
-
-Package natbib Warning: Citation `Dodelson:2003ft' on page 14 undefined on inpu
-t line 231.
-
-[14] [15]
-
-Package natbib Warning: Citation `Dodelson:2003ft' on page 16 undefined on inpu
-t line 285.
-
-[16]
-<Milestone3/Figures/baryon_cdm.pdf, id=235, 722.7pt x 867.24pt>
+[15] [16] [17]
+<Milestone3/Figures/baryon_cdm.pdf, id=846, 722.7pt x 867.24pt>
 File: Milestone3/Figures/baryon_cdm.pdf Graphic file (type pdf)
 <use Milestone3/Figures/baryon_cdm.pdf>
-Package pdftex.def Info: Milestone3/Figures/baryon_cdm.pdf  used on input line 
-344.
-(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
- [17 <./Milestone3/Figures/baryon_cdm.pdf>]
-<Milestone3/Figures/gamma.pdf, id=253, 722.7pt x 867.24pt>
+Package luatex.def Info: Milestone3/Figures/baryon_cdm.pdf  used on input line 
+352.
+(luatex.def)             Requested size: 246.0pt x 295.20177pt.
+ [18<./Milestone3/Figures/baryon_CDM.pdf>]
+<Milestone3/Figures/gamma.pdf, id=884, 722.7pt x 867.24pt>
 File: Milestone3/Figures/gamma.pdf Graphic file (type pdf)
 <use Milestone3/Figures/gamma.pdf>
-Package pdftex.def Info: Milestone3/Figures/gamma.pdf  used on input line 366.
-(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
-
-Underfull \hbox (badness 1442) in paragraph at lines 371--372
-\OT1/cmr/m/n/10 to the quan-ti-ties $\OML/cmm/m/it/10 ^^N[]$ \OT1/cmr/m/n/10 an
-d $\OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 for the modes $\OML/cmm/m/it/10 k \OT1
-/cmr/m/n/10 =
- []
-
-<Milestone3/Figures/gamma0.1.pdf, id=254, 722.7pt x 867.24pt>
+Package luatex.def Info: Milestone3/Figures/gamma.pdf  used on input line 372.
+(luatex.def)             Requested size: 246.0pt x 295.20177pt.
+<Milestone3/Figures/gamma0.1.pdf, id=889, 722.7pt x 867.24pt>
 File: Milestone3/Figures/gamma0.1.pdf Graphic file (type pdf)
 <use Milestone3/Figures/gamma0.1.pdf>
-Package pdftex.def Info: Milestone3/Figures/gamma0.1.pdf  used on input line 37
-6.
-(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
-[18 <./Milestone3/Figures/gamma.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 382.
-
-<Milestone3/Figures/gamma0.01.pdf, id=271, 722.7pt x 867.24pt>
+Package luatex.def Info: Milestone3/Figures/gamma0.1.pdf  used on input line 38
+2.
+(luatex.def)             Requested size: 246.0pt x 295.20177pt.
+<Milestone3/Figures/gamma0.01.pdf, id=892, 722.7pt x 867.24pt>
 File: Milestone3/Figures/gamma0.01.pdf Graphic file (type pdf)
 <use Milestone3/Figures/gamma0.01.pdf>
-Package pdftex.def Info: Milestone3/Figures/gamma0.01.pdf  used on input line 3
-84.
-(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
-<Milestone3/Figures/gamma0.001.pdf, id=272, 722.7pt x 867.24pt>
-File: Milestone3/Figures/gamma0.001.pdf Graphic file (type pdf)
-<use Milestone3/Figures/gamma0.001.pdf>
-Package pdftex.def Info: Milestone3/Figures/gamma0.001.pdf  used on input line 
-392.
-(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
-<Milestone3/Figures/Theta2.pdf, id=273, 722.7pt x 433.62pt>
-File: Milestone3/Figures/Theta2.pdf Graphic file (type pdf)
-<use Milestone3/Figures/Theta2.pdf>
-Package pdftex.def Info: Milestone3/Figures/Theta2.pdf  used on input line 402.
-
-(pdftex.def)             Requested size: 246.0pt x 147.60088pt.
-[19 <./Milestone3/Figures/gamma0.1.pdf> <./Milestone3/Figures/gamma0.01.pdf>]
+Package luatex.def Info: Milestone3/Figures/gamma0.01.pdf  used on input line 3
+89.
+(luatex.def)             Requested size: 246.0pt x 295.20177pt.
+ [19]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 410.
+ on input line 393.
 
-<Milestone3/Figures/Phi_Psi.pdf, id=304, 722.7pt x 867.24pt>
+<Milestone3/Figures/gamma0.001.pdf, id=903, 722.7pt x 867.24pt>
+File: Milestone3/Figures/gamma0.001.pdf Graphic file (type pdf)
+<use Milestone3/Figures/gamma0.001.pdf>
+Package luatex.def Info: Milestone3/Figures/gamma0.001.pdf  used on input line 
+397.
+(luatex.def)             Requested size: 246.0pt x 295.20177pt.
+<Milestone3/Figures/Theta2.pdf, id=906, 722.7pt x 433.62pt>
+File: Milestone3/Figures/Theta2.pdf Graphic file (type pdf)
+<use Milestone3/Figures/Theta2.pdf>
+Package luatex.def Info: Milestone3/Figures/Theta2.pdf  used on input line 407.
+
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+[20<./Milestone3/Figures/gamma.pdf><./Milestone3/Figures/gamma0.1.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 415.
+
+<Milestone3/Figures/Phi_Psi.pdf, id=958, 722.7pt x 867.24pt>
 File: Milestone3/Figures/Phi_Psi.pdf Graphic file (type pdf)
 <use Milestone3/Figures/Phi_Psi.pdf>
-Package pdftex.def Info: Milestone3/Figures/Phi_Psi.pdf  used on input line 419
+Package luatex.def Info: Milestone3/Figures/Phi_Psi.pdf  used on input line 424
 .
-(pdftex.def)             Requested size: 246.0pt x 295.20177pt.
-[20 <./Milestone3/Figures/gamma0.001.pdf> <./Milestone3/Figures/Theta2.pdf> <./
-Milestone3/Figures/Phi_Psi.pdf>]) (Milestone4/milestone4.tex) (Master.bbl
-[21])
+(luatex.def)             Requested size: 246.0pt x 295.20177pt.
+[21<./Milestone3/Figures/gamma0.01.pdf><./Milestone3/Figures/gamma0.001.pdf><./M
+ilestone3/Figures/Theta2.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 432.
+
+) (./Milestone4/Milestone4.tex [22<./Milestone3/Figures/Phi_Psi.pdf>] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3\OML/cmm
+/m/it/10 ; \OT1/cmr/m/n/10 4\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OML/cmm/m/it/1
+0 ; \OT1/cmr/m/n/10 6\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 7\OML/cmm/m/it/10 ; \OT
+1/cmr/m/n/10 8\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 10\OML/cmm/m/it/10 ; \OT1/cmr/
+m/n/10 12\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 15\OML/cmm/m/it/10 ; \OT1/cmr/m/n/1
+0 20\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 25\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 30\
+OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 40\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 50\OML/c
+mm/m/it/10 ; \OT1/cmr/m/n/10 60\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 70\OML/cmm/m/
+it/10 ; \OT1/cmr/m/n/10 80\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 90\OML/cmm/m/it/10
+ ;$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+\OT1/cmr/m/n/10 100\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 120\OML/cmm/m/it/10 ; \OT
+1/cmr/m/n/10 140\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 160\OML/cmm/m/it/10 ; \OT1/c
+mr/m/n/10 180\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 200\OML/cmm/m/it/10 ; \OT1/cmr/
+m/n/10 225\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 250\OML/cmm/m/it/10 ; \OT1/cmr/m/n
+/10 275\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 300\OML/cmm/m/it/10 ; :::; \OT1/cmr/m
+/n/10 2000\OMS/cmsy/m/n/10 g$
+ []
+
+<Milestone4/Figures/transfer.pdf, id=1080, 722.7pt x 433.62pt>
+File: Milestone4/Figures/transfer.pdf Graphic file (type pdf)
+<use Milestone4/Figures/transfer.pdf>
+Package luatex.def Info: Milestone4/Figures/transfer.pdf  used on input line 13
+5.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone4/Figures/integrand.pdf, id=1081, 722.7pt x 433.62pt>
+File: Milestone4/Figures/integrand.pdf Graphic file (type pdf)
+<use Milestone4/Figures/integrand.pdf>
+Package luatex.def Info: Milestone4/Figures/integrand.pdf  used on input line 1
+40.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone4/Figures/C_ell.pdf, id=1084, 722.7pt x 433.62pt>
+File: Milestone4/Figures/C_ell.pdf Graphic file (type pdf)
+<use Milestone4/Figures/C_ell.pdf>
+Package luatex.def Info: Milestone4/Figures/C_ell.pdf  used on input line 147.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+[24]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 151.
+
+<Milestone4/Figures/low_C_ell_vs_Planck.pdf, id=1100, 722.7pt x 433.62pt>
+File: Milestone4/Figures/low_C_ell_vs_Planck.pdf Graphic file (type pdf)
+<use Milestone4/Figures/low_C_ell_vs_Planck.pdf>
+Package luatex.def Info: Milestone4/Figures/low_C_ell_vs_Planck.pdf  used on in
+put line 154.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+[25<./Milestone4/Figures/transfer.pdf><./Milestone4/Figures/integrand.pdf><./Mil
+estone4/Figures/C_ell.pdf><./Milestone4/Figures/low_C_ell_vs_Planck.pdf>]
+<Milestone4/Figures/C_ell_cheat.pdf, id=1198, 722.7pt x 433.62pt>
+File: Milestone4/Figures/C_ell_cheat.pdf Graphic file (type pdf)
+<use Milestone4/Figures/C_ell_cheat.pdf>
+Package luatex.def Info: Milestone4/Figures/C_ell_cheat.pdf  used on input line
+ 169.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+<Milestone4/Figures/Mat_pow.pdf, id=1202, 722.7pt x 433.62pt>
+File: Milestone4/Figures/Mat_pow.pdf Graphic file (type pdf)
+<use Milestone4/Figures/Mat_pow.pdf>
+Package luatex.def Info: Milestone4/Figures/Mat_pow.pdf  used on input line 177
+.
+(luatex.def)             Requested size: 246.0pt x 147.60088pt.
+
+[26<./Milestone4/Figures/C_ell_cheat.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 183.
+
+)
+<Milestone4/Figures/CMB_map.pdf, id=1246, 462.528pt x 346.896pt>
+File: Milestone4/Figures/CMB_map.pdf Graphic file (type pdf)
+<use Milestone4/Figures/CMB_map.pdf>
+Package luatex.def Info: Milestone4/Figures/CMB_map.pdf  used on input line 128
+.
+(luatex.def)             Requested size: 510.0pt x 382.51837pt.
+ (./Master.bbl [27<./Milestone4/Figures/Mat_pow.pdf>])
 
 Class revtex4-2 Warning: Environment acknowledgements is obsolete;
 Use acknowledgments instead.
 
-
-Package natbib Warning: There were undefined citations.
-
-[22] (Master.aux)
+[28<./Milestone4/Figures/CMB_map.pdf>] (./Master.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+Package rerunfilecheck Info: File `Master.out' has not changed.
+(rerunfilecheck)             Checksum: 8AA2F382A9A1774688E836363C4F44E2;9583.
+)
 
+Here is how much of LuaTeX's memory you used:
+ 24601 strings out of 476553
+ 195369,1977958 words of node,token memory allocated
+ 1167 words of node memory still in use:
+   11 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 8 sub_mlist, 1 glyph, 140 attribut
+e, 61 glue_spec, 140 attribute_list, 6 pdf_action nodes
+   avail lists: 1:2,2:1156,3:750,4:90,5:1126,6:275,7:19751,8:98,9:2623,10:29,11:
+1393
+ 45588 multiletter control sequences out of 65536+600000
+ 84 fonts using 6038991 bytes
+ 83i,16n,89p,1757b,649s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf><c:/tex
+live/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2
+023/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2023/te
+xmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/2023/texmf-di
+st/fonts/opentype/public/lm/lmroman5-regular.otf><c:/texlive/2023/texmf-dist/fon
+ts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2023/texmf-dist/fonts/ope
+ntype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/pu
+blic/lm/lmroman8-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/l
+m/lmroman9-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman
+9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-ital
+ic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.ot
+f><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2023/texmf
+-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr9.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c
+:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on Master.pdf (28 pages, 3982208 bytes).
 
-LaTeX Warning: There were undefined references.
-
- ) 
-Here is how much of TeX's memory you used:
- 16977 strings out of 474542
- 327091 string characters out of 5744446
- 1962978 words of memory out of 5000000
- 38878 multiletter control sequences out of 15000+600000
- 571225 words of font info for 85 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 83i,15n,93p,1562b,647s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmbx9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/edvar/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/edvar/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/edvar/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/e
-dvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
-/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6
-.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi9.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/edvar/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/edvar/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/edvar/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/edvar/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/edv
-ar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
-ers/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb
-><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-msy10.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy5.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy7.pfb><C:/Users/edvar/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/edvar/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/edvar/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/edvar/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Users/ed
-var/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pf
-b><C:/Users/edvar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb>
-Output written on Master.pdf (22 pages, 962148 bytes).
-PDF statistics:
- 456 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 1481 PDF objects out of 1728 (max. 8388607)
+ 1219 compressed objects within 13 object streams
+ 197 named destinations out of 1000 (max. 131072)
+ 496 words of extra memory for PDF output out of 10000 (max. 100000000)
 

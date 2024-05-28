@@ -5886,9 +5886,9 @@
 \def\lotname{List of Tables}
 \def\refname{References}
 \def\indexname{Index}
-\def\figurename{FIG.}
+\def\figurename{Fig.}
 \def\figuresname{Figures}%
-\def\tablename{TABLE}
+\def\tablename{Table}
 \def\tablesname{Tables}%
 \def\abstractname{Abstract}
 \def\appendixesname{Appendixes}%

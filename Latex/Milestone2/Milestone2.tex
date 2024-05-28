@@ -46,33 +46,34 @@ reprint,
 
 \begin{document}
 
-\section{Milestone II}
-Next we look at the recombination history of the universe. This is when baryons, mainly protons and electrons, went from being ionized to forming neutral atoms once the energy of the photons dropped below $13.6\,$eV. As a result, photons during this time decoupled from the thermal equilibrium of the universe and are what we now detect as the CMB photons. As this event is tightly related to the free mean path of photons, the goal of this section is to compute the optical depth $\tau$, the visibility function $\tilde g$ and their derivatives. In this section we only consider the formation of hydrogen and neglect the existence of any heavier atoms.
+\section{Recombination history}
+\label{sec:2}
+Next we look at the recombination history of the universe. This is when baryons, mainly protons and electrons, went from being ionized to forming neutral atoms once the energy of the photons dropped below $13.6\,$eV. As a result, photons during this time decoupled from the thermal equilibrium of the universe and are what we now detect as the CMB photons. As this event is tightly related to the free mean path of photons, the goal of this section is to compute the optical depth $\tau$, the visibility function $\tilde g$ and their derivatives as these will be vital for the next sections. In this section we only consider the formation of hydrogen and neglect the existence of any heavier atoms.
 
-To accomplish this we start by calculating the free electron fraction $X_e$ which we will first compute from the \textbf{Saha equation} in early times till $X_e<0.99$ and then switch over to the so-called \textbf{Peebles' equation} from thereon, both to be introduced later. The reason we don't use Peebles' equation from the start is due to it being extremely sensitive to high temperatures and thus the solution at early times is very unstable.
+To accomplish this we start by calculating the free electron fraction $X_e$ which we will first compute from the \textbf{Saha equation} in early times till $X_e<0.99$ and then switch over to the so-called \textbf{Peebles' equation} from thereon, both to be introduced in the theory section. The reason we don't use Peebles' equation from the start is due to it being extremely sensitive to high temperatures and thus the solution at early times is very unstable.
 
 \subsection{Theory}
 As eluded to in the intro we will consider the \textbf{optical depth} $\tau(x)$ which is defined by the relation:
 \begin{equation}
 	I(r)=I_0e^{-\tau(r)},\label{eq:intensity}
 \end{equation}
-where $I_0$ is the intensity of a source which emits radiation and $I(r)$ is the intensity that an observer at a distance $r$ would detect. Here we can clearly see that if $\tau=0$ then $I(r)=I_0$ and thus the medium the radiation travels through does not affect the intensity. If $\tau\gg1$ then we say that the medium is \textbf{optically thick}, if $\tau\ll1$ we say that the medium is \textbf{optically thin}, and $\tau\sim1$ is the transition between the two.
+where $I_0$ is the intensity of a source which emits radiation and $I(r)$ is the intensity that an observer at a distance $r$ would detect. Here we can clearly see that if $\tau=0$ then $I(r)=I_0$ and thus the medium which the radiation travels through does not affect the intensity. If $\tau\gg1$ then we say that the medium is \textbf{optically thick}, if $\tau\ll1$ we say that the medium is \textbf{optically thin}, and $\tau\sim1$ is the transition between the two.
 
-In cosmology the main effect contributing to the optical depth is Thompson scattering of photons with free electrons. The optical depth can be related to the Thompson scattering cross section via:
+In cosmology the main effect contributing to the optical depth is Thompson scattering of photons with free electrons. The optical depth can be related to the Thompson scattering cross section via
 \begin{align}
 	\tau(\eta)&=\int_\eta^{\eta_0}d\eta'\,n_e\sigma_Ta,
 	\label{eq:taueta}\\
-	\sigma_T&=\frac{8\pi}{3}\frac{\alpha^2\hbar^2}{m_e^2c^2}\nonumber
+	\sigma_T&=\frac{8\pi}{3}\frac{\alpha^2\hbar^2}{m_e^2c^2},\nonumber
 \end{align}
 where $n_e$ is the number density of free electrons. Note that since $\sigma_T\propto m^{-2}$ we have neglected the scattering cross section of Thompson scattering with protons due to their relatively large mass. (\ref{eq:taueta}) can be rewritten into differential form:
 \begin{equation}
 	\frac{d\tau}{dx}=-\frac{cn_e\sigma_T}{H}, \label{eq:dtaudx}
 \end{equation}
-which is the ODE that we will solve. Since optical depth is $0$ today we have the initial condition $\tau(0)=0$. On the right hand side of (\ref{eq:dtaudx}) the only missing factor is $n_e$. Instead of computing $n_e$ directly we will consider the fractional electron density:
+which is the ODE that we will solve. Since optical depth is $0$ today we have the initial condition $\tau(0)=0$. On the right hand side of (\ref{eq:dtaudx}), the only missing factor is $n_e$. Instead of computing $n_e$ directly we will consider the fractional electron density:
 \[X_e\equiv n_e/n_H\approx\frac{n_em_H}{\rho_b}=\frac{n_em_Ha^3}{\Omega_{\text{B}0}\rho_{c0}},\]
-where the approximation is due to us not considering any heavier elements than hydrogen. To do this we consider the Saha equation states:
+where the approximation is due to us not considering any heavier elements than hydrogen. To do this we consider the Saha equation:
 \[\frac{n_en_p}{n_e^{0}n_p^{0}}=\frac{n_Hn_\gamma}{n_H^{0}n_\gamma^{0}},\]
-where $n_p,n_\gamma$ and $n_H$ are the number densities for free protons, photons and Hydrogen atoms respectively and the superscript $0$ represents that the given number density is in thermal equilibrium. This is an analytical approximation for when the interaction rate is very high compared to the change in electron density. Since in the early universe consists purely of free electrons due to the high temperatures of the primordial plasma, this then suggests that the Saha equation is only valid when $X_e\approx 1$. Given our definition of $X_e$ and the approximations we can rewrite the Saha equation to the convenient form:
+where $n_p,n_\gamma$ and $n_H$ are the number densities for free protons, photons and Hydrogen atoms respectively and the superscript $0$ represents that the given number density is in thermal equilibrium. A derivation can be found in \cite{Dodelson:2003ft}. This is an analytical approximation for when the interaction rate is very high compared to the change in electron density. Since the early universe consists purely of free electrons due to the high temperatures of the primordial plasma, this then suggests that the Saha equation is only valid when $X_e\approx 1$. Given our definition of $X_e$ and the approximations we can rewrite the Saha equation to the convenient form:
 \begin{equation}
 	\frac{X_e^2}{1-X_e}=\frac{1}{n_b}\left(\frac{k_bm_eT_b}{2\pi\hbar^2}\right)^{3/2}e^{-\epsilon_0/k_bT_b},
 \end{equation}
@@ -83,7 +84,7 @@ where $T_b$ is the baryon temperature of the universe and $\epsilon_0=13.6\,\tex
 \end{align}
 where we have omitted the negative solution due to the electron fraction being manifestly positive. We also note that in the limit $4/C\ll1$ then $X_e=1$ which will be used in numerical calculations later.
 
-Since the Saha equation is only valid for $X_e\approx1$ then, as noted earlier, we consider Peebles' equation outside this realm. The derivation for Peebles' equation is beyond the scope of this paper, but a simplified derivation can in \cite{Dodelson:2003ft} and is given by:
+Since the Saha equation is only valid for $X_e\approx1$ then, as noted earlier, we consider Peebles' equation outside this realm. The derivation for Peebles' equation is beyond the scope of this paper, but a simplified derivation can be found in \cite{Dodelson:2003ft} and is given by
 \begin{equation}
 	\frac{dX_e}{dx}=\frac{C_r(T_b)}{H}\left[\beta(T_b)(1-X_e)-n_HX_e^2\alpha^{(2)}(T_b)\right],\label{eq:Peebles}
 \end{equation}
@@ -100,42 +101,40 @@ where
 	\alpha^{(2)}(T_b)&= \frac{8}{\sqrt{3\pi}}	c\sigma_T\sqrt{\frac{\epsilon_0}{k_bT_b}}\phi_2(T_b),\\
 	\phi_2(T_b)&= 0.448\ln\left(\frac{\epsilon_0}{k_bT_b}\right).
 \end{align*}
-This ODE will then be solved numerically to find $X_e(x)$ with the initial condition given from the last $X_e$ value from the Saha solution. This then gives us $n_e(x)$ from the definition of $X_e$ which will then be used to solve (\ref{eq:dtaudx}) for $\tau(x)$.
+Note that here we take into account the $2s$ energy level of the Hydrogen atom for more accurate data. This ODE will then be solved numerically to find $X_e(x)$ with the initial condition given from the last $X_e$ value from the Saha solution. This then gives us $n_e(x)$ from the definition of $X_e$ which will then be used to solve (\ref{eq:dtaudx}) for $\tau(x)$.
 
-Further we consider the visibility function:
+Further we define the visibility function as
 \begin{equation}
-	\tilde g(x)\equiv\frac{d}{dx}e^{-\tau(x)}=-e^{-\tau(x)}\tau'(x), \label{gtilde}
+	\tilde g(x)\equiv\frac{d}{dx}e^{-\tau(x)}=-e^{-\tau(x)}\tau'(x). \label{gtilde}
 \end{equation}
-which turns out to be a probability density function. Since this is a probability density then it must satisfy:
+This turns out to be a probability density function meaning that is satisfies
 \[\int_{-\infty}^0dx\,\tilde g(x)=1.\]
-The visibility function can be thought of as the probability that a photon scattering between time $x$ and $x+dx$ is the last time it ever scatters before it moves freely. From this we can then consider the time of \textbf{last scattering} to occur when the visibility function peaks. Once the solution to $\tau(x)$ and its derivative has been established, getting the visibility function is a trivial task.
+The visibility function can be thought of as the probability that a photon scattering between time $x$ and $x+dx$ is the last time it ever scatters becoming a free streaming particle. From this we then define of \textbf{last scattering} as the time when the visibility function peaks. Once the solution to $\tau(x)$ and its derivative have been established, getting the visibility function is a simple task.
 
-Finally we have the sound horizon $s(x)$ which is given by:
+Finally we have the sound horizon $s(x)$ which is given by
 \begin{align}
 	s(x)\equiv\int_0^adt\,\frac{c_s}{a}, \label{soundhor}
 \end{align}
-where $c_s=c\sqrt{\frac{R}{3(1+R)}}$ is the sound-speed of the coupled photon-baryon plasma and
+where $c_s=c\sqrt{\frac{R}{3(1+R)}}$ is the sound-speed of the coupled photon-baryon plasma and $R$ is given by
 \begin{equation}
 	R=\frac{4\Omega_{\gamma0}}{3a\Omega_{\text{B}0}}.\label{eq:R}
 \end{equation}
-To interpret the sound horizon we consider an overdense region of the primordial plasma. This region will cause gravitational wells which will further cause a surplus of interactions between photons and baryons. These interactions cause an outwards pressure until the interactions begin to slow down again. The gravitational wells formed by dark matter (as they do not feel this outward pressure) then get deeper, causing the same process to occur again. As such we will have oscillations of baryons and photons, which are comparable to propagating sound waves. The distance in which these sound waves may have travelled before recombination is what we define as the sound horizon. The reason why this quantity is particularly important is that once recombination occurs, the outward pressure will vanish. As such we expect to see overdensities begin to form on these rings after recombination. 
+To interpret the sound horizon we consider an overdense region of the primordial plasma. This region will cause gravitational wells which will further cause a surplus of interactions between photons and baryons. These interactions cause an outwards pressure until the interactions begin to slow down again. The gravitational wells formed by dark matter then get deeper (as they do not feel this outward pressure), causing the same process to occur again. As such we expect oscillations of baryons and photons, which are comparable to propagating sound waves. The distance in which these sound waves may have travelled before recombination is what we define as the sound horizon. The reason why this quantity is particularly important is that once recombination occurs, the outward pressure will vanish. As such we expect to see overdensities begin to form on these rings after recombination. 
 
 We can rewrite (\ref{soundhor}) into a differential form as such:
 \begin{equation}
-	\frac{ds}{dx}=\frac{c_s}{\Hp},
+	\frac{ds}{dx}=\frac{c_s}{\Hp}.
 \end{equation}
-Notice that in radiation domination we have that $R\to\infty$, implying that the sound speed $c_s=c/\sqrt{3}$. As such we obtain the initial condition:
+Notice that in radiation domination we have that $R\to\infty$, implying that the sound speed $c_s=c/\sqrt{3}$ giving us the initial condition
 \[s(x_{\text{ini}})=\frac{c_s(x_{\text{ini}})}{\Hp(x_{\text{ini}})}=\frac{c}{\sqrt{3}}\Hp^{-1}(x_{\text{ini}}).\] 
-
-
 
 \subsection{Implementation details}
 \subsubsection{Solving the Saha and Peebles' equation}
-We began by implementing a \texttt{for}-loop for the Saha equation which at each iteration checks whether we are still in the Saha regime. Note that we have to be careful about round-off errors when solving the Saha equation. When $\epsilon_0/k_bT_b\to0$ in the exponential in (\ref{eq:C}), the rest of the expression will begin to explode. Thus in (\ref{eq:Saha}) we would be subtracting two very large numbers, which should at the end simplify to just $1$, leading to potential round-off errors. To avoid this we instead performed an \texttt{if}-test to check whether $4/C$ is less than some small threshold. Once this is the case then we simply set $X_e$ to $1$ justified by considering the first order expansion of the square root in (\ref{eq:Saha}), which will just yield $X_e=1$. Since the Saha equation is only valid for $X_e\approx1$, we decide to switch over to the more accurate Peebles' equation $X_e<0.99$. For reference we continued on with the Saha equation past its validity to compare the results. 
+We began by implementing a \texttt{for}-loop for the Saha equation which at each iteration checks whether we are still in the Saha regime. Note that we have to be careful about round-off errors when solving the Saha equation. When $\epsilon_0/k_bT_b\to0$ in the exponential in (\ref{eq:C}), the rest of the expression will begin to explode. Thus in (\ref{eq:Saha}) we would be subtracting two very large numbers, which should at the end simplify to just $1$, leading to potential round-off errors. To avoid this we instead performed an \texttt{if}-test to check whether $4/C$ is less than some small threshold. Once this is the case then we simply set $X_e$ to $1$, justified by considering the first order expansion of the square root in (\ref{eq:Saha}), which will just yield $X_e=1$. Since the Saha equation is only valid for $X_e\approx1$, we decide to switch over to the more accurate Peebles' equation once $X_e<0.99$. For reference we continued on with the Saha equation past its validity to compare the results. 
 
 Peebles' equation was then solved numerically via the same ODE solver used in the previous milestone with the initial condition supplied by the last point before we exited the Saha regime. Some care was taken to ensure no overflow due to the exponential in the $\beta^{(2)}$ equation under (\ref{eq:Peebles}). To do this we simply created another \texttt{if}-test to check when the term in the exponential exceeded 150 and set $\beta^{(2)}=0$ as the exponential from $\beta$ will dominate over it. We then had the results for $X_e$ which we used to compute $n_e$ for both cases. The results for both the Saha only and the Saha-Peebles computations were splined and printed to a data file.
 \subsubsection{Solving for the optical depth and visibility functions}
-Next we solved the ODE for both the optical depth $\tau(x)$ in eq. \ref{eq:dtaudx} and the sound-horizon $s(x)$ with the before mentioned initial conditions. Note that the prior ODE, if computed it in the usual way, one would need to subtract an initial condition off the solution for $\tau(x=0)$ which would lead to round-off errors close to $x=0$ due to the finite precision of floating point numbers. This would then lead to noise in the solution. Thus the ODE was then instead solved by going backwards in time to avoid this problem. After, $\tau'(x)$ was also computed since the spliner we are working with seemingly does not work well past 1st derivatives since we also want to consider $\tau''(x)$. With both $\tau(x)$ and $\tau'(x)$ we could easily calculate the visibility function $\tilde g(x)$ with (\ref{gtilde}) and its first derivative. These were then all splined along with using the \texttt{deriv\_x} function in the spliner s.t. we have access to the 2nd derivatives. All the data was again printed to the aforementioned data file.
+Next we solved the ODE for both the optical depth $\tau(x)$ in (\ref{eq:dtaudx}) and the sound-horizon $s(x)$ with the before mentioned initial conditions. Note that the prior ODE, if computed it in the usual way, would require subtracting an initial condition off the solution for $\tau(x=0)$. Thus would lead to potential round-off errors close to $x=0$ due to the finite precision of floating point numbers, leading to noise in the solution. Thus the ODE was then instead solved by going backwards in time to avoid this problem. After, $\tau'(x)$ was also computed since the spliner we are working with seemingly does not work well past 1st derivatives, as we also want an accurate spline of $\tau''(x)$. With both $\tau(x)$ and $\tau'(x)$ we could easily calculate the visibility function $\tilde g(x)$ with (\ref{gtilde}) and its first derivative. These were then all splined along with using the \texttt{deriv\_x} function in the spliner s.t. we have access to the 2nd derivatives. All the data was again printed to the aforementioned data file.
 
 With the various splines we then calculated the time at recombination and last scattering. Our definition for when recombination happens is when $X_e$ drops below 0.1 and the definition for when last scattering occured is when $\tilde g$ peaks. This was done by iterating through the data in \texttt{C++} until these conditions were met.
 
@@ -143,7 +142,7 @@ As previously, the data was imported to Python and various plots together with a
 
 \subsection{Results}
 \subsubsection{Recombination Events}
-We first consider the quantities $x,z,y$ and $r_s$ at both recombination and when last scattering occurred. The results are summarized in TABLE \ref{tab:recombination_events}. The times for recombination and last scattering both are in agreement previously found values \cite{Planck:2018vyg}.
+We first consider the quantities $x,z,y$ and $r_s$ at both recombination and when last scattering occurred. The results are summarized in Table \ref{tab:recombination_events}. The times for recombination and last scattering both are in agreement previously found values \cite{Planck:2018vyg}. \color{red}[write more]\color{black}
 \renewcommand{\arraystretch}{1.25}
 \begin{table}[ht!]
 	\caption{Recombination Events}
@@ -156,39 +155,37 @@ We first consider the quantities $x,z,y$ and $r_s$ at both recombination and whe
 	\end{tabular}
 \end{table}
 \subsubsection{Electron Fraction $X_e$}
-The results for the electron fraction $X_e$ are given in FIG. \ref{fig:Xe}. Here we see that the moment the electron fraction deviates even a small amount from $X_e=1$ then the Saha equation plummets, suggesting that recombination would happen at some time $x\sim-7.14$ instead of the value given in TABLE \ref{tab:recombination_events} with Peebles' more accurate equation. In this figure, freeze out refers to the present day abundance of free electron which we find to be $X_e(0)\approx2.03\cdot10^{-4}$. 
+The results for the electron fraction $X_e$ are given in Fig. \ref{fig:Xe}. Here we see that the moment the electron fraction deviates even a small amount from $X_e=1$ then the Saha equation plummets, suggesting that recombination would happen at some time $x\sim-7.14$ instead of the value given in Table \ref{tab:recombination_events} with Peebles' more accurate equation. In this figure, freeze out refers to the present day abundance of free electron which is estimated to be $X_e(0)\approx2.03\cdot10^{-4}$ with our numerical data. 
 \begin{figure}[ht!]
 \includegraphics[width = \linewidth]{Figures/Xe.pdf}
-\caption{Time evolution of the free electron fraction $X_e(x)$.}
+\caption{Time evolution of the free electron fraction $X_e(x)$. Here the vertical line is the time of recombination and the horizontal line shows the present day abundance of free electrons.}
 \label{fig:Xe}
 \end{figure}
 \subsubsection{Evolution of Optical Depth and Visibility function}
-Further we consider the time evolution of the optical depth parameter, the visibility function and their derivatives given in FIG. \ref{fig:tau} and \ref{fig:gtilde} respectively. The negative of the first derivative of $\tau$ is plotted s.t. we can read off all of them in a single log-plot. For a similar reason the derivatives of $\tilde g$ are normalized such that their peak is at $\max\tilde g$. The surface of last scattering with the $\tilde g$ peak definition is shown for reference. 
-
+Further we consider the time evolution of the optical depth parameter, the visibility function and their derivatives given in Fig. \ref{fig:tau} and \ref{fig:gtilde} respectively. The negative of the first derivative of $\tau$ is plotted s.t. we can read off all of them in a single log-plot. For a similar reason the derivatives of $\tilde g$ are normalized such that their peak is at $\max\tilde g$. 
 \begin{figure}[ht!]
 	\includegraphics[width = \linewidth]{Figures/tau_and_derivs.pdf}
-	\caption{Time evolution of the optical depth $\tau(x)$ and its derivatives.}
+	\caption{Time evolution of the optical depth $\tau(x)$ and its derivatives where the vertical line signifies the time of last scattering.}
 	\label{fig:tau}
 \end{figure}
 \begin{figure}[ht!]
 	\includegraphics[width = \linewidth]{Figures/gtilde.pdf}
-	\caption{Time evolution of visibility function $\tilde g$ and its derivatives all normalized s.t. $\max|\tilde g|=\max|\tilde g'|=\max|\tilde g''|$ So that it all fits in the same plot. These scale factors are roughly $10$ and $200$ for $\tilde g'$ and $\tilde g''$ respectively.}
+	\caption{Time evolution of visibility function $\tilde g$ and its derivatives all normalized s.t. $\max|\tilde g|=\max|\tilde g'|=\max|\tilde g''|$ So that it all fits in the same plot. These factors are roughly $1/10$ and $1/200$ for $\tilde g'$ and $\tilde g''$ respectively.}
 	\label{fig:gtilde}
 \end{figure}
 
-Before this dashed line signaling the last scattering event, the primordial plasma is optically thick. Thus the mean free path of photons is too short and will continue scattering. However, the optical depth at this time still endures a stable decay almost solely due to the expansion rate of the universe as this causes the number density $n_e$ to decrease which can be seen in (\ref{eq:taueta}). As mentioned previously, the visibility function is the probability density that a given photon had its last scattering at time $x$. Thus we can see that when the optical depth is very high, the likelihood of a particular photon at that time scattering for the last time is very small. 
+Before this dashed line signaling the last scattering event, the primordial plasma is optically thick. Thus the mean free path of photons is too short and will continue scattering. However, the optical depth at this time still endures a stable decay almost solely due to the expansion rate of the universe as this causes the number density $n_e$ to decrease as seen in (\ref{eq:taueta}). As mentioned previously, the visibility function is the probability density that a given photon had its last scattering at time $x$. Thus we can see that when the optical depth is very high, the likelihood of a particular photon at that time scattering for the last time is very small. 
 
-$\tau(x)$ then dips down violently as the number of free electrons in the universe rapidly decays. At the same time we then see that this is when the visibility function begins to rapidly increase. This  clearly shows that the formation of neutral Hydrogen happens much faster than the expansion of the universe, hence having the largest effect in this epoch. This in turn means that the mean free paths of photons increase beyond their immediate vicinity and thus, photons are effectively free to travel without interacting with matter. This is when the last scattering event occurs and the photons released here are the ones that we detect today in the CMB spectra. 
+$\tau(x)$ then dips down violently as the number of free electrons in the universe rapidly decay. At the same time we then see that this is when the visibility function begins to rapidly increase. This  clearly shows that the formation of neutral Hydrogen happens much faster than the expansion of the universe, hence having the largest effect in this epoch. This in turn means that the mean free paths of photons increase beyond their immediate vicinity; thus, photons are effectively free to travel without interacting with matter. This is when the last scattering event occurs and the photons released here are the ones that we detect today in the CMB spectra. 
 
-Once the electron fraction begins to flatten out again, the optical depth becomes a straight line on the log-plot, once again caused by the expansion of the universe. The visibility function also begins to flatten out at this point, albeit at a slower rate than the initial increase before last scattering. 
+Once the electron fraction begins to flatten out again, the optical depth becomes a straight line on the log-plot, once again caused by the expansion of the universe. The visibility function also begins to flatten out at this point, albeit at a slower rate than the initial increase before last scattering, suggesting that some photons are not yet at their free streaming stage at these times.
 
 
-\subsection{Summary \& Conclusion}
+\subsection{Summary}
 We first solved the Saha equation due to Peebles' equation being stiff when the temperature of the universe was very high. We then switched over to use Peebles' equation once the fractional electron number density dropped sufficiently low. We then proposed times for when recombination and last scattering occurred within our model. At last we had a discussion of the optical depth and the visibility function along with their physical relevance.
 
-We can readily note from FIG. \ref{fig:gtilde} that recombination and last scattering did not happen instantaneously, as $\tilde g(x)$ would take the form of a Dirac-delta function, but instead over a relatively short period of time. Due to the short time frame, the number of free electrons in the universe rapidly decreased over several orders of magnitude. The values in TABLE \ref{tab:recombination_events} show us that recombination generally happens first, with the last scattering following shortly after.
+We can readily note from Fig. \ref{fig:gtilde} that recombination and last scattering did not happen instantaneously, as $\tilde g(x)$ would take the form of a Dirac-delta function, but instead over a relatively short period of time. Due to the short time frame, the number of free electrons in the universe rapidly decreased over several orders of magnitude. The values in Table \ref{tab:recombination_events} show us that recombination generally happens first, with the last scattering following shortly after.
 
 As expected from the assumptions made in the derivation of the Saha equation, we see that it quickly becomes a terrible approximation outside of its regime. The manifestly seen correlation between the change in fraction of free electrons, optical depth and the visibility function is also clearly seen, but is of no surprise from their various relations.
-
 
 \end{document}

@@ -22,7 +22,8 @@ class PowerSpectrum {
     RecombinationHistory *rec  = nullptr;
     Perturbations *pert        = nullptr;
 
-    Vector make_linspace_from_dx(double min, double max, double delta, bool logarithm=false);
+    Vector make_linspace_from_dx(double min, double max, double delta, bool logarithm = false);
+    double trapezoidal_integral(double dx, const std::vector<double>& y_array);
 
     // Parameters defining the primordial power-spectrum
     double A_s        = 2.1e-9;
@@ -37,7 +38,7 @@ class PowerSpectrum {
     // Sampling values
     const double n_bessel       = 25.0;  // Samplings per oscillation for the Bessel function
     const double n_k_theta_LOS  = 32.0;  // Samplings per oscillation of theta_ell
-    const double n_x_LOS        = 350.0; // Samplings per oscillation of the integrand in the line of sight (LOS) integral
+    const double n_x_LOS        = 100.0; // Samplings per oscillation of the integrand in the line of sight (LOS) integral
     const double n_k_PS         = 32.0;  // Sampling per oscillation when integrating across k in the power spectrum (PS) integral
 
     const double eta0   = cosmo->eta_of_x(0);
@@ -56,6 +57,8 @@ class PowerSpectrum {
         900,  950,  1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 
         1400, 1450, 1500, 1550, 1600, 1650, 1700, 1750, 1800, 1850, 
         1900, 1950, 2000};
+    // Test l = {2, 5, 10, 20, 40, 100, 200, 500, 1000}
+    Vector test_ell_index{0, 3, 7, 10, 13, 19, 24, 32, 42};
    
     //=====================================================================
     // [1] Create bessel function splines needed for the LOS integration
@@ -74,7 +77,7 @@ class PowerSpectrum {
     
     // Do LOS integration for all ells and all k's in the given k_array
     // and for all the source functions (temperature, polarization, ...)
-    void line_of_sight_integration(Vector & k_array);
+    void line_of_sight_integration(Vector & k_array, std::function<double(double, double)> &source_function);
   
     // Do the line of sight integration for a single quantity
     // for all ells by providing a source_function(x,k) (can be temp, pol, ...)
@@ -83,9 +86,7 @@ class PowerSpectrum {
         std::function<double(double,double)> &source_function);
     
     // Splines of the reusult of the LOS integration
-    // Theta_ell(k) and ThetaE_ell(k) for polarization
     std::vector<Spline> thetaT_ell_of_k_spline;
-    std::vector<Spline> thetaE_ell_of_k_spline;
     
     //=====================================================================
     // [3] Integrate to get power-spectrum
@@ -93,7 +94,6 @@ class PowerSpectrum {
     
     // General method to solve for Cells (allowing for cross-correlations)
     // For auto spectrum (C_TT) then call with f_ell = g_ell = theta_ell
-    // For polarization C_TE call with f_ell = theta_ell and g_ell = thetaE_ell
     Vector solve_for_cell(
         Vector & logk_array,
         std::vector<Spline> & f_ell, 
@@ -101,8 +101,6 @@ class PowerSpectrum {
 
     // Splines with the power-spectra
     Spline cell_TT_spline{"cell_TT_spline"};
-    Spline cell_TE_spline{"cell_TE_spline"};
-    Spline cell_EE_spline{"cell_EE_spline"};
 
   public:
 
@@ -127,11 +125,17 @@ class PowerSpectrum {
 
     // Get the quantities we have computed
     double get_cell_TT(const double ell) const;
-    double get_cell_TE(const double ell) const;
-    double get_cell_EE(const double ell) const;
+
+    double get_bessel_func(const int il_index, const double z) const;
+
+    double get_thetaT_ell_of_k_spline(const int il_index, const double k) const;
 
     // Output Cells in units of l(l+1)/2pi (muK)^2
     void output(std::string filename) const;
+    void output_matter_PS(std::string filename) const;
+    void output_theta(std::string filename) const;
+    void output_bessel_function(std::string filename) const;
+    // void output_LOS_integrand(std::string filename) const;
 };
 
 #endif
