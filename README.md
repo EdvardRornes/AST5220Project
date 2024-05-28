@@ -35,7 +35,7 @@ Build:
 
 Run:
 
-     ./cmb
+    ./cmb
 
 Clean:
 
