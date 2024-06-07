@@ -49,4 +49,4 @@ Clean:
 
 ## Running the Python code
 
-All plots are saved in /Latex/MilestoneX/Figures. To see the graphs, uncomment the plt.show() for the desired section at the bottom of /Python/MilestoneX_1_Graph.py
+All plots are saved in /Latex/MilestoneX/Figures. To see the graphs, uncomment the plt.show() for the desired section at the bottom of /Python/Milestone_X_Graph.py
