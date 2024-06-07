@@ -129,20 +129,20 @@ Notice that in radiation domination we have that $R\to\infty$, implying that the
 \[s(x_{\text{ini}})=\frac{c_s(x_{\text{ini}})}{\Hp(x_{\text{ini}})}=\frac{c}{\sqrt{3}}\Hp^{-1}(x_{\text{ini}}).\] 
 
 \subsection{Implementation details}
-\subsubsection{Solving the Saha and Peebles' equation}
+\subsubsection{The Saha and Peebles' equation}
 We began by implementing a \texttt{for}-loop for the Saha equation which at each iteration checks whether we are still in the Saha regime. Note that we have to be careful about round-off errors when solving the Saha equation. When $\epsilon_0/k_bT_b\to0$ in the exponential in (\ref{eq:C}), the rest of the expression will begin to explode. Thus in (\ref{eq:Saha}) we would be subtracting two very large numbers, which should at the end simplify to just $1$, leading to potential round-off errors. To avoid this we instead performed an \texttt{if}-test to check whether $4/C$ is less than some small threshold. Once this is the case then we simply set $X_e$ to $1$, justified by considering the first order expansion of the square root in (\ref{eq:Saha}), which will just yield $X_e=1$. Since the Saha equation is only valid for $X_e\approx1$, we decide to switch over to the more accurate Peebles' equation once $X_e<0.99$. For reference we continued on with the Saha equation past its validity to compare the results. 
 
 Peebles' equation was then solved numerically via the same ODE solver used in the previous milestone with the initial condition supplied by the last point before we exited the Saha regime. Some care was taken to ensure no overflow due to the exponential in the $\beta^{(2)}$ equation under (\ref{eq:Peebles}). To do this we simply created another \texttt{if}-test to check when the term in the exponential exceeded 150 and set $\beta^{(2)}=0$ as the exponential from $\beta$ will dominate over it. We then had the results for $X_e$ which we used to compute $n_e$ for both cases. The results for both the Saha only and the Saha-Peebles computations were splined and printed to a data file.
 \subsubsection{Solving for the optical depth and visibility functions}
 Next we solved the ODE for both the optical depth $\tau(x)$ in (\ref{eq:dtaudx}) and the sound-horizon $s(x)$ with the before mentioned initial conditions. Note that the prior ODE, if computed it in the usual way, would require subtracting an initial condition off the solution for $\tau(x=0)$. Thus would lead to potential round-off errors close to $x=0$ due to the finite precision of floating point numbers, leading to noise in the solution. Thus the ODE was then instead solved by going backwards in time to avoid this problem. After, $\tau'(x)$ was also computed since the spliner we are working with seemingly does not work well past 1st derivatives, as we also want an accurate spline of $\tau''(x)$. With both $\tau(x)$ and $\tau'(x)$ we could easily calculate the visibility function $\tilde g(x)$ with (\ref{gtilde}) and its first derivative. These were then all splined along with using the \texttt{deriv\_x} function in the spliner s.t. we have access to the 2nd derivatives. All the data was again printed to the aforementioned data file.
 
-With the various splines we then calculated the time at recombination and last scattering. Our definition for when recombination happens is when $X_e$ drops below 0.1 and the definition for when last scattering occured is when $\tilde g$ peaks. This was done by iterating through the data in \texttt{C++} until these conditions were met.
+With the various splines we then calculated the time at recombination and last scattering. Our definition for when recombination happens is when $X_e$ drops below 0.1 and the definition for when last scattering occurred is when $\tilde g$ peaks. This was done by iterating through the data in \texttt{C++} until these conditions were met.
 
 As previously, the data was imported to Python and various plots together with a table of the various events were made.
 
 \subsection{Results}
-\subsubsection{Recombination Events}
-We first consider the quantities $x,z,y$ and $r_s$ at both recombination and when last scattering occurred. The results are summarized in Table \ref{tab:recombination_events}. The times for recombination and last scattering both are in agreement previously found values \cite{Planck:2018vyg}. \color{red}[write more]\color{black}
+\subsubsection{Recombination events}
+We first consider the quantities $x,z,y$ and $r_s$ at both recombination and when last scattering occurred. The results are summarized in Table \ref{tab:recombination_events}. The times for recombination and last scattering both are in agreement previously found values \cite{Planck:2018vyg}. As explained in the theory section, the value of $r_s$ is of particular interest which provides the characteristic length scale which acoustic oscillation in the primordial plasma were able to propagate before the Universe became transparent. Observations of the angular scale of acoustic features of the CMB can be used to compare to the theoretical sound horizon at recombination.
 \renewcommand{\arraystretch}{1.25}
 \begin{table}[ht!]
 	\caption{Recombination Events}
@@ -154,14 +154,14 @@ We first consider the quantities $x,z,y$ and $r_s$ at both recombination and whe
 		Last scattering                 & $-6.9853$ & $1079.7$ & $378.04$  & $145.292$   \\\hline
 	\end{tabular}
 \end{table}
-\subsubsection{Electron Fraction $X_e$}
+\subsubsection{Electron fraction $X_e$}
 The results for the electron fraction $X_e$ are given in Fig. \ref{fig:Xe}. Here we see that the moment the electron fraction deviates even a small amount from $X_e=1$ then the Saha equation plummets, suggesting that recombination would happen at some time $x\sim-7.14$ instead of the value given in Table \ref{tab:recombination_events} with Peebles' more accurate equation. In this figure, freeze out refers to the present day abundance of free electron which is estimated to be $X_e(0)\approx2.03\cdot10^{-4}$ with our numerical data. 
 \begin{figure}[ht!]
 \includegraphics[width = \linewidth]{Figures/Xe.pdf}
 \caption{Time evolution of the free electron fraction $X_e(x)$. Here the vertical line is the time of recombination and the horizontal line shows the present day abundance of free electrons.}
 \label{fig:Xe}
 \end{figure}
-\subsubsection{Evolution of Optical Depth and Visibility function}
+\subsubsection{Evolution of the optical Depth and visibility function}
 Further we consider the time evolution of the optical depth parameter, the visibility function and their derivatives given in Fig. \ref{fig:tau} and \ref{fig:gtilde} respectively. The negative of the first derivative of $\tau$ is plotted s.t. we can read off all of them in a single log-plot. For a similar reason the derivatives of $\tilde g$ are normalized such that their peak is at $\max\tilde g$. 
 \begin{figure}[ht!]
 	\includegraphics[width = \linewidth]{Figures/tau_and_derivs.pdf}

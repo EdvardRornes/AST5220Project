@@ -95,7 +95,7 @@ where $p$ is to be interpreted as the pressure. As such, from the FRWL metric an
 	\frac{\ddot{a}}{a}&=-\frac{4\pi G}{3}(\rho+3p).
 \end{align}
 
-\subsubsection{$\Lambda$CDM Model}
+\subsubsection{$\Lambda$CDM model}
 The $\Lambda$CDM model is derived by assuming; that we have some family of weakly interacting massive particles (WIMPs) which we call cold-dark-matter (CDM) and a cosmological constant, $\Lambda$, which accounts for the present day acceleration of the Universe, which will be the dark energy in this article. The name CDM comes from assuming that dark matter (DM) is massive enough to not be relativistic and hence cold. 
 The first Friedmann equation (\ref{eq:F1}) can be rewritten such that the time dependence of the \textbf{Hubble factor} $H\equiv\dot{a}/a$ is given by
 \begin{equation}
@@ -131,7 +131,7 @@ The $\Lambda$CDM model is then fully determined by these cosmological observable
 	\Omega_{\text B0}&=0.05,\hspace{7.3mm}\Omega_{\text{CDM}0}&&=0.267,\label{eq:planck_data}\\
 	\Omega_{\text K0}&=0.00,\hspace{8mm}T_{\text{CMB}0}&&=2.7255.\nonumber
 \end{alignat}
-\subsubsection{Time and Distance Measurements in Cosmology}
+\subsubsection{Time and distance measurements in cosmology}
 Since the expansion of the Universe is strictly positive w.r.t. time, the scale factor $a(t)$ is an injective function and can thus be used as a time measurement. In this paper we will, for computational purposes, be using the variable $x\equiv\ln(a)\implies a=e^x$. 
 
 Again, due to the expansion of the Universe, one can also measure how much the wavelength of a photon released at initial time $t_i$ has stretched before it reaches us at final time $t_f$, commonly known as the \textbf{redshift}:
@@ -167,8 +167,8 @@ From this we get to the ODE
 \end{equation}
 with the initial condition $t(-\infty)=0$. This initial condition states that cosmic time begins once the big bang happened. As before, we make an analytical approximation which gives us the initial condition $t(x_\text{start})=\frac{1}{2H(x_\text{start})}$ and solved numerically from here.
 
-\subsubsection{Markov-Chain Monte Carlo Method}
-In this milestone one of the major computational method which will be used is the Markov Chain Monte Carlo (MCMC) method. The particular algorithm we use is the Metropolis algorithm which generates a Markov chain, where in each step, the chain corresponds to a proposed set of model parameters, which in our case are $h, \Omega_{\text M0}$ and $\Omega_{\text K0}$. These parameters are sampled from a probability distribution guided by certain priors, i.e. accepted ranges, where data outside of these priors are omitted. The algorithm then eventually converges to the posterior distribution of the parameters given the observed data. This can then be used to constrain the cosmological parameters, in which we decide to focus on $h, \Omega_{\text{CDM}0}$ and $\Omega_{\text M0}$. A $\chi^2$-test is then done by the assumption that the measurements are Gaussian distributed and uncorrelated between different redshift. The likelihood function is then given by $L\propto e^{-\chi^2/2}$ where
+\subsubsection{Markov-Chain Monte Carlo method}
+In this milestone one of the major computational method which will be used is the Markov-Chain Monte Carlo (MCMC) method. The particular algorithm we use is the Metropolis algorithm which generates a Markov chain, where in each step, the chain corresponds to a proposed set of model parameters, which in our case are $h, \Omega_{\text M0}$ and $\Omega_{\text K0}$. These parameters are sampled from a probability distribution guided by certain priors, i.e. accepted ranges, where data outside of these priors are omitted. The algorithm then eventually converges to the posterior distribution of the parameters given the observed data. This can then be used to constrain the cosmological parameters, in which we decide to focus on $h, \Omega_{\text{CDM}0}$ and $\Omega_{\text M0}$. A $\chi^2$-test is then done by the assumption that the measurements are Gaussian distributed and uncorrelated between different redshift. The likelihood function is then given by $L\propto e^{-\chi^2/2}$ where
 \[\chi^2(h,\Omega_{\text M0},\Omega_{\text K0})=\sum_{i=1}^N[d_L(z_i,h,\Omega_{\text M0},\Omega_{\text K0})-d_L^\text{obs}]^2/\sigma_i^2.\]
 Here $\sigma_i$ is the standard deviation for the $i$-th data point and $N$ is the total number of data points. The set of parameters with the highest likelihood is our best-fit model, which also happen to be the values which minimize $\chi^2$. To check that this best-fit is in fact a good fit one can consider a set of data points which all lie exactly $1\sigma$ away from the observed values. As such the sum simply reduces to $N$, implying that $\chi^2/N=1$. Hence we will consider a best-fit to be a good fit if $\chi^2\sim N$. For the case when $\chi^2\ll N$ then we over-fit the model, meaning we may be capturing random noise and fluctuations in the data, whilst if $\chi^2\gg N$ then we simply have a bad correspondence with the data and/or underlying assumptions (such as the assumption that the measurements are Gaussian).
 
@@ -176,7 +176,7 @@ Here $\sigma_i$ is the standard deviation for the $i$-th data point and $N$ is t
 \subsubsection{Solving the ODEs}
 To implement some numerical tools to solve for the background we first implement the data from (\ref{eq:planck_data}) and computed the derived quantities $\Omega_{\gamma0}$ and $\Omega_{\nu0}$ with (\ref{eq:ORad}, \ref{eq:ONu}), and $\Omega_{\Lambda0}=1-\Omega_\text{rest0}$ where ``rest'' refers to all the other $\Omega_i$.  
 
-Next we implemented the Runge-Kutta 4 ordinary differential equation (ODE) solver to solve the ODEs for $\eta(x)$ and $t(x)$. This was done by first setting up the respective differential equation (\ref{eq:detaODE}, \ref{eq:dtdx}) with its corresponding initial condition. An ODE solver was used to get a result which was then splined. The ODE solver and splining programs were already provided in the template from \cite{AST5220LectureNotes}. 
+Next we implemented the Runge-Kutta 4 ordinary differential equation (ODE) solver to solve the ODEs for $\eta(x)$ and $t(x)$. The Runge-Kutta 4 method is the one which will be used throughout this entire project for ODEs. This was done by first setting up the respective differential equation (\ref{eq:detaODE}, \ref{eq:dtdx}) with its corresponding initial condition. An ODE solver was used to get a result which was then splined. The ODE solver and splining programs were already provided in the template from \cite{AST5220LectureNotes}. 
 
 Further we computed $H(x)$ from (\ref{eq:Hubble}) which was used together with the various relations from the theory section to compute $\Hp,\frac{d\Hp}{dx},\frac{d^2\Hp}{dx^2},\Omega_i,r,d_A,d_L,\chi$ and $T_{\text{CMB}}$ all as a function of our time variable $x$. Note that the expressions for $\frac{d\Hp}{dx}$ and $\frac{d^2\Hp}{dx^2}$ were found analytically from (\ref{eq:Hubble}). The calculated data was then written to data files to be analyzed in Python.
 \subsubsection{MCMC fit}
@@ -214,7 +214,7 @@ Plotting these assumptions with the data we have Fig. \ref{fig:dHpddHp_vs_anal} 
 	\caption{$\Hp'/\Hp$ and $\Hp''/\Hp$ compared to analytical approximations in the various regimes where the left and right dash-dotted vertical lines signify radiation-matter equality and matter-dark energy equality respectively.}
 	\label{fig:dHpddHp_vs_anal}
 \end{figure}
-\subsubsection{Conformal Time}
+\subsubsection{Conformal time}
 Analytical approximations for the conformal time requires a little more effort. For the radiation dominated era we can solve (\ref{eq:detaODE}) analytically:
 \[\eta_\text{R}(x)=\int_{-\infty}^x\frac{c}{\Hp_\text{R}}dx'\approx\int_{-\infty}^x\frac{c}{H_0}e^{x'}dx'=\frac{c}{H_0}e^x.\]
 Now we approximate this radiation dominated epoch to end abruptly at some time $x_1$ such that we can write the conformal time in the matter dominated epoch as
@@ -248,17 +248,17 @@ Overall the data seems to be consistent with the analytical expressions, even if
 \subsection{Results}
 
 Now that the data has been stress tested to show that they are at least valid in certain regions we can go on to look at some of the results.
-\subsubsection{Time Evolution of  Cosmic Parameters}
-We first consider the time evolution of the various relative energy densities $\Omega_i$ as a function of the scale factor $a(t)$ as given in Fig. \ref{fig:Omegai}.
+\subsubsection{Time evolution of cosmic parameters}
+We first consider the time evolution of the various relative energy densities $\Omega_i$ as a function of $x$ as given in Fig. \ref{fig:Omegai}.
 \begin{figure}[ht!]
 	\includegraphics[width = \linewidth]{Figures/Omega_i.pdf}
-	\caption{Time evolution of the density parameters $\Omega_i$ as a function of the scale factor $a$.}
+	\caption{Time evolution of the density parameters $\Omega_i(x)$.}
 	\label{fig:Omegai}
 \end{figure}
 
 Here we can clearly see the different regimes of the various quantities. The early Universe is in a complete radiation domination at early times which implies that the Universe expands as $a(t)\propto t^{1/2}$. The Universe then relatively slowly switches over to becoming matter dominated as time passes. For a short period of time we have complete matter domination, implying an expansion rate $a(t)\propto t^{2/3}$. Then dark energy starts to dominate at later times, causing the Universe to begin to accelerate, until we get the known result of today where dark energy accounts for roughly 68\% of the total energy in the Universe today. It then further predicts that in the future, dark energy domination will continue to grow as time passes.
 
-The time evolution of the conformal Hubble factor $\Hp(x),$ cosmic time $t(x)$ and conformal distance $\eta(x)/c$ is given in Fig. \ref{fig:TimeEvHp}. The notable acceleration at later times in the $\Hp$ plot can be seen by when the derivative of $\Hp$ changes sign as mentioned previously. One can also see that this same phenomena affects both the cosmic time and conformal distance inversely at the same time. This is due to them both being inversely proportional to the conformal Hubble factor.
+The time evolution of the conformal Hubble factor $\Hp(x),$ cosmic time $t(x)$ and conformal distance $\eta(x)/c$ is given in Fig. \ref{fig:TimeEvHp}. The notable acceleration at later times in the $\Hp$ plot can be seen by when the derivative of $\Hp$ changes sign as mentioned previously. One can also see that this same phenomena affects both the cosmic time and conformal distance inversely at the same time. This is due to the change in the power law as we transition from the matter dominated era to dark energy domination.
 \begin{figure}[ht!]
 	\includegraphics[width = \linewidth]{Figures/merge_Hp_t_eta_Ev.pdf}
 	\caption{Time evolution of the conformal Hubble factor $\Hp$, cosmic time $t$ and conformal distance $\eta/c$ as a function of $x$.}
@@ -293,7 +293,7 @@ Here we can see that radiation-matter-equality happened roughly $51000$ years af
 Now, since $a$ is strictly a positive number then, mathematically, all that remains to check whether this is not when deceleration starts or a terrace point. To ensure this one can just check some arbitrarily close points such as $\Omega_{\Lambda}=1/3\pm\epsilon$ and $\Omega_{\text M}=2/3\mp\epsilon$ where $\epsilon$ is some tiny positive number.
 
 Next in the table we have $t(x=0)$ which corresponds to the age of the Universe today. \cite{Planck:2018vyg} estimates this to be $13.78\pm0.20\,$Gly which is reasonably close to our value of $13.86\,$Gly. Similarly $\eta(x=0)$ shows us the actual size of the observable Universe today. \cite{Gott:2003pf} states the expected conformal distance of the Universe is roughly $14\,$Gpc which corresponds to $45.7\,$Gly, again in reasonable agreement with the data. 
-\subsubsection{Supernova Comparison}
+\subsubsection{Supernova comparison}
 Further we compare our numerical data to data collected from supernova observations \cite{SDSS:2014iwm} by comparing the luminosity distance is given in Fig. \ref{fig:LumiDistance} and making a posterior probability distribution function (PDF) of the Hubble parameter $H_0$ in Fig. \ref{fig:PDEh}. We note that the found $\chi^2_\text{min}=29.3$ for the MCMC fit, which then yields that for the points accepted within the $1\sigma$ region follow $\chi^2\sim N$ to a good approximation, suggesting that we have a good fit. 
 
 The luminosity distance from the observational data is seemingly always lower than our data. This phenomena is known as the \textbf{Hubble tension} which is a widely known problem in today's standard model of cosmology \cite{Di_Valentino_2021}. Direct data, such as supernova data, seemingly always prefers lower values for luminosity distance, and thus, higher values for $h$ that can be seen in Fig. \ref{fig:PDEh}. Indirect data, such as the CMB, however prefer higher values for $d_L$ and thus lower values $h$ with much smaller error-bars. This is an ongoing issue which suggests that the $\Lambda$CDM model is not a complete model and must be modified. The posterior PDF of the Hubble parameter today $H_0$ shows that the Gaussian fit is centered at roughly $70.1\,\text{km/s/Mpc}$. As mentioned, this is a large discrepancy from $H_0=67\,\text{km/s/Mpc}$ which we got from the fiducial cosmology but still considered a common result from direct data. 
